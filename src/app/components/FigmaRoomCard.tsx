@@ -48,7 +48,7 @@ import { Room, AmenityItem, AmenityIcon } from '../data';
 
 export default function FigmaRoomCard({
   room,
-  t,
+  theme,
   isDark,
   onExplore
 }: {

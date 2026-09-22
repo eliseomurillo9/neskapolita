@@ -49,7 +49,7 @@ import RoomModal from './RoomModal';
 
 export default function RoomCard({
   room,
-  t,
+  theme,
   index,
   onOpenModal
 }: {

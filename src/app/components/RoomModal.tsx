@@ -48,7 +48,7 @@ import { Room, AmenityItem, AmenityIcon } from '../data';
 
 export default function RoomModal({
   room,
-  t,
+  theme,
   onClose
 }: {
   room: Room;

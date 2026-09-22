@@ -74,7 +74,7 @@ const localFeatures = [{
   desc: "24/7 washers and dryers so you can pack light and stay fresh."
 }];
 export default function HomePage({
-  t,
+  theme,
   isDark,
   rooms,
   onExploreRooms,
