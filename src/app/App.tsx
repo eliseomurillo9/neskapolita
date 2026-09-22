@@ -16,11 +16,7 @@ import { useTheme } from "./hooks/useTheme";
 import { useLanguage } from "./hooks/useLanguage";
 import { useAppNavigation } from "./hooks/useAppNavigation";
 export default function App() {
-  const {
-    isDark,
-    t,
-    toggleTheme
-  } = useTheme();
+  const { isDark, theme, toggleTheme } = useTheme();
   const {
     lang,
     toggleLang
@@ -37,7 +33,7 @@ export default function App() {
   const [selectedRoom, setSelectedRoom] = useState<Room | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return <motion.div className="min-h-screen w-full" animate={{
-    backgroundColor: t.pageBg
+    backgroundColor: theme.pageBg
   }} transition={{
     duration: 0.55,
     ease: [0.22, 1, 0.36, 1]
@@ -64,9 +60,9 @@ export default function App() {
         }} transition={{
           duration: 0.3
         }}>
-              <HomePage t={t} isDark={isDark} rooms={rooms} onExploreRooms={goRooms} onOpenModal={setSelectedRoom} onExploreRuta={goRuta} />
+              <HomePage theme={theme} isDark={isDark} rooms={rooms} onExploreRooms={goRooms} onOpenModal={setSelectedRoom} onExploreRuta={goRuta} />
             </motion.div>} />
-          
+
           <Route path="/ruta" element={<motion.div initial={{
           opacity: 0
         }} animate={{
@@ -88,7 +84,7 @@ export default function App() {
               </div>
               <RutaFloresPage onExploreRooms={goRooms} />
             </motion.div>} />
-          
+
           <Route path="/rooms" element={<motion.div initial={{
           opacity: 0
         }} animate={{
@@ -103,7 +99,7 @@ export default function App() {
                 <button onClick={goHome} className="self-start flex items-center gap-1.5 mb-8 uppercase tracking-widest" style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 10,
-              color: t.muted,
+              color: theme.muted,
               background: "none",
               border: "none",
               cursor: "pointer"
@@ -111,12 +107,12 @@ export default function App() {
                 <h1 className="font-black leading-tight mb-4 italic" style={{
               fontFamily: "'Fraunces',serif",
               fontSize: "clamp(32px,5vw,56px)",
-              color: t.heading,
+              color: theme.heading,
               fontVariationSettings: '"SOFT" 0,"WONK" 1'
             }}>{t("find_your_casa")}</h1>
               </div>
               <main>
-                {rooms.map((room, i) => <RoomCard key={room.id} room={room} t={t} index={i} onOpenModal={setSelectedRoom} />)}
+                {rooms.map((room, i) => <RoomCard key={room.id} room={room} theme={theme} index={i} onOpenModal={setSelectedRoom} />)}
               </main>
             </motion.div>} />
         </Routes>
@@ -132,7 +128,7 @@ export default function App() {
 
       {/* Modal */}
       <AnimatePresence>
-        {selectedRoom && <RoomModal room={selectedRoom} t={t} onClose={() => setSelectedRoom(null)} />}
+        {selectedRoom && <RoomModal room={selectedRoom} theme={theme} onClose={() => setSelectedRoom(null)} />}
       </AnimatePresence>
     </motion.div>;
 }

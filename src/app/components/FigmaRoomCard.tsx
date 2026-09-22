@@ -53,7 +53,7 @@ export default function FigmaRoomCard({
   onExplore
 }: {
   room: Room;
-  t: Theme;
+  theme: Theme;
   isDark: boolean;
   onExplore: () => void;
 }) {

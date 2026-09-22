@@ -54,13 +54,13 @@ export default function RoomCard({
   onOpenModal
 }: {
   room: Room;
-  t: Theme;
+  theme: Theme;
   index: number;
   onOpenModal: (r: Room) => void;
 }) {
   const imageRight = index % 2 !== 0;
   return <motion.div className="relative flex flex-col md:flex-row overflow-hidden" style={{
-    borderBottom: `1px solid ${t.sectionBorder}`,
+    borderBottom: `1px solid ${theme.sectionBorder}`,
     minHeight: "min(520px, 72vw)"
   }} initial={{
     opacity: 0
@@ -96,7 +96,7 @@ export default function RoomCard({
         <span className="absolute bottom-4 right-5 font-black select-none pointer-events-none leading-none italic" style={{
         fontFamily: "'Fraunces',serif",
         fontSize: 88,
-        color: t.watermark
+        color: theme.watermark
       }}>
           {room.index}
         </span>
@@ -104,7 +104,7 @@ export default function RoomCard({
 
       {/* Content half */}
       <div className={`relative flex flex-col justify-center gap-6 px-10 md:px-14 py-12 md:w-1/2 ${imageRight ? "md:order-1" : ""}`} style={{
-      background: t.cardBg
+      background: theme.cardBg
     }}>
         {/* Index + tag */}
         <div className="flex items-center gap-3">
@@ -112,15 +112,15 @@ export default function RoomCard({
           fontFamily: "'Fraunces',serif",
           fontSize: 12,
           letterSpacing: "0.12em",
-          color: t.gold
+          color: theme.gold
         }}>{room.index}</span>
           {room.tag && <span className="px-2 py-0.5 uppercase tracking-widest" style={{
           fontFamily: "'DM Sans',sans-serif",
           fontSize: 8,
           borderRadius: 2,
-          background: t.tag.bg,
-          border: `1px solid ${t.tag.border}`,
-          color: t.tag.text
+          background: theme.tag.bg,
+          border: `1px solid ${theme.tag.border}`,
+          color: theme.tag.text
         }}>
               {room.tag}
             </span>}
@@ -132,7 +132,7 @@ export default function RoomCard({
           fontFamily: "'Fraunces',serif",
           fontSize: "clamp(24px,3vw,32px)",
           lineHeight: 1.2,
-          color: t.heading,
+          color: theme.heading,
           fontVariationSettings: '"SOFT" 0,"WONK" 1'
         }}>
             {room.name}
@@ -140,23 +140,23 @@ export default function RoomCard({
           <p className="uppercase tracking-[0.22em]" style={{
           fontFamily: "'DM Sans',sans-serif",
           fontSize: 10,
-          color: t.green
+          color: theme.green
         }}>{room.type}</p>
           {room.tagline && <p className="italic mt-0.5" style={{
           fontFamily: "'Fraunces',serif",
           fontSize: 13,
-          color: t.muted
+          color: theme.muted
         }}>{room.tagline}</p>}
           <div className="flex items-baseline gap-1.5 mt-2">
             <span className="font-bold leading-none" style={{
             fontFamily: "'Fraunces',serif",
             fontSize: 24,
-            color: t.gold
+            color: theme.gold
           }}>${room.price}</span>
             <span style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 10,
-            color: t.muted
+            color: theme.muted
           }}>{t("per_night")}</span>
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function RoomCard({
         <p style={{
         fontFamily: "'DM Sans',sans-serif",
         fontSize: 15,
-        color: t.body,
+        color: theme.body,
         lineHeight: 1.7,
         maxWidth: 400
       }}>
@@ -175,22 +175,22 @@ export default function RoomCard({
         {/* Amenity pills */}
         <div className="flex flex-wrap gap-1.5">
           {room.amenities.slice(0, 4).map(item => <div key={item.label} className="flex items-center gap-1.5 px-2.5 py-1" style={{
-          background: t.pillBg,
-          border: `1px solid ${t.pillBorder}`,
+          background: theme.pillBg,
+          border: `1px solid ${theme.pillBorder}`,
           borderRadius: 100
         }}>
-              <AmenityIcon item={item} size={10} color={t.green} />
+              <AmenityIcon item={item} size={10} color={theme.green} />
               <span style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 10,
-            color: t.body
+            color: theme.body
           }}>{item.label}</span>
             </div>)}
         </div>
 
         {/* CTAs */}
         <div className="flex flex-col gap-4 pt-2" style={{
-        borderTop: `1px solid ${t.divider}`
+        borderTop: `1px solid ${theme.divider}`
       }}>
           <div className="flex gap-3">
             <motion.button className="flex-1 flex items-center justify-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)]" style={{

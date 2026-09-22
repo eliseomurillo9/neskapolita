@@ -81,7 +81,7 @@ export default function HomePage({
   onOpenModal,
   onExploreRuta
 }: {
-  t: Theme;
+  theme: Theme;
   isDark: boolean;
   rooms: Room[];
   onExploreRooms: () => void;
@@ -374,7 +374,7 @@ export default function HomePage({
 
       {/* ── Find Your Casa ── */}
       <section className="py-16 md:py-20 px-6 md:px-14 w-full" style={{
-      background: t.pageBg
+      background: theme.pageBg
     }}>
         <div className="max-w-[1920px] mx-auto w-full">
           <div className="text-center mb-10 md:mb-12">
@@ -382,15 +382,15 @@ export default function HomePage({
             fontFamily: "'Fraunces',serif",
             fontSize: "clamp(24px,3vw,32px)",
             lineHeight: 1.2,
-            color: t.heading,
+            color: theme.heading,
             fontVariationSettings: '"SOFT" 0,"WONK" 1'
           }}>{t("find_your")}<span style={{
-              color: t.green
+              color: theme.green
             }}>{t("casa")}</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {rooms.map(room => <FigmaRoomCard key={room.id} room={room} t={t} isDark={isDark} onExplore={onExploreRooms} />)}
+            {rooms.map(room => <FigmaRoomCard key={room.id} room={room} theme={theme} isDark={isDark} onExplore={onExploreRooms} />)}
           </div>
         </div>
       </section>
@@ -405,7 +405,7 @@ export default function HomePage({
 
       {/* ── Everything you need ── */}
       <section className="py-16 md:py-20 px-6 md:px-14 w-full" style={{
-      background: t.pageBg
+      background: theme.pageBg
     }}>
         <div className="max-w-[1920px] mx-auto w-full">
           <div className="max-w-5xl mx-auto">
@@ -413,26 +413,26 @@ export default function HomePage({
             fontFamily: "'Fraunces',serif",
             fontSize: "clamp(24px,3vw,32px)",
             lineHeight: 1.2,
-            color: t.heading,
+            color: theme.heading,
             fontVariationSettings: '"SOFT" 0,"WONK" 1',
             maxWidth: 420
           }}>{t("everything_you_need")}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {localFeatures.map(f => <div key={f.title} className="flex gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl" style={{
-              background: t.cardBg,
-              border: `1px solid ${t.amenityBorder}`
+              background: theme.cardBg,
+              border: `1px solid ${theme.amenityBorder}`
             }}>
                   <div className="shrink-0 mt-0.5">{f.icon}</div>
                   <div>
                     <p className="font-bold mb-1" style={{
                   fontFamily: "'DM Sans',sans-serif",
                   fontSize: 16,
-                  color: t.heading
+                  color: theme.heading
                 }}>{f.title}</p>
                     <p style={{
                   fontFamily: "'DM Sans',sans-serif",
                   fontSize: 15,
-                  color: t.body,
+                  color: theme.body,
                   lineHeight: 1.7
                 }}>{f.desc}</p>
                   </div>
@@ -440,8 +440,8 @@ export default function HomePage({
             </div>
             {/* Traveler Community — full width */}
             <div className="flex gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl mt-4" style={{
-            background: t.cardBg,
-            border: `1px solid ${t.amenityBorder}`
+            background: theme.cardBg,
+            border: `1px solid ${theme.amenityBorder}`
           }}>
               <div className="shrink-0 mt-0.5">
                 <svg fill="none" viewBox="0 0 28 28" width="28" height="28">
@@ -452,12 +452,12 @@ export default function HomePage({
                 <p className="font-bold mb-1" style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 16,
-                color: t.heading
+                color: theme.heading
               }}>{t("traveler_community")}</p>
                 <p style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 15,
-                color: t.body,
+                color: theme.body,
                 lineHeight: 1.7
               }}>{t("traveler_desc")}</p>
               </div>

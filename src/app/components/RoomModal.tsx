@@ -52,7 +52,7 @@ export default function RoomModal({
   onClose
 }: {
   room: Room;
-  t: Theme;
+  theme: Theme;
   onClose: () => void;
 }) {
   return <motion.div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6" initial={{
@@ -68,9 +68,9 @@ export default function RoomModal({
       background: "rgba(0,0,0,0.65)"
     }} />
       <motion.div className="relative z-10 w-full sm:max-w-2xl max-h-[93vh] overflow-y-auto flex flex-col" style={{
-      background: t.cardBg,
+      background: theme.cardBg,
       borderRadius: 4,
-      border: `1px solid ${t.amenityBorder}`
+      border: `1px solid ${theme.amenityBorder}`
     }} initial={{
       opacity: 0,
       y: 56,
@@ -126,18 +126,18 @@ export default function RoomModal({
         <div className="flex flex-col gap-6 p-6">
           {/* Price row */}
           <div className="flex items-center justify-between pb-5" style={{
-          borderBottom: `1px solid ${t.divider}`
+          borderBottom: `1px solid ${theme.divider}`
         }}>
             <div className="flex items-baseline gap-2">
               <span className="font-bold" style={{
               fontFamily: "'Fraunces',serif",
               fontSize: 32,
-              color: t.gold
+              color: theme.gold
             }}>${room.price}</span>
               <span style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11,
-              color: t.muted
+              color: theme.muted
             }}>{t("per_night_slash")}</span>
             </div>
             <div className="flex items-center gap-4">
@@ -145,28 +145,28 @@ export default function RoomModal({
                 <span className="uppercase tracking-widest" style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 8,
-                color: t.muted
+                color: theme.muted
               }}>{t("size")}</span>
                 <span style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 12,
-                color: t.heading
+                color: theme.heading
               }}>{room.size}</span>
               </div>
               <div className="w-px h-7" style={{
-              background: t.divider
+              background: theme.divider
             }} />
               <div className="flex items-center gap-1.5">
-                <Star size={11} fill={t.starColor} stroke="none" />
+                <Star size={11} fill={theme.starColor} stroke="none" />
                 <span className="font-bold" style={{
                 fontFamily: "'Fraunces',serif",
                 fontSize: 14,
-                color: t.starColor
+                color: theme.starColor
               }}>4.9</span>
                 <span className="uppercase tracking-widest" style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 8,
-                color: t.muted
+                color: theme.muted
               }}>{t("google")}</span>
               </div>
             </div>
@@ -175,7 +175,7 @@ export default function RoomModal({
           <p style={{
           fontFamily: "'DM Sans',sans-serif",
           fontSize: 14,
-          color: t.body,
+          color: theme.body,
           lineHeight: 1.7
         }}>{room.description}</p>
 
@@ -184,22 +184,22 @@ export default function RoomModal({
               <p className="uppercase tracking-widest" style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 9,
-            color: t.muted
+            color: theme.muted
           }}>{t("key_amenities")}</p>
               {(room.detailedAmenities as DetailedAmenityCategory[]).map(cat => <div key={cat.title}>
                   <p className="mb-2" style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11,
               fontWeight: 600,
-              color: t.heading
+              color: theme.heading
             }}>{cat.title}</p>
                   <div className="flex flex-col gap-1.5">
                     {cat.items.map(item => <div key={item} className="flex items-center gap-2.5">
-                        <Check size={10} color={t.green} strokeWidth={2.5} />
+                        <Check size={10} color={theme.green} strokeWidth={2.5} />
                         <span style={{
                   fontFamily: "'DM Sans',sans-serif",
                   fontSize: 13,
-                  color: t.body
+                  color: theme.body
                 }}>{item}</span>
                       </div>)}
                   </div>
@@ -208,19 +208,19 @@ export default function RoomModal({
               <p className="uppercase tracking-widest mb-3" style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 9,
-            color: t.muted
+            color: theme.muted
           }}>{t("amenities")}</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {room.amenities.map(item => <div key={item.label} className="flex items-center gap-2 px-3 py-2.5" style={{
-              background: t.amenityBg,
-              border: `1px solid ${t.amenityBorder}`,
+              background: theme.amenityBg,
+              border: `1px solid ${theme.amenityBorder}`,
               borderRadius: 3
             }}>
-                    <AmenityIcon item={item} size={12} color={t.green} />
+                    <AmenityIcon item={item} size={12} color={theme.green} />
                     <span style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 11,
-                color: t.body
+                color: theme.body
               }}>{item.label}</span>
                   </div>)}
               </div>
@@ -231,19 +231,19 @@ export default function RoomModal({
             <p className="uppercase tracking-widest mb-3" style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 9,
-            color: t.muted
+            color: theme.muted
           }}>{t("highlights")}</p>
             <div className="flex flex-wrap gap-2">
               {room.highlights.map(h => <div key={h} className="flex items-center gap-1.5 px-3 py-1.5" style={{
-              background: t.highlightBg,
-              border: `1px solid ${t.highlightBorder}`,
+              background: theme.highlightBg,
+              border: `1px solid ${theme.highlightBorder}`,
               borderRadius: 100
             }}>
-                  <Check size={10} color={t.green} strokeWidth={2.5} />
+                  <Check size={10} color={theme.green} strokeWidth={2.5} />
                   <span style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 11,
-                color: t.body
+                color: theme.body
               }}>{h}</span>
                 </div>)}
             </div>
@@ -274,11 +274,11 @@ export default function RoomModal({
             </motion.button>
             <motion.button className="flex items-center justify-center px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0" style={{
             background: "transparent",
-            border: `1px solid ${t.btnOutlineBorder}`,
-            color: t.btnOutlineColor
+            border: `1px solid ${theme.btnOutlineBorder}`,
+            color: theme.btnOutlineColor
           }} whileHover={{
-            borderColor: t.btnOutlineHoverBorder,
-            color: t.btnOutlineHoverColor
+            borderColor: theme.btnOutlineHoverBorder,
+            color: theme.btnOutlineHoverColor
           }} whileTap={{
             scale: 0.98
           }} onClick={onClose}>
