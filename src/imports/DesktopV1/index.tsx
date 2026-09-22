@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-a56cgiz6y";
@@ -1070,7 +1071,10 @@ function Text2() {
     </div>;
 }
 function ButtonSwitchLanguage() {
-  return <div className="bg-[rgba(28,36,32,0.04)] border border-[#3d9e72] border-solid content-stretch flex gap-[4px] items-center px-[12px] py-[8px] relative rounded-[16777200px] shrink-0" data-name="Button - Switch language">
+  const { i18n } = useTranslation();
+  const toggleLanguage = () => i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
+
+  return <div className="bg-[rgba(28,36,32,0.04)] border border-[#3d9e72] border-solid content-stretch flex gap-[4px] items-center px-[12px] py-[8px] relative rounded-[16777200px] shrink-0" data-name="Button - Switch language" onClick={toggleLanguage} style={{ cursor: "pointer" }}>
       <Text />
       <Text1 />
       <Text2 />
@@ -1781,7 +1785,7 @@ export default function DesktopV() {
       <Section1 />
       <RoomFinderRow />
       <SavingsBannerSection />
-      <AmenitiesSection />
+      <AmenitiesSection />x
       <RutaDeLasFloresLight />
       <div className="bg-[#ede8d8] h-[240px] relative shrink-0 w-[1440px]" data-name="Nar-bar">
         <div aria-hidden className="absolute border-[rgba(28,36,32,0.09)] border-solid border-t inset-0 pointer-events-none" />

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-sf0500q9i9";
@@ -77,7 +78,10 @@ function Text2() {
     </div>;
 }
 function ButtonSwitchLanguage() {
-  return <div className="bg-[rgba(28,36,32,0.05)] border border-[#3d9e72] border-solid content-stretch flex gap-[5px] h-[36px] items-center px-[14px] relative rounded-[16777200px] shrink-0" data-name="Button - Switch language">
+  const { i18n } = useTranslation();
+  const toggleLanguage = () => i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
+
+  return <div className="bg-[rgba(28,36,32,0.05)] border border-[#3d9e72] border-solid content-stretch flex gap-[5px] h-[36px] items-center px-[14px] relative rounded-[16777200px] shrink-0" data-name="Button - Switch language" onClick={toggleLanguage} style={{ cursor: "pointer" }}>
       <Text />
       <Text1 />
       <Text2 />
