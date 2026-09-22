@@ -1,4 +1,4 @@
-import i18n from "../../../i18n";
+import i18n from "../../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import * as React from "react";
 import { ChevronLeftIcon, ChevronRightIcon, MoreHorizontalIcon } from "lucide-react";
@@ -41,7 +41,7 @@ function PaginationPrevious({
 }: React.ComponentProps<typeof PaginationLink>) {
   return <PaginationLink aria-label="Go to previous page" size="default" className={cn("gap-1 px-2.5 sm:pl-2.5", className)} {...props}>
       <ChevronLeftIcon />
-      <span className="hidden sm:block">{t("text_4")}</span>
+      <span className="hidden sm:block">{t("common.award_winning_coffee_farm")}</span>
     </PaginationLink>;
 }
 function PaginationNext({
@@ -49,7 +49,7 @@ function PaginationNext({
   ...props
 }: React.ComponentProps<typeof PaginationLink>) {
   return <PaginationLink aria-label="Go to next page" size="default" className={cn("gap-1 px-2.5 sm:pr-2.5", className)} {...props}>
-      <span className="hidden sm:block">{t("text_5")}</span>
+      <span className="hidden sm:block">{t("common.ataco")}</span>
       <ChevronRightIcon />
     </PaginationLink>;
 }
@@ -59,7 +59,7 @@ function PaginationEllipsis({
 }: React.ComponentProps<"span">) {
   return <span aria-hidden data-slot="pagination-ellipsis" className={cn("flex size-9 items-center justify-center", className)} {...props}>
       <MoreHorizontalIcon className="size-4" />
-      <span className="sr-only">{t("text_6")}</span>
+      <span className="sr-only">{t("common.cobblestone_streets_lined_with")}</span>
     </span>;
 }
 export { Pagination, PaginationContent, PaginationLink, PaginationItem, PaginationPrevious, PaginationNext, PaginationEllipsis };

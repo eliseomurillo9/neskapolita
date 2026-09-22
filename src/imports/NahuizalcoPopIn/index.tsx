@@ -1,18 +1,18 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-zkxxxkx5af";
 function Paragraph() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#3d9e72] text-[11px] tracking-[2px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("top_places")}</p>
+    }}>{t("common.top_places")}</p>
     </div>;
 }
 function Paragraph1() {
   return <div className="content-stretch flex flex-col h-[30px] items-start pt-[2px] relative shrink-0 w-[97px]" data-name="Paragraph">
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[27.5px] relative shrink-0 text-[#1c2420] text-[22px] w-[149px]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_140")}</p>
+    }}>{t("index.nahuizalco")}</p>
     </div>;
 }
 function Container1() {
@@ -60,7 +60,7 @@ function Container2() {
 function Instruction() {
   return <div className="content-stretch flex gap-[12px] items-center justify-center relative shrink-0" data-name="instruction">
       <Container2 />
-      <p className="[word-break:break-word] font-['Nunito:ExtraBold',sans-serif] font-extrabold leading-[normal] relative shrink-0 text-[#3d9e72] text-[14px] tracking-[0.5px] whitespace-nowrap">{t("tap_place")}</p>
+      <p className="[word-break:break-word] font-['Nunito:ExtraBold',sans-serif] font-extrabold leading-[normal] relative shrink-0 text-[#3d9e72] text-[14px] tracking-[0.5px] whitespace-nowrap">{t("common.tap_place")}</p>
     </div>;
 }
 function Icon2() {
@@ -87,7 +87,7 @@ function Paragraph2() {
   return <div className="content-stretch flex h-[21px] items-center relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[21px] relative shrink-0 text-[#1c2420] text-[14px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("place_13")}</p>
+    }}>{t("ruta.place_13")}</p>
     </div>;
 }
 function Paragraph3() {
@@ -133,14 +133,14 @@ function Paragraph4() {
   return <div className="content-stretch flex h-[21px] items-center relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[21px] relative shrink-0 text-[#1c2420] text-[14px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("place_14")}</p>
+    }}>{t("ruta.place_14")}</p>
     </div>;
 }
 function Paragraph5() {
   return <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#54625d] text-[13px] w-[356px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_141")}</p>
+    }}>{t("index.watch_master_artisans_weave")}</p>
     </div>;
 }
 function Container7() {
@@ -179,7 +179,7 @@ function Paragraph6() {
   return <div className="content-stretch flex h-[21px] items-center relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[21px] relative shrink-0 text-[#1c2420] text-[14px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("place_15")}</p>
+    }}>{t("ruta.place_15")}</p>
     </div>;
 }
 function Paragraph7() {

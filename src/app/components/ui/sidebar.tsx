@@ -1,4 +1,4 @@
-import i18n from "../../../i18n";
+import i18n from "../../../locales/i18n";
 const t = i18n.t.bind(i18n);
 "use client";
 
@@ -139,8 +139,8 @@ function Sidebar({
         "--sidebar-width": SIDEBAR_WIDTH_MOBILE
       } as React.CSSProperties} side={side}>
           <SheetHeader className="sr-only">
-            <SheetTitle>{t("text_7")}</SheetTitle>
-            <SheetDescription>{t("text_8")}</SheetDescription>
+            <SheetTitle>{t("common.a_colorful_artisan_market")}</SheetTitle>
+            <SheetDescription>{t("common.cloud_forest_reserve_with")}</SheetDescription>
           </SheetHeader>
           <div className="flex h-full w-full flex-col">{children}</div>
         </SheetContent>
@@ -171,7 +171,7 @@ function SidebarTrigger({
     toggleSidebar();
   }} {...props}>
       <PanelLeftIcon />
-      <span className="sr-only">{t("text_9")}</span>
+      <span className="sr-only">{t("common.when_you_book_direct")}</span>
     </Button>;
 }
 function SidebarRail({

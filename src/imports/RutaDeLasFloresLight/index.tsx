@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-lhxd6z9emk";
 import imgMap011 from "./a59195a9e27cccf80d5295fb9bf15ac226f28f11.png";
@@ -21,7 +21,7 @@ function ActionButton() {
   return <div className="absolute bg-[#3d9e72] content-stretch drop-shadow-[0px_6.698px_10.047px_rgba(76,110,88,0.05)] flex gap-[13.395px] items-center left-[900px] px-[50.233px] py-[23.442px] rounded-[6.698px] top-[44px]" data-name="Action Button">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[18.753px] text-white tracking-[2.2437px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_182")}</p>
+    }}>{t("index.explore_ruta_de_las")}</p>
       <ArrowRight />
     </div>;
 }

@@ -2,7 +2,7 @@ import { createRoot } from "react-dom/client";
   import { BrowserRouter } from "react-router-dom";
   import App from "./app/App.tsx";
   import "./styles/index.css";
-import "./i18n";
+import "./locales/i18n";
 
   createRoot(document.getElementById("root")!).render(
     <BrowserRouter>

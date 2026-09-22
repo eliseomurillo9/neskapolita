@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-864d05ehra";
 export default function ButtonPrimary({
@@ -13,7 +13,7 @@ export default function ButtonPrimary({
         <div className="content-stretch flex gap-[8px] items-center px-[30px] py-[14px] relative size-full">
           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11.2px] text-white tracking-[1.34px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_18")}</p>
+        }}>{t("index.explore_the_must_visit")}</p>
           <div className="relative shrink-0 size-[13px]" data-name="arrow-right">
             <svg className="absolute block inset-0 size-full" fill="none" viewBox="0 0 20.093 20.093">
               <g id="arrow-right">

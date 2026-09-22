@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import svgPaths from "./svg-9yr61w7rzh";
@@ -17,13 +17,13 @@ type NavBarProps = {
 };
 const desktopLinks = ["Rooms", "Story", "Find Us"];
 const NAV_LINKS = [{
-  label: t("data_160"),
+  label: t("index.rooms"),
   page: "rooms"
 }, {
-  label: t("nav_our_story_2"),
+  label: t("nav.our_story"),
   page: "home"
 }, {
-  label: t("data_161"),
+  label: t("index.find_us"),
   page: "home"
 }];
 export default function NavBar({
@@ -90,7 +90,7 @@ export default function NavBar({
             fontVariationSettings: '"SOFT" 0, "WONK" 1',
             lineHeight: "33.6px",
             cursor: onLogoClick ? "pointer" : "default"
-          }} onClick={onLogoClick}>{t("hero_title_2")}</p>
+          }} onClick={onLogoClick}>{t("hero.title")}</p>
           </div>
 
           {/* Right: desktop toggles + Book Now */}
@@ -106,7 +106,7 @@ export default function NavBar({
               letterSpacing: "1px",
               color: lang === "EN" ? "#3d9e72" : textColor,
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_162")}</span>
+            }}>{t("index.en")}</span>
               <span style={{
               color: mutedColor,
               fontSize: 10
@@ -117,7 +117,7 @@ export default function NavBar({
               letterSpacing: "1px",
               color: lang === "ES" ? "#3d9e72" : textColor,
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_163")}</span>
+            }}>{t("index.es")}</span>
             </button>
 
             {/* Mode toggle — desktop only */}
@@ -175,7 +175,7 @@ export default function NavBar({
               letterSpacing: "1px",
               color: "white",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_164")}</p>
+            }}>{t("index.book_now")}</p>
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function NavBar({
         }} onClick={() => {
           onLogoClick?.();
           toggleMenu(false);
-        }}>{t("hero_title_2")}</p>
+        }}>{t("hero.title")}</p>
           <button onClick={() => toggleMenu(false)} className="flex items-center justify-center cursor-pointer border-0 bg-transparent p-2 rounded-full -mr-2" aria-label="Close menu">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <g clipPath="url(#clip_xcircle)">
@@ -277,7 +277,7 @@ export default function NavBar({
               letterSpacing: "1px",
               color: lang === "EN" ? "#3d9e72" : textColor,
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_165")}</span>
+            }}>{t("index.en")}</span>
               <span style={{
               color: mutedColor,
               fontSize: 10
@@ -288,7 +288,7 @@ export default function NavBar({
               letterSpacing: "1px",
               color: lang === "ES" ? "#3d9e72" : textColor,
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_166")}</span>
+            }}>{t("index.es")}</span>
             </button>
 
             <button onClick={onToggleMode} className="flex items-center gap-[6px] h-[36px] cursor-pointer rounded-[4px] px-[14px] shrink-0" style={{
@@ -353,7 +353,7 @@ export default function NavBar({
             color: "white",
             textTransform: "uppercase",
             fontVariationSettings: '"opsz" 14'
-          }}>{t("text_167")}</span>
+          }}>{t("index.book_via_whatsapp")}</span>
           </button>
         </div>
 

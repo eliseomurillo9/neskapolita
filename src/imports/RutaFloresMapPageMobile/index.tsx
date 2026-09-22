@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import imgMap from "./a59195a9e27cccf80d5295fb9bf15ac226f28f11.png";
 import imgImg28131 from "./850dde4affad5f2560eb4e5d70ef9add7b7d9ff3.png";
@@ -29,15 +29,15 @@ function HeroCopy() {
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>
         <span className="leading-[normal] text-[32px]">{`A Cozy Refuge on the `}</span>
-        <span className="leading-[normal] text-[#398e68] text-[32px]">{t("ruta_de_las_flores")}</span>
+        <span className="leading-[normal] text-[#398e68] text-[32px]">{t("common.ruta_de_las_flores")}</span>
       </p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_217")}</p>
+    }}>{t("index.set_in_the_heart")}</p>
       <div className="bg-[#398e68] drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] relative shrink-0" data-name="See all rooms">
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-white whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("see_all_rooms_2")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("common.see_all_rooms_1")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -54,17 +54,17 @@ function GuideIntroduction() {
   return <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-center leading-[normal] overflow-clip relative shrink-0 text-center w-full" data-name="Guide introduction">
       <p className="font-['Fraunces:Black',sans-serif] font-black relative shrink-0 text-[#1c2420] text-[36px] w-full" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("explore_ruta")}</p>
+    }}>{t("common.explore_ruta")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d] text-[15px] w-full" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_218")}</p>
+    }}>{t("index.discover_the_best_of")}</p>
     </div>;
 }
 function RouteMetadata() {
   return <div className="[word-break:break-word] content-center flex flex-wrap gap-[8px] items-center leading-[normal] overflow-clip relative shrink-0 text-[12px] w-full whitespace-nowrap" data-name="Route metadata">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_219")}</p>
+    }}>{t("index.stop_1")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -80,18 +80,18 @@ function DestinationDetails() {
       <RouteMetadata />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] min-w-full relative shrink-0 text-[#1c2420] text-[32px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_220")}</p>
+    }}>{t("index.juay_a")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] min-w-full relative shrink-0 text-[#54625d] text-[16px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Food Festival & Waterfalls`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_1")}</p>
+    }}>{t("ruta.desc_1")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="Route directions">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_221")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -110,7 +110,7 @@ function RouteMetadata1() {
   return <div className="[word-break:break-word] content-center flex flex-wrap gap-[8px] items-center leading-[normal] overflow-clip relative shrink-0 text-[12px] w-full whitespace-nowrap" data-name="Route metadata">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_222")}</p>
+    }}>{t("index.stop_2")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -118,7 +118,7 @@ function RouteMetadata1() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_223")}</p>
+    }}>{t("index.8_km_north")}</p>
     </div>;
 }
 function DestinationDetails1() {
@@ -126,18 +126,18 @@ function DestinationDetails1() {
       <RouteMetadata1 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] min-w-full relative shrink-0 text-[#1c2420] text-[32px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_224")}</p>
+    }}>{t("common.apaneca")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] min-w-full relative shrink-0 text-[#54625d] text-[16px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Coffee Farms & Adventure`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_2")}</p>
+    }}>{t("ruta.desc_2")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="Route directions">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_225")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -156,7 +156,7 @@ function RouteMetadata2() {
   return <div className="[word-break:break-word] content-center flex flex-wrap gap-[8px] items-center leading-[normal] overflow-clip relative shrink-0 text-[12px] w-full whitespace-nowrap" data-name="Route metadata">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_226")}</p>
+    }}>{t("index.stop_3")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -164,7 +164,7 @@ function RouteMetadata2() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_227")}</p>
+    }}>{t("index.12_km_north")}</p>
     </div>;
 }
 function DestinationDetails2() {
@@ -172,18 +172,18 @@ function DestinationDetails2() {
       <RouteMetadata2 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] min-w-full relative shrink-0 text-[#1c2420] text-[32px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_228")}</p>
+    }}>{t("common.ataco")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] min-w-full relative shrink-0 text-[#54625d] text-[16px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Street Art & Handcrafts`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_3")}</p>
+    }}>{t("ruta.desc_3")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="Route directions">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_229")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -202,7 +202,7 @@ function RouteMetadata3() {
   return <div className="[word-break:break-word] content-center flex flex-wrap gap-[8px] items-center leading-[normal] overflow-clip relative shrink-0 text-[12px] w-full whitespace-nowrap" data-name="Route metadata">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_230")}</p>
+    }}>{t("index.stop_4")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -210,7 +210,7 @@ function RouteMetadata3() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_231")}</p>
+    }}>{t("index.5_km_south")}</p>
     </div>;
 }
 function DestinationDetails3() {
@@ -218,18 +218,18 @@ function DestinationDetails3() {
       <RouteMetadata3 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] min-w-full relative shrink-0 text-[#1c2420] text-[32px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_232")}</p>
+    }}>{t("index.salcoatit_n")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] min-w-full relative shrink-0 text-[#54625d] text-[16px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Art Galleries & Yucca Cuisine`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_4")}</p>
+    }}>{t("ruta.desc_4")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="Route directions">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_233")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -248,7 +248,7 @@ function RouteMetadata4() {
   return <div className="[word-break:break-word] content-center flex flex-wrap gap-[8px] items-center leading-[normal] overflow-clip relative shrink-0 text-[12px] w-full whitespace-nowrap" data-name="Route metadata">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_234")}</p>
+    }}>{t("index.stop_5")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -256,7 +256,7 @@ function RouteMetadata4() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_235")}</p>
+    }}>{t("index.15_km_south")}</p>
     </div>;
 }
 function DestinationDetails4() {
@@ -264,18 +264,18 @@ function DestinationDetails4() {
       <RouteMetadata4 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] min-w-full relative shrink-0 text-[#1c2420] text-[32px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_236")}</p>
+    }}>{t("index.nahuizalco")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] min-w-full relative shrink-0 text-[#54625d] text-[16px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_237")}</p>
+    }}>{t("index.candlelit_night_market")}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_5")}</p>
+    }}>{t("ruta.desc_5")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="Route directions">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_238")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -294,7 +294,7 @@ function RouteMetadata5() {
   return <div className="[word-break:break-word] content-center flex flex-wrap gap-[8px] items-center leading-[normal] overflow-clip relative shrink-0 text-[12px] w-full whitespace-nowrap" data-name="Route metadata">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_239")}</p>
+    }}>{t("index.stop_6")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -302,7 +302,7 @@ function RouteMetadata5() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_240")}</p>
+    }}>{t("index.25_km_south")}</p>
     </div>;
 }
 function DestinationDetails5() {
@@ -310,18 +310,18 @@ function DestinationDetails5() {
       <RouteMetadata5 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] min-w-full relative shrink-0 text-[#1c2420] text-[32px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_241")}</p>
+    }}>{t("index.sonsonate")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] min-w-full relative shrink-0 text-[#54625d] text-[16px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Colonial Gateway & Thermal Pools`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_6")}</p>
+    }}>{t("ruta.desc_6")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="Route directions">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_242")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -351,14 +351,14 @@ function ExplorationCallout() {
   return <div className="bg-[#ede8d8] content-stretch flex flex-col gap-[16px] items-center justify-center overflow-clip p-[32px] relative shrink-0 w-full" data-name="Exploration callout">
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] min-w-full relative shrink-0 text-[#1c2420] text-[36px] w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("ready_to_explore")}</p>
+    }}>{t("common.ready_to_explore")}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] min-w-full opacity-80 relative shrink-0 text-[#1c2420] text-[16px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_243")}</p>
+    }}>{t("index.book_your_stay_at")}</p>
       <div className="bg-[#398e68] drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] relative shrink-0" data-name="See all rooms">
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-white whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("see_all_rooms_2")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("common.see_all_rooms_1")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -369,7 +369,7 @@ function QuestionHeader() {
   return <div className="content-stretch flex gap-[12px] items-start leading-[normal] overflow-clip relative shrink-0 text-[18px] w-full" data-name="Question header">
       <p className="flex-[1_0_0] font-['Fraunces:Black',sans-serif] font-black min-w-px relative text-[#1c2420]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_244")}</p>
+    }}>{t("index.how_many_days_do")}</p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -383,7 +383,7 @@ function Question() {
         <QuestionHeader />
         <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] relative shrink-0 text-[#54625d] text-[14px] w-full" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_245")}</p>
+      }}>{t("index.we_recommend_2_to")}</p>
       </div>
       <div aria-hidden className="absolute border border-[#d5dad7] border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>;
@@ -392,7 +392,7 @@ function QuestionHeader1() {
   return <div className="content-stretch flex gap-[12px] items-start leading-[normal] overflow-clip relative shrink-0 text-[18px] w-full" data-name="Question header">
       <p className="flex-[1_0_0] font-['Fraunces:Black',sans-serif] font-black min-w-px relative text-[#1c2420]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_246")}</p>
+    }}>{t("index.what_is_the_best")}</p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -406,7 +406,7 @@ function Question1() {
         <QuestionHeader1 />
         <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] relative shrink-0 text-[#54625d] text-[14px] w-full" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_247")}</p>
+      }}>{t("index.juay_a_is_the")}</p>
       </div>
       <div aria-hidden className="absolute border border-[#d5dad7] border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>;
@@ -415,7 +415,7 @@ function QuestionHeader2() {
   return <div className="content-stretch flex gap-[12px] items-start leading-[normal] overflow-clip relative shrink-0 text-[18px] w-full" data-name="Question header">
       <p className="flex-[1_0_0] font-['Fraunces:Black',sans-serif] font-black min-w-px relative text-[#1c2420]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_248")}</p>
+    }}>{t("index.can_you_visit_ruta")}</p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -438,7 +438,7 @@ function QuestionHeader3() {
   return <div className="content-stretch flex gap-[12px] items-start leading-[normal] overflow-clip relative shrink-0 text-[18px] w-full" data-name="Question header">
       <p className="flex-[1_0_0] font-['Fraunces:Black',sans-serif] font-black min-w-px relative text-[#1c2420]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_249")}</p>
+    }}>{t("index.what_is_the_best_1")}</p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -452,7 +452,7 @@ function Question3() {
         <QuestionHeader3 />
         <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] relative shrink-0 text-[#54625d] text-[14px] w-full" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_250")}</p>
+      }}>{t("index.the_dry_season_from")}</p>
       </div>
       <div aria-hidden className="absolute border border-[#d5dad7] border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>;
@@ -470,7 +470,7 @@ function RutaQuickTips() {
       <div className="content-stretch flex flex-col gap-[32px] items-start overflow-clip px-[24px] py-[48px] relative rounded-[inherit] size-full">
         <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[#1c2420] text-[36px] text-center w-full" style={{
         fontVariationSettings: '"SOFT" 0, "WONK" 1'
-      }}>{t("ruta_quick_tips")}</p>
+      }}>{t("common.ruta_quick_tips")}</p>
         <Questions />
       </div>
       <div aria-hidden className="absolute border-[#d5dad7] border-b border-solid border-t inset-0 pointer-events-none" />
@@ -480,45 +480,45 @@ function HostelInformation() {
   return <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-full" data-name="Hostel information">
       <p className="font-['Fraunces:Black_Italic',sans-serif] font-black italic leading-[normal] relative shrink-0 text-[#4c6e58] text-[24px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_title_2")}</p>
+    }}>{t("hero.title")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_251")}</p>
+    }}>{t("index.your_tropical_refuge_in")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] min-w-full relative shrink-0 text-[#54625d] text-[12px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_252")}</p>
+    }}>{t("index.calle_merceditas_caceres_1")}</p>
     </div>;
 }
 function LinkColumn() {
   return <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[150px]" data-name="Link column">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] text-[11px] tracking-[2px] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("explore_card")}</p>
+    }}>{t("common.explore")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#1c2420] text-[13px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_253")}</p>
+    }}>{t("index.town_guide")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#1c2420] text-[13px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_254")}</p>
+    }}>{t("index.los_chorros")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#1c2420] text-[13px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_255")}</p>
+    }}>{t("index.food_festival")}</p>
     </div>;
 }
 function LinkColumn1() {
   return <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[150px]" data-name="Link column">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] text-[11px] tracking-[2px] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_256")}</p>
+    }}>{t("index.hostel")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#1c2420] text-[13px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_257")}</p>
+    }}>{t("index.our_rooms")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#1c2420] text-[13px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_258")}</p>
+    }}>{t("index.the_garden")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#1c2420] text-[13px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_259")}</p>
+    }}>{t("index.shared_kitchen")}</p>
     </div>;
 }
 function FooterLinks() {
@@ -532,10 +532,10 @@ function BottomRow() {
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start leading-[normal] overflow-clip pt-[24px] relative rounded-[inherit] size-full text-[12px]">
         <p className="font-['DM_Sans:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[#54625d] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_260")}</p>
+      }}>{t("index.2026_neskapolita_hostel_handcrafted")}</p>
         <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_261")}</p>
+      }}>{t("index.designed_for_adventure")}</p>
       </div>
       <div aria-hidden className="absolute border-[#d5dad7] border-solid border-t inset-0 pointer-events-none" />
     </div>;

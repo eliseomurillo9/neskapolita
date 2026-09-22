@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-a56cgiz6y";
 import imgImg31101 from "./cd9987bb22832d1a86f78c1d38d1f0d14103c288.png";
@@ -49,10 +49,10 @@ function CardCommunity({
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-w-px relative" data-name="Card-Community-Text">
             <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
             fontVariationSettings: '"opsz" 14'
-          }}>{t("traveler_community")}</p>
+          }}>{t("common.traveler_community")}</p>
             <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
             fontVariationSettings: '"opsz" 14'
-          }}>{t("traveler_desc")}</p>
+          }}>{t("common.traveler_desc")}</p>
           </div>
         </div>
       </div>
@@ -77,10 +77,10 @@ function CardLaundry({
         </div>
         <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_laundry")}</p>
+      }}>{t("features.laundry")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_19")}</p>
+      }}>{t("index.24_7_washers_and")}</p>
       </div>
     </div>;
 }
@@ -105,10 +105,10 @@ function CardLounge({
         </div>
         <p className="[word-break:break-word] absolute font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] left-[32px] text-[#1c2420] text-[18px] top-[76px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_lounge")}</p>
+      }}>{t("features.lounge")}</p>
         <p className="[word-break:break-word] absolute font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] left-[32px] right-[32px] text-[#54625d] text-[14px] top-[115px]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_20")}</p>
+      }}>{t("index.cozy_community_space_with")}</p>
         {property1 === "hover" && <div className="absolute h-[495px] left-[-151px] top-[-171px] w-[660px]" data-name="IMG_3110 1">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImg31101} />
           </div>}
@@ -140,10 +140,10 @@ function CardKitchen({
             </div>
             <p className="[word-break:break-word] absolute font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] left-[32px] text-[#1c2420] text-[18px] top-[76px] whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("feature_kitchen")}</p>
+        }}>{t("features.kitchen")}</p>
             <p className="[word-break:break-word] absolute font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] left-[32px] right-[32px] text-[#54625d] text-[14px] top-[115px]" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_21")}</p>
+        }}>{t("index.fully_equipped_space_to")}</p>
             <div className="absolute h-[508px] left-[-23px] top-[-139px] w-[381px]" data-name="13 1">
               <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img131} />
             </div>
@@ -162,10 +162,10 @@ function CardKitchen({
             </div>
             <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("feature_kitchen")}</p>
+        }}>{t("features.kitchen")}</p>
             <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_22")}</p>
+        }}>{t("index.fully_equipped_space_to")}</p>
           </>}
       </div>
     </div>;
@@ -194,10 +194,10 @@ function CardGarden({
             </div>
             <p className="[word-break:break-word] absolute font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] left-[32px] text-[#1c2420] text-[18px] top-[76px] whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("feature_garden")}</p>
+        }}>{t("features.garden")}</p>
             <p className="[word-break:break-word] absolute font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] left-[32px] right-[32px] text-[#54625d] text-[14px] top-[115px]" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_23")}</p>
+        }}>{t("index.a_lush_tranquil_green")}</p>
             <div className="absolute h-[703px] left-[-108px] top-[-426px] w-[527px]" data-name="14 (2) 2">
               <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img1422} />
             </div>
@@ -216,10 +216,10 @@ function CardGarden({
             </div>
             <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("feature_garden")}</p>
+        }}>{t("features.garden")}</p>
             <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_24")}</p>
+        }}>{t("index.a_lush_tranquil_green")}</p>
           </>}
       </div>
     </div>;
@@ -263,7 +263,7 @@ function Room3({
                               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
                                 <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#0a1209] text-[12.601px] whitespace-nowrap" style={{
                               fontVariationSettings: '"SOFT" 0, "WONK" 1'
-                            }}>{t("text_25")}</p>
+                            }}>{t("index.casa_nieves")}</p>
                               </div>
                             </div>
                           </div>
@@ -285,7 +285,7 @@ function Room3({
                               <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
                                 <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#0a1209] text-[6.873px] text-right whitespace-nowrap" style={{
                               fontVariationSettings: '"opsz" 9'
-                            }}>{t("per_night_short")}</p>
+                            }}>{t("common.per_night_short")}</p>
                               </div>
                             </div>
                           </div>
@@ -296,7 +296,7 @@ function Room3({
                     {isDefault && <>
                         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[#0a1209] text-[9.308px] w-[113.84px]" style={{
                       fontVariationSettings: '"opsz" 14'
-                    }}>{t("text_26")}</p>
+                    }}>{t("index.chambre_twin_avec_salle")}</p>
                         <div className="bg-[#3d9e72] drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] h-[36px] relative shrink-0 w-[116px]" data-name="V2 / Primary Button">
                           <div className="flex flex-row items-center size-full">
                             <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center px-[28px] py-[14px] relative size-full text-white whitespace-nowrap">
@@ -318,7 +318,7 @@ function Room3({
                                     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
                                       <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#0c1a10] text-[12.601px] whitespace-nowrap" style={{
                                     fontVariationSettings: '"SOFT" 0, "WONK" 1'
-                                  }}>{t("text_27")}</p>
+                                  }}>{t("index.casa_nieves")}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -340,7 +340,7 @@ function Room3({
                                     <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
                                       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#0c1a10] text-[6.873px] text-right whitespace-nowrap" style={{
                                     fontVariationSettings: '"opsz" 9'
-                                  }}>{t("per_night_short")}</p>
+                                  }}>{t("common.per_night_short")}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -349,7 +349,7 @@ function Room3({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[#0c1a10] text-[9.308px] w-full" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("text_28")}</p>
+                      }}>{t("index.chambre_twin_avec_salle")}</p>
                         </div>
                         <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
                           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[#0c1a10] text-[9.308px] text-center w-full" style={{
@@ -371,7 +371,7 @@ function Room3({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("room_volcan_size")}</p>
+                      }}>{t("rooms.flores.size")}</p>
                         </div>
                         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                           <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -390,7 +390,7 @@ function Room3({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("amenity_mountain_view")}</p>
+                      }}>{t("amenities.mountain_view")}</p>
                         </div>
                         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                           <div className="relative shrink-0 size-[24px]" data-name="Icon Frame">
@@ -403,7 +403,7 @@ function Room3({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("amenity_courtyard")}</p>
+                      }}>{t("amenities.courtyard")}</p>
                         </div>
                         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                           <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -422,7 +422,7 @@ function Room3({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("amenity_bath_volcan")}</p>
+                      }}>{t("amenities.bath")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-name="Action Row">
@@ -487,7 +487,7 @@ function Room2({
                               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
                                 <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#0c1a10] text-[12.601px] whitespace-nowrap" style={{
                               fontVariationSettings: '"SOFT" 0, "WONK" 1'
-                            }}>{t("text_29")}</p>
+                            }}>{t("index.casa_nieves")}</p>
                               </div>
                             </div>
                           </div>
@@ -509,7 +509,7 @@ function Room2({
                               <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
                                 <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#0c1a10] text-[6.873px] text-right whitespace-nowrap" style={{
                               fontVariationSettings: '"opsz" 9'
-                            }}>{t("per_night_short")}</p>
+                            }}>{t("common.per_night_short")}</p>
                               </div>
                             </div>
                           </div>
@@ -520,7 +520,7 @@ function Room2({
                     {isDefault && <>
                         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[#0c1a10] text-[9.308px] w-[113.84px]" style={{
                       fontVariationSettings: '"opsz" 14'
-                    }}>{t("text_30")}</p>
+                    }}>{t("index.chambre_twin_avec_salle")}</p>
                         <div className="bg-[#3d9e72] drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] h-[36px] relative shrink-0 w-[116px]" data-name="V2 / Primary Button">
                           <div className="flex flex-row items-center size-full">
                             <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center px-[28px] py-[14px] relative size-full text-white whitespace-nowrap">
@@ -542,7 +542,7 @@ function Room2({
                                     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
                                       <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#0c1a10] text-[12.601px] whitespace-nowrap" style={{
                                     fontVariationSettings: '"SOFT" 0, "WONK" 1'
-                                  }}>{t("text_31")}</p>
+                                  }}>{t("index.casa_nieves")}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -564,7 +564,7 @@ function Room2({
                                     <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
                                       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#0c1a10] text-[6.873px] text-right whitespace-nowrap" style={{
                                     fontVariationSettings: '"opsz" 9'
-                                  }}>{t("per_night_short")}</p>
+                                  }}>{t("common.per_night_short")}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -573,7 +573,7 @@ function Room2({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[#0c1a10] text-[9.308px] w-full" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("text_32")}</p>
+                      }}>{t("index.chambre_twin_avec_salle")}</p>
                         </div>
                         <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
                           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[9.308px] text-center text-white w-full" style={{
@@ -592,7 +592,7 @@ function Room2({
                               </div>
                               <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                             fontVariationSettings: '"opsz" 14'
-                          }}>{t("room_volcan_size")}</p>
+                          }}>{t("rooms.flores.size")}</p>
                             </div>
                             <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                               <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -611,7 +611,7 @@ function Room2({
                               </div>
                               <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                             fontVariationSettings: '"opsz" 14'
-                          }}>{t("amenity_garden_view")}</p>
+                          }}>{t("amenities.garden_view")}</p>
                             </div>
                             <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                               <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -625,7 +625,7 @@ function Room2({
                               </div>
                               <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                             fontVariationSettings: '"opsz" 14'
-                          }}>{t("amenity_patio")}</p>
+                          }}>{t("amenities.patio")}</p>
                             </div>
                             <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                               <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -644,7 +644,7 @@ function Room2({
                               </div>
                               <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                             fontVariationSettings: '"opsz" 14'
-                          }}>{t("amenity_bath_volcan")}</p>
+                          }}>{t("amenities.bath")}</p>
                             </div>
                           </div>
                         </div>
@@ -734,7 +734,7 @@ function Room1({
                             <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
                               <p className={`[word-break:break-word] font-["DM_Sans:9pt_Regular",sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[6.873px] text-right whitespace-nowrap ${isHover ? "text-[#ede8d8]" : "text-[#0a1209]"}`} style={{
                               fontVariationSettings: '"opsz" 9'
-                            }}>{t("per_night_short")}</p>
+                            }}>{t("common.per_night_short")}</p>
                             </div>
                           </div>
                         </div>
@@ -770,7 +770,7 @@ function Room1({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("room_mochila_size")}</p>
+                      }}>{t("rooms.mochila.size")}</p>
                         </div>
                         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                           <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -789,7 +789,7 @@ function Room1({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("amenity_1bed")}</p>
+                      }}>{t("amenities.1bed")}</p>
                         </div>
                         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                           <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -814,7 +814,7 @@ function Room1({
                           </div>
                           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{t("amenity_4bunks")}</p>
+                      }}>{t("amenities.4bunks")}</p>
                         </div>
                       </div>}
                   </div>
@@ -865,7 +865,7 @@ function Room({
                 <div className="absolute bg-[#f2f2f2] border-[#d9d9d9] border-[0.716px] border-solid h-[21.479px] left-0 rounded-[2px] top-0 w-[71.597px]" data-name="Container">
                   <p className="[word-break:break-word] absolute font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[9.966px] left-[7.16px] text-[#595961] text-[6.64px] top-[5.01px] tracking-[0.928px] uppercase whitespace-nowrap" style={{
                   fontVariationSettings: '"opsz" 9'
-                }}>{t("most_popular")}</p>
+                }}>{t("common.most_popular")}</p>
                 </div>
               </div>
               <div className="absolute h-[56.538px] left-[11.46px] top-[10.74px] w-[53.721px]" data-name="01 1">
@@ -913,7 +913,7 @@ function Room({
                             <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
                               <p className={`[word-break:break-word] font-["DM_Sans:9pt_Regular",sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[6.873px] text-right whitespace-nowrap ${isDefault ? "text-[#0c1a10]" : "text-[#ede8d8]"}`} style={{
                               fontVariationSettings: '"opsz" 9'
-                            }}>{t("per_night_short")}</p>
+                            }}>{t("common.per_night_short")}</p>
                             </div>
                           </div>
                         </div>
@@ -939,7 +939,7 @@ function Room({
                             </div>
                             <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                           fontVariationSettings: '"opsz" 14'
-                        }}>{t("room_nieves_size")}</p>
+                        }}>{t("rooms.nieves.size")}</p>
                           </div>
                           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                             <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -953,7 +953,7 @@ function Room({
                             </div>
                             <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                           fontVariationSettings: '"opsz" 14'
-                        }}>{t("amenity_ac")}</p>
+                        }}>{t("amenities.ac")}</p>
                           </div>
                           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                             <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -972,7 +972,7 @@ function Room({
                             </div>
                             <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                           fontVariationSettings: '"opsz" 14'
-                        }}>{t("amenity_bath_volcan")}</p>
+                        }}>{t("amenities.bath")}</p>
                           </div>
                           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                             <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">
@@ -986,7 +986,7 @@ function Room({
                             </div>
                             <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
                           fontVariationSettings: '"opsz" 14'
-                        }}>{t("amenity_tv")}</p>
+                        }}>{t("amenities.tv")}</p>
                           </div>
                         </div>
                         <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-name="Action Row">
@@ -1027,21 +1027,21 @@ function Button() {
   return <div className="content-stretch flex flex-col items-center justify-center relative shrink-0" data-name="Button">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[17.28px] relative shrink-0 text-[#1c2420] text-[11.52px] text-center tracking-[1.38px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_33")}</p>
+    }}>{t("index.rooms")}</p>
     </div>;
 }
 function Button1() {
   return <div className="content-stretch flex flex-col items-center justify-center relative shrink-0" data-name="Button">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[17.28px] relative shrink-0 text-[#1c2420] text-[11.52px] text-center tracking-[1.38px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_34")}</p>
+    }}>{t("index.story")}</p>
     </div>;
 }
 function Button2() {
   return <div className="content-stretch flex flex-col items-center justify-center relative shrink-0" data-name="Button">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[17.28px] relative shrink-0 text-[#1c2420] text-[11.52px] text-center tracking-[1.38px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_35")}</p>
+    }}>{t("index.find_us")}</p>
     </div>;
 }
 function Container() {
@@ -1055,7 +1055,7 @@ function Text() {
   return <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Text">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#3d9e72] text-[11px] text-center tracking-[1px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_36")}</p>
+    }}>{t("index.en")}</p>
     </div>;
 }
 function Text1() {
@@ -1067,7 +1067,7 @@ function Text2() {
   return <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Text">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#1c2420] text-[11px] text-center tracking-[1px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_37")}</p>
+    }}>{t("index.es")}</p>
     </div>;
 }
 function ButtonSwitchLanguage() {
@@ -1122,7 +1122,7 @@ function Paragraph() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.8px] relative shrink-0 text-[11.2px] text-white tracking-[1.12px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_38")}</p>
+    }}>{t("index.book_now")}</p>
     </div>;
 }
 function Container3() {
@@ -1142,7 +1142,7 @@ function Paragraph1() {
   return <div className="absolute content-stretch flex flex-col items-start left-[604.5px] top-[19px] w-[132px]" data-name="Paragraph">
       <p className="[word-break:break-word] font-['Fraunces:Black_Italic',sans-serif] font-black italic leading-[33.6px] relative shrink-0 text-[#4c6e58] text-[22.4px] tracking-[-0.22px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_title_2")}</p>
+    }}>{t("hero.title")}</p>
     </div>;
 }
 function NavBar1() {
@@ -1177,10 +1177,10 @@ function NameAndPhrase() {
   return <div className="[word-break:break-word] content-stretch flex flex-col font-black gap-[20px] items-start relative shrink-0 whitespace-nowrap" data-name="name and phrase">
       <p className="font-['Fraunces:Black_Italic',sans-serif] italic leading-[67.015px] relative shrink-0 text-[#f2b138] text-[67.015px]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_title_2")}</p>
+    }}>{t("hero.title")}</p>
       <p className="font-['Fraunces:Black',sans-serif] leading-[normal] relative shrink-0 text-[30px] text-white" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_subtitle_2")}</p>
+    }}>{t("hero.subtitle")}</p>
     </div>;
 }
 function Buttons() {
@@ -1188,7 +1188,7 @@ function Buttons() {
       <div className="bg-[#f2b138] relative shrink-0" data-name="V1 / Primary Button">
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex font-bold gap-[10px] items-center leading-[normal] px-[32px] py-[16px] relative size-full text-[#0c1a10] whitespace-nowrap">
-            <p className="font-['Sora:Bold',sans-serif] relative shrink-0 text-[11px] tracking-[3px] uppercase">{t("nav_explore_rooms_2")}</p>
+            <p className="font-['Sora:Bold',sans-serif] relative shrink-0 text-[11px] tracking-[3px] uppercase">{t("nav.explore_rooms")}</p>
             <p className="font-['Sora:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] relative shrink-0 text-[14px]">→</p>
           </div>
         </div>
@@ -1198,7 +1198,7 @@ function Buttons() {
           <div className="content-stretch flex gap-[8px] items-center px-[28px] py-[14px] relative size-full">
             <p className="[word-break:break-word] font-['DM_Sans:Medium',sans-serif] font-medium leading-[17.28px] relative shrink-0 text-[#ede8d8] text-[11.52px] tracking-[1.3824px] uppercase whitespace-nowrap" style={{
             fontVariationSettings: '"opsz" 14'
-          }}>{t("nav_our_story_2")}</p>
+          }}>{t("nav.our_story")}</p>
           </div>
         </div>
       </div>
@@ -1219,7 +1219,7 @@ function Paragraph3() {
   return <div className="content-stretch flex flex-col items-start opacity-45 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[14.4px] relative shrink-0 text-[9.6px] text-white tracking-[1.344px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_39")}</p>
+    }}>{t("index.booking_raiting")}</p>
     </div>;
 }
 function ParagraphMargin() {
@@ -1307,7 +1307,7 @@ function Frame1() {
   return <div className="content-stretch flex items-center justify-center py-[20px] relative shrink-0">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal h-[29px] leading-[28.704px] relative shrink-0 text-[#131f16] text-[14.72px] w-[498px]" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("story_desc")}</p>
+    }}>{t("story.desc")}</p>
     </div>;
 }
 function ParagraphMargin1() {
@@ -1323,7 +1323,7 @@ function Text3() {
         <div aria-hidden className="absolute border border-[#4c6e58] border-solid inset-0 pointer-events-none rounded-[4px]" />
         <div className="flex flex-row items-center justify-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[12px] items-center justify-center leading-[normal] not-italic px-[24px] py-[14px] relative size-full whitespace-nowrap">
-            <p className="font-['Space_Mono:Bold',sans-serif] relative shrink-0 text-[#4c6e58] text-[12px] tracking-[1.5px] uppercase">{t("story_cta")}</p>
+            <p className="font-['Space_Mono:Bold',sans-serif] relative shrink-0 text-[#4c6e58] text-[12px] tracking-[1.5px] uppercase">{t("story.cta")}</p>
             <p className="font-['Space_Mono:Regular',sans-serif] relative shrink-0 text-[#0c1a10] text-[14px]">→</p>
           </div>
         </div>
@@ -1350,11 +1350,11 @@ function HeaderGroup() {
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>
         <span className="leading-[normal]">{`Find Your `}</span>
-        <span className="leading-[normal] text-[#3d9e72]">{t("casa")}</span>
+        <span className="leading-[normal] text-[#3d9e72]">{t("common.casa")}</span>
       </p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] relative shrink-0 text-[#54625d] text-[15px] text-center w-[720px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_40")}</p>
+    }}>{t("index.from_shared_dorms_to")}</p>
     </div>;
 }
 function CardsContainer() {
@@ -1386,7 +1386,7 @@ function TitleAndPitch() {
       </p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[26px] min-w-full relative shrink-0 text-[#0c1a10] text-[14.4px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_41")}</p>
+    }}>{t("common.when_you_book_direct")}</p>
     </div>;
 }
 function ArrowRight() {
@@ -1402,7 +1402,7 @@ function ActionButton() {
   return <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] flex gap-[8px] items-center px-[30px] py-[14px] relative rounded-[4px] shrink-0" data-name="Action Button">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11.2px] text-white tracking-[1.34px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_42")}</p>
+    }}>{t("index.book_your_stay")}</p>
       <ArrowRight />
     </div>;
 }
@@ -1428,7 +1428,7 @@ function Text4() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:SemiBold',sans-serif] font-semibold leading-[21.6px] relative shrink-0 text-[#0c1a10] text-[14.4px] tracking-[-0.144px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_43")}</p>
+      }}>{t("index.paypal")}</p>
       </div>
     </div>;
 }
@@ -1445,7 +1445,7 @@ function MethodPayPal() {
           <Container10 />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_44")}</p>
+        }}>{t("index.paypal")}</p>
         </div>
       </div>
     </div>;
@@ -1467,7 +1467,7 @@ function MethodCash() {
           <Frame />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_45")}</p>
+        }}>{t("index.cash_usd")}</p>
         </div>
       </div>
     </div>;
@@ -1477,7 +1477,7 @@ function Text5() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:ExtraBold',sans-serif] font-extrabold leading-[10.8px] relative shrink-0 text-[7.2px] text-white tracking-[0.144px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_46")}</p>
+      }}>{t("index.visa")}</p>
       </div>
     </div>;
 }
@@ -1515,7 +1515,7 @@ function MethodVisa() {
           <Container11 />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_47")}</p>
+        }}>{t("index.cards_accepted")}</p>
         </div>
       </div>
     </div>;
@@ -1541,14 +1541,14 @@ function SecurityNote() {
       <LockSimple />
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#18271c] text-[10.88px] tracking-[0.65px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_48")}</p>
+    }}>{t("index.secure_booking_no_hidden")}</p>
     </div>;
 }
 function RightColumn() {
   return <div className="content-stretch flex flex-col gap-[20px] items-center justify-end relative shrink-0 w-[580px]" data-name="Right Column">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[25.34px] min-w-full relative shrink-0 text-[#1c2420] text-[14.08px] text-center w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_49")}</p>
+    }}>{t("index.we_accept_various_ways")}</p>
       <PaymentMethodsRow />
       <SecurityNote />
     </div>;
@@ -1574,7 +1574,7 @@ function V1LeftCol() {
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>
         {`Everything `}
-        <br aria-hidden />{t("text_50")}<br aria-hidden />{t("text_51")}</p>
+        <br aria-hidden />{t("index.you_need")}<br aria-hidden />{t("index.for_a_perfect_stay")}</p>
     </div>;
 }
 function V1GridRow() {
@@ -1620,7 +1620,7 @@ function ActionButton1() {
   return <div className="absolute bg-[#3d9e72] content-stretch drop-shadow-[0px_6.698px_10.047px_rgba(76,110,88,0.05)] flex gap-[13.395px] items-center left-[900px] px-[50.233px] py-[23.442px] rounded-[6.698px] top-[44px]" data-name="Action Button">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[18.753px] text-white tracking-[2.2437px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_52")}</p>
+    }}>{t("index.explore_the_must_visit_1")}</p>
       <ArrowRight1 />
     </div>;
 }
@@ -1657,21 +1657,21 @@ function Paragraph4() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['Fraunces:Black_Italic',sans-serif] font-black italic leading-[33.6px] relative shrink-0 text-[#3d9e72] text-[22.4px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_title_2")}</p>
+    }}>{t("hero.title")}</p>
     </div>;
 }
 function Paragraph5() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[23.4px] relative shrink-0 text-[#54625d] text-[13px] w-[300px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_53")}</p>
+    }}>{t("index.your_refuge_on_the")}</p>
     </div>;
 }
 function Paragraph6() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[16.5px] relative shrink-0 text-[#54625d] text-[11px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_54")}</p>
+    }}>{t("index.2026_neskapolita_hostel")}</p>
     </div>;
 }
 function Container16() {
@@ -1685,14 +1685,14 @@ function Paragraph7() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#3d9e72] text-[11px] tracking-[2px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_55")}</p>
+    }}>{t("index.stay")}</p>
     </div>;
 }
 function Paragraph8() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_56")}</p>
+    }}>{t("index.book_now")}</p>
     </div>;
 }
 function Container18() {
@@ -1705,28 +1705,28 @@ function Paragraph9() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#3d9e72] text-[11px] tracking-[2px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("explore_card")}</p>
+    }}>{t("common.explore")}</p>
     </div>;
 }
 function Paragraph10() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("nav_our_story_2")}</p>
+    }}>{t("nav.our_story")}</p>
     </div>;
 }
 function Paragraph11() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_57")}</p>
+    }}>{t("index.faq")}</p>
     </div>;
 }
 function Paragraph12() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_58")}</p>
+    }}>{t("index.gallery")}</p>
     </div>;
 }
 function Container19() {
@@ -1741,21 +1741,21 @@ function Paragraph13() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#3d9e72] text-[11px] tracking-[2px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_59")}</p>
+    }}>{t("index.connect")}</p>
     </div>;
 }
 function Paragraph14() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_60")}</p>
+    }}>{t("index.instagram")}</p>
     </div>;
 }
 function Paragraph15() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_61")}</p>
+    }}>{t("index.whatsapp")}</p>
     </div>;
 }
 function Container20() {

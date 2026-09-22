@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-uen9kikjva";
 function Frame() {
@@ -16,16 +16,16 @@ function Frame1() {
       </p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_9")}</p>
+    }}>{t("common.when_you_book_direct")}</p>
     </div>;
 }
 function Frame2() {
-  return <div className="bg-[#4c6e58] relative rounded-[4px] shrink-0 w-full" data-name="Frame">
+  return <div className="bg-[#4c6e58] relative rounded-[4px] shrink-0 w-full cursor-pointer" data-name="Frame" onClick={() => window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank')}>
       <div className="flex flex-row justify-center size-full">
         <div className="content-stretch flex items-start justify-center px-[20px] py-[12px] relative size-full">
           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[12px] text-white tracking-[1px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_10")}</p>
+        }}>{t("index.book_your_stay")}</p>
         </div>
       </div>
     </div>;
@@ -45,7 +45,7 @@ function Text() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:SemiBold',sans-serif] font-semibold leading-[21.6px] relative shrink-0 text-[#0c1a10] text-[14.4px] tracking-[-0.144px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_11")}</p>
+      }}>{t("index.paypal")}</p>
       </div>
     </div>;
 }
@@ -62,7 +62,7 @@ function MethodPayPal() {
           <Container />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_12")}</p>
+        }}>{t("index.paypal")}</p>
         </div>
       </div>
     </div>;
@@ -84,7 +84,7 @@ function MethodCash() {
           <Frame3 />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_13")}</p>
+        }}>{t("index.cash_usd")}</p>
         </div>
       </div>
     </div>;
@@ -94,7 +94,7 @@ function Text1() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:ExtraBold',sans-serif] font-extrabold leading-[10.8px] relative shrink-0 text-[7.2px] text-white tracking-[0.144px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_14")}</p>
+      }}>{t("index.visa")}</p>
       </div>
     </div>;
 }
@@ -132,7 +132,7 @@ function MethodVisa() {
           <Container1 />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_15")}</p>
+        }}>{t("index.cards_accepted")}</p>
         </div>
       </div>
     </div>;
@@ -160,14 +160,14 @@ function SecurityNote() {
       fontVariationSettings: '"opsz" 14'
     }}>
         {`Secure booking · No hidden fees · `}
-        <br aria-hidden />{t("text_16")}</p>
+        <br aria-hidden />{t("index.free_cancellation_within_48h")}</p>
     </div>;
 }
 function RightColumn() {
   return <div className="content-stretch flex flex-col gap-[20px] items-center justify-end relative shrink-0 w-full" data-name="Right Column">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[25.34px] relative shrink-0 text-[#1c2420] text-[14.08px] text-center w-full" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_17")}</p>
+    }}>{t("index.we_accept_various_ways")}</p>
       <PaymentMethodsRow />
       <SecurityNote />
     </div>;

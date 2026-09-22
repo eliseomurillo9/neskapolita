@@ -1,4 +1,4 @@
-import i18n from "../../../i18n";
+import i18n from "../../../locales/i18n";
 const t = i18n.t.bind(i18n);
 "use client";
 
@@ -130,7 +130,7 @@ function CarouselPrevious({
   } = useCarousel();
   return <Button data-slot="carousel-previous" variant={variant} size={size} className={cn("absolute size-8 rounded-full", orientation === "horizontal" ? "top-1/2 -left-12 -translate-y-1/2" : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)} disabled={!canScrollPrev} onClick={scrollPrev} {...props}>
       <ArrowLeft />
-      <span className="sr-only">{t("text_2")}</span>
+      <span className="sr-only">{t("common.a_striking_emerald_green")}</span>
     </Button>;
 }
 function CarouselNext({
@@ -146,7 +146,7 @@ function CarouselNext({
   } = useCarousel();
   return <Button data-slot="carousel-next" variant={variant} size={size} className={cn("absolute size-8 rounded-full", orientation === "horizontal" ? "top-1/2 -right-12 -translate-y-1/2" : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)} disabled={!canScrollNext} onClick={scrollNext} {...props}>
       <ArrowRight />
-      <span className="sr-only">{t("text_3")}</span>
+      <span className="sr-only">{t("common.high_altitude_zip_line")}</span>
     </Button>;
 }
 export { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext };

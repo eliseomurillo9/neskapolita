@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import imgMap from "./a59195a9e27cccf80d5295fb9bf15ac226f28f11.png";
 import imgImg28131 from "./850dde4affad5f2560eb4e5d70ef9add7b7d9ff3.png";
@@ -14,15 +14,15 @@ function LeftPanel() {
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>
         <span className="leading-[54px]">{`A Cozy Refuge on the `}</span>
-        <span className="leading-[54px] text-[#398e68]">{t("ruta_de_las_flores")}</span>
+        <span className="leading-[54px] text-[#398e68]">{t("common.ruta_de_las_flores")}</span>
       </p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_183")}</p>
+    }}>{t("index.set_in_the_heart")}</p>
       <div className="bg-[#398e68] drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] relative shrink-0" data-name="V2 / Primary Button">
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-white whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("see_all_rooms_2")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("common.see_all_rooms_1")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -54,17 +54,17 @@ function Intro() {
   return <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-center leading-[normal] relative shrink-0 w-full" data-name="Intro">
       <p className="font-['Fraunces:Black',sans-serif] font-black relative shrink-0 text-[#1c2420] text-[36px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("explore_ruta")}</p>
+    }}>{t("common.explore_ruta")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d] text-[15px] text-center w-[600px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_184")}</p>
+    }}>{t("index.discover_the_best_of")}</p>
     </div>;
 }
 function Eyebrow() {
   return <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] relative shrink-0 text-[12px] whitespace-nowrap" data-name="Eyebrow">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_185")}</p>
+    }}>{t("index.stop_1")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -80,18 +80,18 @@ function TextBlock() {
       <Eyebrow />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[#1c2420] text-[32px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_186")}</p>
+    }}>{t("index.juay_a")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] relative shrink-0 text-[#54625d] text-[16px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Food Festival & Waterfalls`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_1")}</p>
+    }}>{t("ruta.desc_1")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="V2 / Secondary Button">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_187")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -110,7 +110,7 @@ function Eyebrow1() {
   return <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] relative shrink-0 text-[12px] whitespace-nowrap" data-name="Eyebrow">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_188")}</p>
+    }}>{t("index.stop_2")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -118,7 +118,7 @@ function Eyebrow1() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_189")}</p>
+    }}>{t("index.8_km_north")}</p>
     </div>;
 }
 function TextBlock1() {
@@ -126,18 +126,18 @@ function TextBlock1() {
       <Eyebrow1 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[#1c2420] text-[32px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_190")}</p>
+    }}>{t("common.apaneca")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] relative shrink-0 text-[#54625d] text-[16px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Coffee Farms & Adventure`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_2")}</p>
+    }}>{t("ruta.desc_2")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="V2 / Secondary Button">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_191")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -156,7 +156,7 @@ function Eyebrow2() {
   return <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] relative shrink-0 text-[12px] whitespace-nowrap" data-name="Eyebrow">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_192")}</p>
+    }}>{t("index.stop_3")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -164,7 +164,7 @@ function Eyebrow2() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_193")}</p>
+    }}>{t("index.12_km_north")}</p>
     </div>;
 }
 function TextBlock2() {
@@ -172,18 +172,18 @@ function TextBlock2() {
       <Eyebrow2 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[#1c2420] text-[32px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_194")}</p>
+    }}>{t("common.ataco")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] relative shrink-0 text-[#54625d] text-[16px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Street Art & Handcrafts`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_3")}</p>
+    }}>{t("ruta.desc_3")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="V2 / Secondary Button">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_195")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -202,7 +202,7 @@ function Eyebrow3() {
   return <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] relative shrink-0 text-[12px] whitespace-nowrap" data-name="Eyebrow">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_196")}</p>
+    }}>{t("index.stop_4")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -210,7 +210,7 @@ function Eyebrow3() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_197")}</p>
+    }}>{t("index.5_km_south")}</p>
     </div>;
 }
 function TextBlock3() {
@@ -218,18 +218,18 @@ function TextBlock3() {
       <Eyebrow3 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[#1c2420] text-[32px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_198")}</p>
+    }}>{t("index.salcoatit_n")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] relative shrink-0 text-[#54625d] text-[16px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Art Galleries & Yucca Cuisine`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_4")}</p>
+    }}>{t("ruta.desc_4")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="V2 / Secondary Button">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_199")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -248,7 +248,7 @@ function Eyebrow4() {
   return <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] relative shrink-0 text-[12px] whitespace-nowrap" data-name="Eyebrow">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_200")}</p>
+    }}>{t("index.stop_5")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -256,7 +256,7 @@ function Eyebrow4() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_201")}</p>
+    }}>{t("index.15_km_south")}</p>
     </div>;
 }
 function TextBlock4() {
@@ -264,18 +264,18 @@ function TextBlock4() {
       <Eyebrow4 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[#1c2420] text-[32px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_202")}</p>
+    }}>{t("index.nahuizalco")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] relative shrink-0 text-[#54625d] text-[16px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_203")}</p>
+    }}>{t("index.candlelit_night_market")}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_5")}</p>
+    }}>{t("ruta.desc_5")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="V2 / Secondary Button">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_204")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -294,7 +294,7 @@ function Eyebrow5() {
   return <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] relative shrink-0 text-[12px] whitespace-nowrap" data-name="Eyebrow">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_205")}</p>
+    }}>{t("index.stop_6")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal relative shrink-0 text-[#54625d]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -302,7 +302,7 @@ function Eyebrow5() {
       </p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#f2b138]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_206")}</p>
+    }}>{t("index.25_km_south")}</p>
     </div>;
 }
 function TextBlock5() {
@@ -310,18 +310,18 @@ function TextBlock5() {
       <Eyebrow5 />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[#1c2420] text-[32px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_207")}</p>
+    }}>{t("index.sonsonate")}</p>
       <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[normal] relative shrink-0 text-[#54625d] text-[16px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>{`Colonial Gateway & Thermal Pools`}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] min-w-full relative shrink-0 text-[#54625d] text-[15px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("ruta_desc_6")}</p>
+    }}>{t("ruta.desc_6")}</p>
       <div className="relative rounded-[100px] shrink-0" data-name="V2 / Secondary Button">
         <div aria-hidden className="absolute border-2 border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[100px]" />
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-[#3d9e72] whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("text_208")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("index.get_route_directions")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -351,10 +351,10 @@ function Left() {
   return <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start leading-[normal] relative shrink-0 text-[#0c1a10] w-[700px]" data-name="Left">
       <p className="font-['Fraunces:Black',sans-serif] font-black relative shrink-0 text-[36px] w-full" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("ready_to_explore")}</p>
+    }}>{t("common.ready_to_explore")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal opacity-80 relative shrink-0 text-[16px] w-full" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_209")}</p>
+    }}>{t("index.book_your_stay_at")}</p>
     </div>;
 }
 function CtaBanner() {
@@ -363,7 +363,7 @@ function CtaBanner() {
       <div className="bg-[#398e68] drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] relative shrink-0" data-name="V2 / Primary Button">
         <div className="flex flex-row items-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] px-[28px] py-[14px] relative size-full text-white whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("see_all_rooms_2")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("common.see_all_rooms_1")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>
@@ -374,7 +374,7 @@ function HeaderRow() {
   return <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] relative shrink-0 text-[18px] w-full whitespace-nowrap" data-name="Header Row">
       <p className="font-['Fraunces:Black',sans-serif] font-black relative shrink-0 text-[#1c2420]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_210")}</p>
+    }}>{t("index.how_many_days_do")}</p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -388,14 +388,14 @@ function FaqItem() {
       <HeaderRow />
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] relative shrink-0 text-[#54625d] text-[14px] w-full" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_211")}</p>
+    }}>{t("index.we_recommend_2_to")}</p>
     </div>;
 }
 function HeaderRow1() {
   return <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] relative shrink-0 text-[18px] w-full whitespace-nowrap" data-name="Header Row">
       <p className="font-['Fraunces:Black',sans-serif] font-black relative shrink-0 text-[#1c2420]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_212")}</p>
+    }}>{t("index.what_is_the_best")}</p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -409,14 +409,14 @@ function FaqItem1() {
       <HeaderRow1 />
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] relative shrink-0 text-[#54625d] text-[14px] w-full" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_213")}</p>
+    }}>{t("index.juay_a_is_the")}</p>
     </div>;
 }
 function HeaderRow2() {
   return <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] relative shrink-0 text-[18px] w-full whitespace-nowrap" data-name="Header Row">
       <p className="font-['Fraunces:Black',sans-serif] font-black relative shrink-0 text-[#1c2420]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_214")}</p>
+    }}>{t("index.can_you_visit_ruta")}</p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -437,7 +437,7 @@ function HeaderRow3() {
   return <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] relative shrink-0 text-[18px] w-full whitespace-nowrap" data-name="Header Row">
       <p className="font-['Fraunces:Black',sans-serif] font-black relative shrink-0 text-[#1c2420]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_215")}</p>
+    }}>{t("index.what_is_the_best_1")}</p>
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold relative shrink-0 text-[#4c6e58]" style={{
       fontVariationSettings: '"opsz" 14'
     }}>
@@ -451,7 +451,7 @@ function FaqItem3() {
       <HeaderRow3 />
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] relative shrink-0 text-[#54625d] text-[14px] w-full" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_216")}</p>
+    }}>{t("index.the_dry_season_from")}</p>
     </div>;
 }
 function AccordionColumn() {
@@ -467,7 +467,7 @@ function GridFaQs() {
       <div aria-hidden className="absolute border-[#d5dad7] border-b border-solid border-t inset-0 pointer-events-none" />
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[#1c2420] text-[36px] text-center w-full" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("ruta_quick_tips")}</p>
+    }}>{t("common.ruta_quick_tips")}</p>
       <AccordionColumn />
     </div>;
 }

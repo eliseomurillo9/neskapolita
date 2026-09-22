@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-x8asy6p3zk";
 import imgImageLushTropicalFlowersAndForestOfElSalvador from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
@@ -17,7 +17,7 @@ function Text() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[33.6px] relative shrink-0 text-[#ede8d8] text-[22.4px] tracking-[-0.224px] whitespace-nowrap" style={{
         fontVariationSettings: '"SOFT" 0, "WONK" 1'
-      }}>{t("hero_title_2")}</p>
+      }}>{t("hero.title")}</p>
       </div>
     </div>;
 }
@@ -26,7 +26,7 @@ function Link() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[17.28px] relative shrink-0 text-[11.52px] text-white tracking-[1.3824px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 9'
-      }}>{t("text_62")}</p>
+      }}>{t("index.rooms")}</p>
       </div>
     </div>;
 }
@@ -35,7 +35,7 @@ function Link1() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[17.28px] relative shrink-0 text-[11.52px] text-white tracking-[1.3824px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 9'
-      }}>{t("text_63")}</p>
+      }}>{t("index.story")}</p>
       </div>
     </div>;
 }
@@ -44,7 +44,7 @@ function Link2() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[17.28px] relative shrink-0 text-[11.52px] text-white tracking-[1.3824px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 9'
-      }}>{t("text_64")}</p>
+      }}>{t("index.find_us")}</p>
       </div>
     </div>;
 }
@@ -60,7 +60,7 @@ function Container1() {
         </div>
         <p className="[word-break:break-word] font-['DM_Sans:Medium',sans-serif] font-medium leading-[16.8px] relative shrink-0 text-[11.2px] text-center text-white tracking-[1.12px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_65")}</p>
+      }}>{t("index.book_now")}</p>
       </div>
     </div>;
 }
@@ -106,25 +106,25 @@ function NameAndPhrase() {
   return <div className="[word-break:break-word] content-stretch flex flex-col font-black gap-[20px] items-start relative shrink-0 whitespace-nowrap" data-name="name and phrase">
       <p className="font-['Fraunces:Black_Italic',sans-serif] italic leading-[67.015px] relative shrink-0 text-[#f2b138] text-[67.015px]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_title_2")}</p>
+    }}>{t("hero.title")}</p>
       <div className="font-['Fraunces:Black',sans-serif] leading-[0] relative shrink-0 text-[#ede8d8] text-[30px]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
     }}>
         <p className="leading-[normal] mb-0 whitespace-pre">{`Your refuge `}</p>
-        <p className="leading-[normal] whitespace-pre">{t("text_66")}</p>
+        <p className="leading-[normal] whitespace-pre">{t("index.on_the_ruta_de")}</p>
       </div>
     </div>;
 }
 function Buttons() {
   return <div className="content-stretch flex gap-[20px] items-center relative shrink-0" data-name="buttons">
       <div className="[word-break:break-word] bg-[#f2b138] content-stretch flex font-bold gap-[10px] items-center leading-[normal] px-[32px] py-[16px] relative shrink-0 text-[#0c1a10] whitespace-nowrap" data-name="V1 / Primary Button">
-        <p className="font-['Sora:Bold',sans-serif] relative shrink-0 text-[11px] tracking-[3px] uppercase">{t("nav_explore_rooms_2")}</p>
+        <p className="font-['Sora:Bold',sans-serif] relative shrink-0 text-[11px] tracking-[3px] uppercase">{t("nav.explore_rooms")}</p>
         <p className="font-['Sora:Bold','Noto_Sans_Symbols:Bold',sans-serif] relative shrink-0 text-[14px]">→</p>
       </div>
       <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] flex gap-[8px] items-center px-[28px] py-[14px] relative rounded-[100px] shrink-0" data-name="V2 / Primary Button">
         <p className="[word-break:break-word] font-['DM_Sans:Medium',sans-serif] font-medium leading-[17.28px] relative shrink-0 text-[#ede8d8] text-[11.52px] tracking-[1.3824px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("nav_our_story_2")}</p>
+      }}>{t("nav.our_story")}</p>
       </div>
     </div>;
 }
@@ -143,7 +143,7 @@ function Paragraph1() {
   return <div className="content-stretch flex flex-col items-start opacity-45 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[14.4px] relative shrink-0 text-[9.6px] text-white tracking-[1.344px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_67")}</p>
+    }}>{t("index.google_raiting")}</p>
     </div>;
 }
 function ParagraphMargin() {
@@ -199,7 +199,7 @@ function Paragraph4() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[33.6px] relative shrink-0 text-[#f2b138] text-[22.4px] whitespace-nowrap" style={{
         fontVariationSettings: '"SOFT" 0, "WONK" 1'
-      }}>{t("text_68")}</p>
+      }}>{t("index.1_100m")}</p>
       </div>
     </div>;
 }
@@ -207,7 +207,7 @@ function Paragraph5() {
   return <div className="content-stretch flex flex-col items-start opacity-45 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[14.4px] relative shrink-0 text-[#ede8d8] text-[9.6px] tracking-[1.344px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_69")}</p>
+    }}>{t("index.above_sea_level")}</p>
     </div>;
 }
 function ParagraphMargin2() {
@@ -286,7 +286,7 @@ function Paragraph6() {
   return <div className="content-stretch flex flex-col h-[58px] items-start max-w-[400px] opacity-60 relative shrink-0" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal h-[29px] leading-[28.704px] relative shrink-0 text-[14.72px] text-white w-[498px]" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("story_desc")}</p>
+    }}>{t("story.desc")}</p>
     </div>;
 }
 function ParagraphMargin3() {
@@ -300,7 +300,7 @@ function Text1() {
       <ParagraphMargin3 />
       <div className="content-stretch flex gap-[12px] items-center justify-center px-[24px] py-[14px] relative rounded-[4px] shrink-0 w-[326px]" data-name="V3 / Secondary Button">
         <div aria-hidden className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[4px]" />
-        <p className="[word-break:break-word] font-['Space_Mono:Bold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#ede8d8] text-[12px] tracking-[1.5px] uppercase whitespace-nowrap">{t("story_cta")}</p>
+        <p className="[word-break:break-word] font-['Space_Mono:Bold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#ede8d8] text-[12px] tracking-[1.5px] uppercase whitespace-nowrap">{t("story.cta")}</p>
         <p className="[word-break:break-word] font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#0c1a10] text-[14px] whitespace-nowrap">→</p>
       </div>
     </div>;
@@ -331,10 +331,10 @@ function Frame() {
   return <div className="[word-break:break-word] content-stretch flex flex-col gap-[8.592px] items-center relative shrink-0 text-[#ede8d8] whitespace-nowrap" data-name="Frame">
       <p className="font-['Fraunces:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[22.911px]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("find_your_casa")}</p>
+    }}>{t("common.find_your_casa")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[24px] relative shrink-0 text-[16px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_70")}</p>
+    }}>{t("index.from_shared_dorms_to")}</p>
     </div>;
 }
 function Header() {
@@ -346,7 +346,7 @@ function Container10() {
   return <div className="absolute bg-[#f2f2f2] border-[#d9d9d9] border-[0.716px] border-solid h-[21.479px] left-0 rounded-[2px] top-0 w-[71.597px]" data-name="Container">
       <p className="[word-break:break-word] absolute font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[9.966px] left-[7.16px] text-[#595961] text-[6.64px] top-[5.01px] tracking-[0.928px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("most_popular")}</p>
+    }}>{t("common.most_popular")}</p>
     </div>;
 }
 function Frame1() {
@@ -369,7 +369,7 @@ function Heading1() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
       <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#ede8d8] text-[12.601px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_71")}</p>
+    }}>{t("index.casa_nieves")}</p>
     </div>;
 }
 function Heading3Margin() {
@@ -401,7 +401,7 @@ function Paragraph8() {
   return <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#ede8d8] text-[6.873px] text-right whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("per_night_short")}</p>
+    }}>{t("common.per_night_short")}</p>
     </div>;
 }
 function ParagraphMargin4() {
@@ -429,7 +429,7 @@ function Frame5() {
   return <div className="[word-break:break-word] content-stretch flex items-center justify-between relative shrink-0 text-white w-[275px]">
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[9.308px] w-[113.84px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_72")}</p>
+    }}>{t("index.chambre_twin_avec_salle")}</p>
       <div className="bg-[#3d9e72] content-stretch flex gap-[8px] h-[36px] items-center px-[28px] py-[14px] relative rounded-[100px] shrink-0 w-[116px] whitespace-nowrap" data-name="V2 / Primary Button">
         <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[13px]" style={{
         fontVariationSettings: '"opsz" 14'
@@ -471,7 +471,7 @@ function Heading2() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
       <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#ede8d8] text-[12.601px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_73")}</p>
+    }}>{t("index.casa_nieves")}</p>
     </div>;
 }
 function Heading3Margin1() {
@@ -503,7 +503,7 @@ function Paragraph10() {
   return <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#ede8d8] text-[6.873px] text-right whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("per_night_short")}</p>
+    }}>{t("common.per_night_short")}</p>
     </div>;
 }
 function ParagraphMargin5() {
@@ -531,7 +531,7 @@ function Frame8() {
   return <div className="[word-break:break-word] content-stretch flex items-center justify-between relative shrink-0 text-white w-[275px]">
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[9.308px] w-[113.84px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_74")}</p>
+    }}>{t("index.chambre_twin_avec_salle")}</p>
       <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] flex gap-[8px] h-[36px] items-center px-[28px] py-[14px] relative rounded-[100px] shrink-0 w-[116px] whitespace-nowrap" data-name="V2 / Primary Button">
         <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[13px]" style={{
         fontVariationSettings: '"opsz" 14'
@@ -573,7 +573,7 @@ function Heading3() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
       <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#ede8d8] text-[12.601px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_75")}</p>
+    }}>{t("index.casa_nieves")}</p>
     </div>;
 }
 function Heading3Margin2() {
@@ -605,7 +605,7 @@ function Paragraph12() {
   return <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#ede8d8] text-[6.873px] text-right whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("per_night_short")}</p>
+    }}>{t("common.per_night_short")}</p>
     </div>;
 }
 function ParagraphMargin6() {
@@ -633,7 +633,7 @@ function Frame10() {
   return <div className="[word-break:break-word] content-stretch flex items-center justify-between relative shrink-0 text-white w-[275px]">
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[9.308px] w-[113.84px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_76")}</p>
+    }}>{t("index.chambre_twin_avec_salle")}</p>
       <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] flex gap-[8px] h-[36px] items-center px-[28px] py-[14px] relative rounded-[100px] shrink-0 w-[116px] whitespace-nowrap" data-name="V2 / Primary Button">
         <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[13px]" style={{
         fontVariationSettings: '"opsz" 14'
@@ -675,7 +675,7 @@ function Heading4() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
       <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#ede8d8] text-[12.601px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_77")}</p>
+    }}>{t("index.casa_nieves")}</p>
     </div>;
 }
 function Heading3Margin3() {
@@ -707,7 +707,7 @@ function Paragraph14() {
   return <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#ede8d8] text-[6.873px] text-right whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("per_night_short")}</p>
+    }}>{t("common.per_night_short")}</p>
     </div>;
 }
 function ParagraphMargin7() {
@@ -735,7 +735,7 @@ function Frame12() {
   return <div className="[word-break:break-word] content-stretch flex items-center justify-between relative shrink-0 text-white w-[275px]">
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[9.308px] w-[113.84px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_78")}</p>
+    }}>{t("index.chambre_twin_avec_salle")}</p>
       <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] flex gap-[8px] h-[36px] items-center px-[28px] py-[14px] relative rounded-[100px] shrink-0 w-[116px] whitespace-nowrap" data-name="V2 / Primary Button">
         <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[13px]" style={{
         fontVariationSettings: '"opsz" 14'
@@ -828,7 +828,7 @@ function Paragraph15() {
   return <div className="content-stretch flex flex-col items-start max-w-[320px] opacity-60 relative shrink-0 w-[320px]" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[26.64px] relative shrink-0 text-[#ede8d8] text-[14.4px] w-[320px]" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_79")}</p>
+    }}>{t("index.when_you_book_direct_1")}</p>
     </div>;
 }
 function ParagraphMargin8() {
@@ -861,7 +861,7 @@ function Button1() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[8px] items-center px-[29.6px] py-[12.8px] relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:Medium',sans-serif] font-medium leading-[16.8px] relative shrink-0 text-[11.2px] text-center text-white tracking-[1.344px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_80")}</p>
+      }}>{t("index.book_your_stay")}</p>
         <Icon />
       </div>
     </div>;
@@ -897,7 +897,7 @@ function Text2() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:SemiBold',sans-serif] font-semibold leading-[21.6px] relative shrink-0 text-[#ede8d8] text-[14.4px] tracking-[-0.144px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_81")}</p>
+      }}>{t("index.paypal")}</p>
       </div>
     </div>;
 }
@@ -914,7 +914,7 @@ function Paragraph17() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[14.4px] relative shrink-0 text-[#ede8d8] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 9'
-      }}>{t("text_82")}</p>
+      }}>{t("index.paypal")}</p>
       </div>
     </div>;
 }
@@ -953,7 +953,7 @@ function Paragraph18() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[14.4px] relative shrink-0 text-[#ede8d8] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 9'
-      }}>{t("text_83")}</p>
+      }}>{t("index.cash_usd")}</p>
       </div>
     </div>;
 }
@@ -973,7 +973,7 @@ function Text4() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:ExtraBold',sans-serif] font-extrabold leading-[10.8px] relative shrink-0 text-[7.2px] text-white tracking-[0.144px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_84")}</p>
+      }}>{t("index.visa")}</p>
       </div>
     </div>;
 }
@@ -1011,7 +1011,7 @@ function Paragraph19() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[14.4px] relative shrink-0 text-[#ede8d8] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 9'
-      }}>{t("text_85")}</p>
+      }}>{t("index.cards_accepted")}</p>
       </div>
     </div>;
 }
@@ -1049,7 +1049,7 @@ function Paragraph20() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[16.32px] relative shrink-0 text-[#ede8d8] text-[10.88px] tracking-[0.6528px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 9'
-      }}>{t("text_86")}</p>
+      }}>{t("index.secure_booking_no_hidden")}</p>
       </div>
     </div>;
 }
@@ -1094,7 +1094,7 @@ function V1LeftCol() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-[420px]" data-name="V1-Left-Col">
       <p className="[word-break:break-word] font-['Oswald:Bold',sans-serif] font-bold leading-[56px] relative shrink-0 text-[#1c2420] text-[50px] w-full whitespace-pre-wrap">
         {`Everything `}
-        <br aria-hidden />{t("text_87")}<br aria-hidden />{t("text_88")}</p>
+        <br aria-hidden />{t("index.you_need")}<br aria-hidden />{t("index.for_a_perfect_stay")}</p>
     </div>;
 }
 function Leaf() {
@@ -1118,10 +1118,10 @@ function CardGarden() {
         <IconWrapper />
         <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_garden")}</p>
+      }}>{t("features.garden")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_89")}</p>
+      }}>{t("index.a_lush_tranquil_green")}</p>
       </div>
     </div>;
 }
@@ -1146,10 +1146,10 @@ function CardKitchen() {
         <IconWrapper1 />
         <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_kitchen")}</p>
+      }}>{t("features.kitchen")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_90")}</p>
+      }}>{t("index.fully_equipped_space_to")}</p>
       </div>
     </div>;
 }
@@ -1180,10 +1180,10 @@ function CardLounge() {
         <IconWrapper2 />
         <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_lounge")}</p>
+      }}>{t("features.lounge")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_91")}</p>
+      }}>{t("index.cozy_community_space_with")}</p>
       </div>
     </div>;
 }
@@ -1208,10 +1208,10 @@ function CardLaundry() {
         <IconWrapper3 />
         <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_laundry")}</p>
+      }}>{t("features.laundry")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_92")}</p>
+      }}>{t("index.24_7_washers_and")}</p>
       </div>
     </div>;
 }
@@ -1239,10 +1239,10 @@ function CardCommunityText() {
   return <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-w-px relative" data-name="Card-Community-Text">
       <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1c2420] text-[18px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("traveler_community")}</p>
+    }}>{t("common.traveler_community")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#54625d] text-[14px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("traveler_desc")}</p>
+    }}>{t("common.traveler_desc")}</p>
     </div>;
 }
 function CardCommunity() {
@@ -1280,7 +1280,7 @@ function AmenitiesSection() {
 }
 function V1LeftCol1() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-[420px]" data-name="V1-Left-Col">
-      <p className="[word-break:break-word] font-['Oswald:Bold',sans-serif] font-bold leading-[64px] relative shrink-0 text-[#ede8d8] text-[56px] tracking-[-1px] uppercase w-full">{t("everything_you_need")}</p>
+      <p className="[word-break:break-word] font-['Oswald:Bold',sans-serif] font-bold leading-[64px] relative shrink-0 text-[#ede8d8] text-[56px] tracking-[-1px] uppercase w-full">{t("common.everything_you_need")}</p>
     </div>;
 }
 function Leaf1() {
@@ -1304,10 +1304,10 @@ function CardGarden1() {
         <IconWrapper5 />
         <p className="[word-break:break-word] font-['DM_Sans:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#ede8d8] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_garden")}</p>
+      }}>{t("features.garden")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full opacity-60 relative shrink-0 text-[#ede8d8] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_93")}</p>
+      }}>{t("index.a_lush_tranquil_green")}</p>
       </div>
     </div>;
 }
@@ -1332,10 +1332,10 @@ function CardKitchen1() {
         <IconWrapper6 />
         <p className="[word-break:break-word] font-['DM_Sans:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#ede8d8] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_kitchen")}</p>
+      }}>{t("features.kitchen")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full opacity-60 relative shrink-0 text-[#ede8d8] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_94")}</p>
+      }}>{t("index.fully_equipped_space_to")}</p>
       </div>
     </div>;
 }
@@ -1366,10 +1366,10 @@ function CardLounge1() {
         <IconWrapper7 />
         <p className="[word-break:break-word] font-['DM_Sans:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#ede8d8] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_lounge")}</p>
+      }}>{t("features.lounge")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full opacity-60 relative shrink-0 text-[#ede8d8] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_95")}</p>
+      }}>{t("index.cozy_community_space_with")}</p>
       </div>
     </div>;
 }
@@ -1394,10 +1394,10 @@ function CardLaundry1() {
         <IconWrapper8 />
         <p className="[word-break:break-word] font-['DM_Sans:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#ede8d8] text-[18px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("feature_laundry")}</p>
+      }}>{t("features.laundry")}</p>
         <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full opacity-60 relative shrink-0 text-[#ede8d8] text-[14px] w-[min-content]" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_96")}</p>
+      }}>{t("index.24_7_washers_and")}</p>
       </div>
     </div>;
 }
@@ -1425,10 +1425,10 @@ function CardCommunityText1() {
   return <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-w-px relative text-[#ede8d8]" data-name="Card-Community-Text">
       <p className="font-['DM_Sans:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[18px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("traveler_community")}</p>
+    }}>{t("common.traveler_community")}</p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[22px] min-w-full opacity-60 relative shrink-0 text-[14px] w-[min-content]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("traveler_desc")}</p>
+    }}>{t("common.traveler_desc")}</p>
     </div>;
 }
 function CardCommunity1() {
@@ -1467,7 +1467,7 @@ function Container44() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['Fraunces:Italic',sans-serif] font-normal italic leading-[33.6px] relative shrink-0 text-[#f2b138] text-[22.4px] whitespace-nowrap" style={{
         fontVariationSettings: '"SOFT" 0, "WONK" 1'
-      }}>{t("hero_title_2")}</p>
+      }}>{t("hero.title")}</p>
       </div>
     </div>;
 }
@@ -1475,7 +1475,7 @@ function Paragraph21() {
   return <div className="content-stretch flex flex-col items-start max-w-[260px] opacity-70 relative shrink-0 w-[260px]" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[24.928px] relative shrink-0 text-[#ede8d8] text-[13.12px] w-[260px]" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_97")}</p>
+    }}>{t("index.your_refuge_on_the")}</p>
     </div>;
 }
 function ParagraphMargin9() {
@@ -1489,7 +1489,7 @@ function Paragraph22() {
   return <div className="content-stretch flex flex-col items-start opacity-70 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[14.88px] relative shrink-0 text-[#ede8d8] text-[9.92px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_98")}</p>
+    }}>{t("index.2026_neskapolita_hostel")}</p>
     </div>;
 }
 function ParagraphMargin10() {
@@ -1511,7 +1511,7 @@ function Paragraph23() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[13.92px] relative shrink-0 text-[#3d9e72] text-[9.28px] tracking-[2.0416px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_99")}</p>
+      }}>{t("index.stay")}</p>
       </div>
     </div>;
 }
@@ -1519,7 +1519,7 @@ function Paragraph24() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[19.2px] relative shrink-0 text-[#ede8d8] text-[12.8px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_100")}</p>
+    }}>{t("index.private_rooms")}</p>
     </div>;
 }
 function ParagraphMargin11() {
@@ -1533,7 +1533,7 @@ function Paragraph25() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[19.2px] relative shrink-0 text-[#ede8d8] text-[12.8px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_101")}</p>
+    }}>{t("index.dormitory")}</p>
     </div>;
 }
 function ParagraphMargin12() {
@@ -1547,7 +1547,7 @@ function Paragraph26() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[19.2px] relative shrink-0 text-[#ede8d8] text-[12.8px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_102")}</p>
+    }}>{t("index.book_now")}</p>
     </div>;
 }
 function ParagraphMargin13() {
@@ -1561,7 +1561,7 @@ function Paragraph27() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[19.2px] relative shrink-0 text-[#ede8d8] text-[12.8px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_103")}</p>
+    }}>{t("index.gallery")}</p>
     </div>;
 }
 function ParagraphMargin14() {
@@ -1585,7 +1585,7 @@ function Paragraph28() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[13.92px] relative shrink-0 text-[#3d9e72] text-[9.28px] tracking-[2.0416px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("explore_card")}</p>
+      }}>{t("common.explore")}</p>
       </div>
     </div>;
 }
@@ -1593,7 +1593,7 @@ function Paragraph29() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[19.2px] relative shrink-0 text-[#ede8d8] text-[12.8px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_104")}</p>
+    }}>{t("index.getting_here")}</p>
     </div>;
 }
 function ParagraphMargin15() {
@@ -1607,7 +1607,7 @@ function Paragraph30() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[19.2px] relative shrink-0 text-[#ede8d8] text-[12.8px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_105")}</p>
+    }}>{t("index.faq")}</p>
     </div>;
 }
 function ParagraphMargin16() {
@@ -1629,7 +1629,7 @@ function Paragraph31() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[13.92px] relative shrink-0 text-[#3d9e72] text-[9.28px] tracking-[2.0416px] uppercase whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 9'
-      }}>{t("text_106")}</p>
+      }}>{t("index.connect")}</p>
       </div>
     </div>;
 }
@@ -1637,7 +1637,7 @@ function Paragraph32() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[19.2px] relative shrink-0 text-[#ede8d8] text-[12.8px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_107")}</p>
+    }}>{t("index.instagram")}</p>
     </div>;
 }
 function ParagraphMargin17() {
@@ -1651,7 +1651,7 @@ function Paragraph33() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[19.2px] relative shrink-0 text-[#ede8d8] text-[12.8px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("text_108")}</p>
+    }}>{t("index.facebook")}</p>
     </div>;
 }
 function ParagraphMargin18() {

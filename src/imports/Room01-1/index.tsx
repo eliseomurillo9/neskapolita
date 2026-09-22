@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-5vwvmv1zi0";
 import imgImage from "./1a87c5d486772503401990064608c4940c7da7fc.png";
@@ -8,7 +8,7 @@ function Container() {
   return <div className="absolute bg-[#f2f2f2] border-[#d9d9d9] border-[0.716px] border-solid h-[21.479px] left-0 rounded-[2px] top-0 w-[71.597px]" data-name="Container">
       <p className="[word-break:break-word] absolute font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[9.966px] left-[7.16px] text-[#595961] text-[6.64px] top-[5.01px] tracking-[0.928px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("most_popular")}</p>
+    }}>{t("common.most_popular")}</p>
     </div>;
 }
 function Frame1() {
@@ -37,7 +37,7 @@ function Heading() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
       <p className="[word-break:break-word] font-['Fraunces:Bold',sans-serif] font-bold leading-[18.902px] relative shrink-0 text-[#0c1a10] text-[12.601px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("room_nieves_name")}</p>
+    }}>{t("rooms.nieves.name")}</p>
     </div>;
 }
 function Heading3Margin() {
@@ -69,7 +69,7 @@ function Paragraph1() {
   return <div className="content-stretch flex flex-col items-end opacity-40 relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[10.31px] relative shrink-0 text-[#ede8d8] text-[6.873px] text-right whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 9'
-    }}>{t("per_night_short")}</p>
+    }}>{t("common.per_night_short")}</p>
     </div>;
 }
 function ParagraphMargin() {
@@ -108,7 +108,7 @@ function ServiceItem() {
       <IconFrame />
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("room_nieves_size")}</p>
+    }}>{t("rooms.nieves.size")}</p>
     </div>;
 }
 function Snowflake() {
@@ -130,7 +130,7 @@ function ServiceItem1() {
       <IconFrame1 />
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("amenity_ac")}</p>
+    }}>{t("amenities.ac")}</p>
     </div>;
 }
 function Shower() {
@@ -157,7 +157,7 @@ function ServiceItem2() {
       <IconFrame2 />
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("amenity_bath_volcan")}</p>
+    }}>{t("amenities.bath")}</p>
     </div>;
 }
 function Monitor() {
@@ -179,7 +179,7 @@ function ServiceItem3() {
       <IconFrame3 />
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#0c1a10] text-[8px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("amenity_tv")}</p>
+    }}>{t("amenities.tv")}</p>
     </div>;
 }
 function ServicesRow() {
@@ -212,7 +212,7 @@ function Frame2() {
   return <div className="content-stretch flex flex-col gap-[12px] items-center justify-center relative shrink-0 w-full">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[#0c1a10] text-[9.308px] w-full" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("room_nieves_hover")}</p>
+    }}>{t("rooms.nieves.hover")}</p>
       <ServicesRow />
       <ActionRow />
     </div>;

@@ -1,18 +1,18 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-5z4002hoh5";
 function Paragraph() {
   return <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#3d9e72] text-[11px] tracking-[2px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("top_places")}</p>
+    }}>{t("common.top_places")}</p>
     </div>;
 }
 function Paragraph1() {
   return <div className="content-stretch flex flex-col h-[30px] items-start pt-[2px] relative shrink-0 w-[97px]" data-name="Paragraph">
       <p className="[word-break:break-word] font-['Fraunces:Black',sans-serif] font-black leading-[27.5px] relative shrink-0 text-[#1c2420] text-[22px] w-[149px]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("text_274")}</p>
+    }}>{t("index.sonsonate")}</p>
     </div>;
 }
 function Container1() {
@@ -60,7 +60,7 @@ function Container2() {
 function Instruction() {
   return <div className="content-stretch flex gap-[12px] items-center justify-center relative shrink-0" data-name="instruction">
       <Container2 />
-      <p className="[word-break:break-word] font-['Nunito:ExtraBold',sans-serif] font-extrabold leading-[normal] relative shrink-0 text-[#3d9e72] text-[14px] tracking-[0.5px] whitespace-nowrap">{t("tap_place")}</p>
+      <p className="[word-break:break-word] font-['Nunito:ExtraBold',sans-serif] font-extrabold leading-[normal] relative shrink-0 text-[#3d9e72] text-[14px] tracking-[0.5px] whitespace-nowrap">{t("common.tap_place")}</p>
     </div>;
 }
 function Icon2() {
@@ -87,14 +87,14 @@ function Paragraph2() {
   return <div className="content-stretch flex h-[21px] items-center relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[21px] relative shrink-0 text-[#1c2420] text-[14px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("place_16")}</p>
+    }}>{t("ruta.place_16")}</p>
     </div>;
 }
 function Paragraph3() {
   return <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#54625d] text-[13px] w-[356px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_275")}</p>
+    }}>{t("index.an_imposing_baroque_cathedral")}</p>
     </div>;
 }
 function Container5() {
@@ -133,14 +133,14 @@ function Paragraph4() {
   return <div className="content-stretch flex h-[21px] items-center relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[21px] relative shrink-0 text-[#1c2420] text-[14px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("place_17")}</p>
+    }}>{t("ruta.place_17")}</p>
     </div>;
 }
 function Paragraph5() {
   return <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#54625d] text-[13px] w-[356px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_276")}</p>
+    }}>{t("index.natural_volcanic_thermal_pools")}</p>
     </div>;
 }
 function Container7() {
@@ -179,14 +179,14 @@ function Paragraph6() {
   return <div className="content-stretch flex h-[21px] items-center relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[21px] relative shrink-0 text-[#1c2420] text-[14px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("place_18")}</p>
+    }}>{t("ruta.place_18")}</p>
     </div>;
 }
 function Paragraph7() {
   return <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full" data-name="Paragraph">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#54625d] text-[13px] w-[356px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_277")}</p>
+    }}>{t("index.a_hidden_multi_tiered")}</p>
     </div>;
 }
 function Container9() {

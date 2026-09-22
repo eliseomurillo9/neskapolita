@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -52,25 +52,25 @@ const localFeatures = [{
   icon: <svg fill="none" viewBox="0 0 24 24" width="24" height="24">
         <path d={svgPaths.p1f220c80} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
-  title: t("feature_garden"),
+  title: t("features.garden"),
   desc: "A lush, tranquil green oasis to unwind, read, or enjoy morning coffee."
 }, {
   icon: <svg fill="none" viewBox="0 0 24 24" width="24" height="24">
         <path d={svgPaths.p3075da00} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
-  title: t("feature_kitchen"),
+  title: t("features.kitchen"),
   desc: "Fully equipped space to cook, share recipes, and connect over food."
 }, {
   icon: <svg fill="none" viewBox="0 0 24 24" width="24" height="24">
         <path d={svgPaths.p2794d100} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
-  title: t("feature_lounge"),
+  title: t("features.lounge"),
   desc: "Cozy community space with deep couches, books, and vinyl records."
 }, {
   icon: <svg fill="none" viewBox="0 0 24 24" width="24" height="24">
         <path d={svgPaths.pa962300} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
-  title: t("feature_laundry"),
+  title: t("features.laundry"),
   desc: "24/7 washers and dryers so you can pack light and stay fresh."
 }];
 export default function HomePage({
@@ -121,14 +121,14 @@ export default function HomePage({
             fontSize: "clamp(42px,4.65vw,67px)",
             color: "#f2b138",
             fontVariationSettings: '"SOFT" 0,"WONK" 1'
-          }}>{t("hero_title_2")}</p>
+          }}>{t("hero.title")}</p>
             <p className="font-black leading-tight" style={{
             fontFamily: "'Fraunces',serif",
             fontSize: "clamp(20px,2.08vw,30px)",
             color: "#ffffff",
             fontVariationSettings: '"SOFT" 0,"WONK" 1',
             maxWidth: 520
-          }}>{t("hero_subtitle_2")}</p>
+          }}>{t("hero.subtitle")}</p>
           </motion.div>
           <motion.div className="flex flex-col gap-8 md:gap-[60px]" initial={{
           opacity: 0,
@@ -154,7 +154,7 @@ export default function HomePage({
                 textTransform: "uppercase",
                 whiteSpace: "nowrap",
                 fontVariationSettings: '"opsz" 14'
-              }}>{t("nav_explore_rooms_2")}</span>
+              }}>{t("nav.explore_rooms")}</span>
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                   <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="#0c1a10" strokeLinecap="round" strokeWidth="2" />
                 </svg>
@@ -171,7 +171,7 @@ export default function HomePage({
                 textTransform: "uppercase",
                 whiteSpace: "nowrap",
                 fontVariationSettings: '"opsz" 14'
-              }}>{t("nav_our_story_2")}</span>
+              }}>{t("nav.our_story")}</span>
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                   <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
                 </svg>
@@ -190,7 +190,7 @@ export default function HomePage({
               color: "rgba(255,255,255,0.45)",
               letterSpacing: "1.344px",
               fontVariationSettings: '"opsz" 9'
-            }}>{t("booking_rating_1")}</p>
+            }}>{t("common.booking_rating_1")}</p>
             </div>
           </motion.div>
         </div>
@@ -240,7 +240,7 @@ export default function HomePage({
               letterSpacing: "1px",
               textTransform: "uppercase",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("booking_rating_2")}</span>
+            }}>{t("common.booking_rating_2")}</span>
             </div>
             <p className="font-black italic text-center w-full" style={{
             fontFamily: "'Fraunces',serif",
@@ -248,14 +248,14 @@ export default function HomePage({
             color: "#f2b138",
             fontVariationSettings: '"SOFT" 0,"WONK" 1',
             lineHeight: 1.1
-          }}>{t("hero_title_2")}</p>
+          }}>{t("hero.title")}</p>
             <p className="font-black text-center w-full" style={{
             fontFamily: "'Fraunces',serif",
             fontSize: "clamp(20px, 5.5vw, 24px)",
             color: "#ede8d8",
             fontVariationSettings: '"SOFT" 0,"WONK" 1',
             lineHeight: 1.25
-          }}>{t("hero_subtitle_2")}</p>
+          }}>{t("hero.subtitle")}</p>
           </div>
 
           {/* Buttons */}
@@ -273,7 +273,7 @@ export default function HomePage({
               textTransform: "uppercase",
               whiteSpace: "nowrap",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("nav_explore_rooms_2")}</span>
+            }}>{t("nav.explore_rooms")}</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="#0c1a10" strokeLinecap="round" strokeWidth="2" />
               </svg>
@@ -291,7 +291,7 @@ export default function HomePage({
               textTransform: "uppercase",
               whiteSpace: "nowrap",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("nav_our_story_2")}</span>
+            }}>{t("nav.our_story")}</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
               </svg>
@@ -332,11 +332,11 @@ export default function HomePage({
               color: "#0c1a10",
               fontVariationSettings: '"SOFT" 0,"WONK" 1',
               maxWidth: 843
-            }}>{t("story_title_1")}{" "}
+            }}>{t("story.title_1")}{" "}
                 <br className="hidden md:block" />
                 <em style={{
                 color: "#3d9e72"
-              }}>{t("story_title_2")}</em>
+              }}>{t("story.title_2")}</em>
               </h2>
 
               {/* Subtext */}
@@ -347,7 +347,7 @@ export default function HomePage({
               color: "#131f16",
               maxWidth: 498,
               fontVariationSettings: '"opsz" 14'
-            }}>{t("story_desc")}</p>
+            }}>{t("story.desc")}</p>
             </div>
 
             {/* Button */}
@@ -363,7 +363,7 @@ export default function HomePage({
               textTransform: "uppercase",
               whiteSpace: "nowrap",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("story_cta")}</span>
+            }}>{t("story.cta")}</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
               </svg>
@@ -384,9 +384,9 @@ export default function HomePage({
             lineHeight: 1.2,
             color: theme.heading,
             fontVariationSettings: '"SOFT" 0,"WONK" 1'
-          }}>{t("find_your")}<span style={{
+          }}>{t("common.find_your")}<span style={{
               color: theme.green
-            }}>{t("casa")}</span>
+            }}>{t("common.casa")}</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -416,7 +416,7 @@ export default function HomePage({
             color: theme.heading,
             fontVariationSettings: '"SOFT" 0,"WONK" 1',
             maxWidth: 420
-          }}>{t("everything_you_need")}</h2>
+          }}>{t("common.everything_you_need")}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {localFeatures.map(f => <div key={f.title} className="flex gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl" style={{
               background: theme.cardBg,
@@ -453,13 +453,13 @@ export default function HomePage({
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 16,
                 color: theme.heading
-              }}>{t("traveler_community")}</p>
+              }}>{t("common.traveler_community")}</p>
                 <p style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 15,
                 color: theme.body,
                 lineHeight: 1.7
-              }}>{t("traveler_desc")}</p>
+              }}>{t("common.traveler_desc")}</p>
               </div>
             </div>
           </div>

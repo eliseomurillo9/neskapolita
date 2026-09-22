@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 type FooterProps = {
   className?: string;
@@ -42,20 +42,20 @@ export default function Footer({
           fontSize: 22.4,
           color: logo,
           fontVariationSettings: '"SOFT" 0, "WONK" 1'
-        }}>{t("hero_title_2")}</p>
+        }}>{t("hero.title")}</p>
           <p style={{
           fontFamily: "'DM Sans',sans-serif",
           fontSize: 13,
           color: tagline,
           lineHeight: 1.8,
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_109")}</p>
+        }}>{t("index.your_refuge_on_the")}</p>
           <p style={{
           fontFamily: "'DM Sans',sans-serif",
           fontSize: 11,
           color: copyright,
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_110")}</p>
+        }}>{t("index.2026_neskapolita_hostel")}</p>
         </div>
 
         {/* Right: link columns */}

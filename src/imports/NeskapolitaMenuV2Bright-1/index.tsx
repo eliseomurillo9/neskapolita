@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-d640mmtgs0";
 function XCircle() {
@@ -25,7 +25,7 @@ function Header() {
   return <div className="content-stretch flex h-[72px] items-center justify-between px-[24px] py-[16px] relative shrink-0 w-full" data-name="Header">
       <p className="[word-break:break-word] font-['Fraunces:Black_Italic',sans-serif] font-black italic leading-[normal] relative shrink-0 text-[#4c6e58] text-[22px] whitespace-nowrap" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_title_2")}</p>
+    }}>{t("hero.title")}</p>
       <MenuButton />
     </div>;
 }
@@ -33,24 +33,24 @@ function ActivePill() {
   return <div className="bg-[rgba(61,158,114,0.14)] content-stretch flex items-start px-[28px] py-[8px] relative rounded-[100px] shrink-0" data-name="ActivePill">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#3d9e72] text-[22px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("nav_our_story_2")}</p>
+    }}>{t("nav.our_story")}</p>
     </div>;
 }
 function Frame() {
   return <div className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-full" data-name="Frame">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#0c1a10] text-[22px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_175")}</p>
+    }}>{t("index.rooms")}</p>
       <ActivePill />
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#0c1a10] text-[22px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("amenities")}</p>
+    }}>{t("common.amenities")}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#0c1a10] text-[22px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_176")}</p>
+    }}>{t("index.explore_ruta")}</p>
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#0c1a10] text-[22px] text-center whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_177")}</p>
+    }}>{t("index.booking")}</p>
     </div>;
 }
 function NavigationContent() {
@@ -62,7 +62,7 @@ function Text() {
   return <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Text">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#3d9e72] text-[11px] text-center tracking-[1px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_178")}</p>
+    }}>{t("index.en")}</p>
     </div>;
 }
 function Text1() {
@@ -74,7 +74,7 @@ function Text2() {
   return <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Text">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#1c2420] text-[11px] text-center tracking-[1px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_179")}</p>
+    }}>{t("index.es")}</p>
     </div>;
 }
 function ButtonSwitchLanguage() {
@@ -105,7 +105,7 @@ function Text3() {
   return <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Text">
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#1c2420] text-[11px] text-center tracking-[1px] whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_180")}</p>
+    }}>{t("index.dark")}</p>
     </div>;
 }
 function ButtonToggleLightDarkMode() {
@@ -134,7 +134,7 @@ function PlayfulCta() {
       <Frame1 />
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[12px] text-white tracking-[1px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_181")}</p>
+    }}>{t("index.book_via_whatsapp")}</p>
     </div>;
 }
 function CtaSection() {

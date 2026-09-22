@@ -1,4 +1,4 @@
-import i18n from "../i18n";
+import i18n from "../locales/i18n";
 const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -102,58 +102,58 @@ export const rooms = [{
   id: 1,
   index: "01",
   badge: badge01,
-  name: t("room_nieves_name"),
-  type: t("room_nieves_type"),
+  name: t("rooms.nieves.name"),
+  type: t("rooms.nieves.type"),
   tagline: "",
-  hoverDescription: t("room_nieves_hover"),
+  hoverDescription: t("rooms.nieves.hover"),
   price: 45,
   tag: "Most popular",
   image: room1Img,
-  description: t("room_nieves_desc"),
+  description: t("rooms.nieves.desc"),
   guests: 2,
   size: "15 m²",
   amenities: [{
     figma: ROOM01_ICONS.area,
-    label: t("room_nieves_size")
+    label: t("rooms.nieves.size")
   }, {
     figma: ROOM01_ICONS.ac,
-    label: t("amenity_ac")
+    label: t("amenities.ac")
   }, {
     figma: ROOM01_ICONS.bath,
-    label: t("amenity_bath_volcan")
+    label: t("amenities.bath")
   }, {
     figma: ROOM01_ICONS.tv,
-    label: t("amenity_tv")
+    label: t("amenities.tv")
   }],
   highlights: ["Air conditioning", "Flat-screen TV & Netflix", "Private bathroom", "Outdoor dining area"],
   detailedAmenities: [{
-    title: t("category_comfort_flores"),
+    title: t("categories.comfort"),
     items: ["Air conditioning", "Bed linen provided", "Socket near the bed", "Clothes rack & Drying rack"]
   }, {
-    title: t("category_bathroom_volcan"),
+    title: t("categories.bathroom"),
     items: ["Private bathroom", "Washing machine & Clothes dryer", "Iron & Ironing facilities", "Cleaning products"]
   }, {
-    title: t("category_entertainment_volcan"),
+    title: t("categories.entertainment"),
     items: ["Free High-Speed Wi-Fi", "Flat-screen TV with Satellite & Cable channels", "Streaming services (e.g., Netflix)"]
   }, {
-    title: t("category_outdoor"),
+    title: t("categories.outdoor"),
     items: ["Outdoor dining area"]
   }, {
-    title: t("category_rules_volcan"),
+    title: t("categories.rules"),
     items: ["Smoking Policy: Non-smoking room"]
   }] as DetailedAmenityCategory[]
 }, {
   id: 2,
   index: "02",
   badge: badge02,
-  name: t("room_mochila_name"),
-  type: t("room_mochila_type"),
+  name: t("rooms.mochila.name"),
+  type: t("rooms.mochila.type"),
   tagline: "",
-  hoverDescription: t("room_mochila_hover"),
+  hoverDescription: t("rooms.mochila.hover"),
   price: 18,
   tag: null,
   image: room2Img,
-  description: t("room_mochila_desc"),
+  description: t("rooms.mochila.desc"),
   guests: 5,
   size: "21 m²",
   amenities: [{
@@ -161,46 +161,46 @@ export const rooms = [{
       path: svgPaths.p19aa6f00,
       viewBox: "0 0 24 24"
     },
-    label: t("room_mochila_size")
+    label: t("rooms.mochila.size")
   }, {
     figma: {
       path: svgPaths.pfbef580,
       viewBox: "0 0 18.8457 18.8457"
     },
-    label: t("amenity_1bed")
+    label: t("amenities.1bed")
   }, {
     figma: {
       path: svgPaths.p1d5bb000,
       viewBox: "0 0 13.6212 9.98889"
     },
-    label: t("amenity_4bunks")
+    label: t("amenities.4bunks")
   }],
   highlights: ["Safe deposit box", "Laptop safe", "Shared bathroom & hairdryer", "Outdoor dining area"],
   detailedAmenities: [{
-    title: t("category_comfort_flores"),
+    title: t("categories.comfort"),
     items: ["Fan (Ventilador)", "Bed linen provided", "Socket near the bed", "Safe deposit box & Laptop safe", "Clothes rack & Drying rack"]
   }, {
-    title: t("category_shared_bathroom"),
+    title: t("categories.shared_bathroom"),
     items: ["Shared bathroom with shower and hairdryer", "Free toiletries", "Washing machine & Clothes dryer", "Iron & Ironing facilities", "Cleaning products"]
   }, {
-    title: t("category_connectivity"),
+    title: t("categories.connectivity"),
     items: ["Free High-Speed Wi-Fi", "Outdoor dining area"]
   }, {
-    title: t("category_rules_volcan"),
+    title: t("categories.rules"),
     items: ["Smoking Policy: Non-smoking room"]
   }] as DetailedAmenityCategory[]
 }, {
   id: 3,
   index: "16",
   badge: badge16,
-  name: t("room_flores_name"),
-  type: t("room_flores_type"),
+  name: t("rooms.flores.name"),
+  type: t("rooms.flores.type"),
   tagline: "",
-  hoverDescription: t("room_flores_hover"),
+  hoverDescription: t("rooms.flores.hover"),
   price: 55,
   tag: null,
   image: room3Img,
-  description: t("room_flores_desc"),
+  description: t("rooms.flores.desc"),
   guests: 2,
   size: "19 m²",
   amenities: [{
@@ -208,55 +208,55 @@ export const rooms = [{
       path: svgPaths.p19aa6f00,
       viewBox: "0 0 24 24"
     },
-    label: t("room_volcan_size")
+    label: t("rooms.flores.size")
   }, {
     figma: {
       path: svgPaths.p3a99c600,
       viewBox: "0 0 18.8457 18.8457"
     },
-    label: t("amenity_garden_view")
+    label: t("amenities.garden_view")
   }, {
     figma: {
       path: svgPaths.p76b4680,
       viewBox: "0 0 20.6426 20.6426"
     },
-    label: t("amenity_patio")
+    label: t("amenities.patio")
   }, {
     figma: {
       path: svgPaths.p83e8080,
       viewBox: "0 0 15.1543 15.1543"
     },
-    label: t("amenity_bath_volcan")
+    label: t("amenities.bath")
   }],
   highlights: ["Private patio & terrace", "Garden & courtyard views", "Safe deposit box", "Outdoor dining area"],
   detailedAmenities: [{
-    title: t("category_room_details"),
+    title: t("categories.room_details"),
     items: ["Room size: 19 m²", "1 Single Bed + 1 Double Bed (2 beds total)", "Views: Garden, Inner courtyard, Patio & Terrace", "Entire unit on the ground floor"]
   }, {
-    title: t("category_comfort_flores"),
+    title: t("categories.comfort"),
     items: ["Fan (Ventilador)", "Bed linen provided", "Socket near the bed", "Safe deposit box & Laptop safe", "Clothes rack & Drying rack"]
   }, {
-    title: t("category_bathroom_volcan"),
+    title: t("categories.bathroom"),
     items: ["Private bathroom with shower", "Washing machine & Clothes dryer", "Iron & Ironing facilities", "Cleaning products"]
   }, {
-    title: t("category_connectivity_flores"),
+    title: t("categories.connectivity_flores"),
     items: ["Free High-Speed Wi-Fi", "Terrace & Private Patio", "Outdoor dining area"]
   }, {
-    title: t("category_rules_volcan"),
+    title: t("categories.rules"),
     items: ["Smoking Policy: Non-smoking room"]
   }] as DetailedAmenityCategory[]
 }, {
   id: 4,
   index: "17",
   badge: badge17,
-  name: t("room_volcan_name"),
-  type: t("room_volcan_type"),
+  name: t("rooms.volcan.name"),
+  type: t("rooms.volcan.type"),
   tagline: "",
-  hoverDescription: t("room_volcan_hover"),
+  hoverDescription: t("rooms.volcan.hover"),
   price: 65,
   tag: null,
   image: room4Img,
-  description: t("room_volcan_desc"),
+  description: t("rooms.volcan.desc"),
   guests: 2,
   size: "19 m²",
   amenities: [{
@@ -264,41 +264,41 @@ export const rooms = [{
       path: svgPaths.p17a34d00,
       viewBox: "0 0 24 24"
     },
-    label: t("room_volcan_size")
+    label: t("rooms.flores.size")
   }, {
     figma: {
       path: svgPaths.p25eecaf0,
       viewBox: "0 0 16.6426 16.6426"
     },
-    label: t("amenity_mountain_view")
+    label: t("amenities.mountain_view")
   }, {
     figma: {
       path: svgPaths.p183483e0,
       viewBox: "0 0 24 24"
     },
-    label: t("amenity_courtyard")
+    label: t("amenities.courtyard")
   }, {
     figma: {
       path: svgPaths.p83e8080,
       viewBox: "0 0 15.1543 15.1543"
     },
-    label: t("amenity_bath_volcan")
+    label: t("amenities.bath")
   }],
   highlights: ["Private balcony & terrace", "Mountain & city views", "Air conditioning", "Flat-screen TV & Netflix"],
   detailedAmenities: [{
-    title: t("category_climate"),
+    title: t("categories.climate"),
     items: ["Air conditioning", "Bed linen provided", "Socket near the bed"]
   }, {
-    title: t("category_bathroom_volcan"),
+    title: t("categories.bathroom"),
     items: ["Private bathroom", "Washing machine & Clothes dryer", "Iron & Ironing facilities", "Clothes rack & Drying rack", "Cleaning products"]
   }, {
-    title: t("category_entertainment_volcan"),
+    title: t("categories.entertainment"),
     items: ["Free High-Speed Wi-Fi", "Flat-screen TV with Satellite & Cable channels", "Streaming services (e.g., Netflix)"]
   }, {
-    title: t("category_leisure"),
+    title: t("categories.leisure"),
     items: ["Private Balcony & Terrace", "Outdoor dining area"]
   }, {
-    title: t("category_rules_volcan"),
+    title: t("categories.rules"),
     items: ["Smoking: Non-smoking room"]
   }] as DetailedAmenityCategory[]
 }];

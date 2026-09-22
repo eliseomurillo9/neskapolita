@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-1nqmf93wrd";
 function BadgeCircle() {
@@ -16,7 +16,7 @@ function TitleAndPitch() {
       </p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-relaxed relative text-[#0c1a10] text-[13.5px] sm:text-[14.4px] max-w-[480px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_265")}</p>
+    }}>{t("common.when_you_book_direct")}</p>
     </div>;
 }
 function ArrowRight() {
@@ -29,10 +29,10 @@ function ArrowRight() {
     </div>;
 }
 function ActionButton() {
-  return <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] flex gap-[8px] items-center px-[30px] py-[14px] relative rounded-[4px] shrink-0 cursor-pointer transition-colors hover:bg-[#2d8a60]" data-name="Action Button">
+  return <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] flex gap-[8px] items-center px-[30px] py-[14px] relative rounded-[4px] shrink-0 cursor-pointer transition-colors hover:bg-[#2d8a60]" data-name="Action Button" onClick={() => window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank')}>
       <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11.2px] text-white tracking-[1.34px] uppercase whitespace-nowrap" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_266")}</p>
+    }}>{t("index.book_your_stay")}</p>
       <ArrowRight />
     </div>;
 }
@@ -58,7 +58,7 @@ function Text() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:SemiBold',sans-serif] font-semibold leading-[21.6px] relative shrink-0 text-[#0c1a10] text-[14.4px] tracking-[-0.144px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_267")}</p>
+      }}>{t("index.paypal")}</p>
       </div>
     </div>;
 }
@@ -75,7 +75,7 @@ function MethodPayPal() {
           <Container />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_268")}</p>
+        }}>{t("index.paypal")}</p>
         </div>
       </div>
     </div>;
@@ -97,7 +97,7 @@ function MethodCash() {
           <Frame />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_269")}</p>
+        }}>{t("index.cash_usd")}</p>
         </div>
       </div>
     </div>;
@@ -107,7 +107,7 @@ function Text1() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <p className="[word-break:break-word] font-['DM_Sans:ExtraBold',sans-serif] font-extrabold leading-[10.8px] relative shrink-0 text-[7.2px] text-white tracking-[0.144px] whitespace-nowrap" style={{
         fontVariationSettings: '"opsz" 14'
-      }}>{t("text_270")}</p>
+      }}>{t("index.visa")}</p>
       </div>
     </div>;
 }
@@ -145,7 +145,7 @@ function MethodVisa() {
           <Container1 />
           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
           fontVariationSettings: '"opsz" 14'
-        }}>{t("text_271")}</p>
+        }}>{t("index.cards_accepted")}</p>
         </div>
       </div>
     </div>;
@@ -171,14 +171,14 @@ function SecurityNote() {
       <LockSimple />
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] text-[#18271c] text-[10px] sm:text-[10.88px] tracking-[0.5px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_272")}</p>
+    }}>{t("index.secure_booking_no_hidden")}</p>
     </div>;
 }
 function RightColumn() {
   return <div className="flex flex-col gap-[16px] sm:gap-[20px] items-center lg:items-end justify-end relative w-full lg:flex-1 lg:max-w-[560px] min-w-0" data-name="Right Column">
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[25.34px] relative text-[#1c2420] text-[13.5px] sm:text-[14.08px] text-center lg:text-right w-full max-w-[480px]" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_273")}</p>
+    }}>{t("index.we_accept_various_ways")}</p>
       <PaymentMethodsRow />
       <SecurityNote />
     </div>;

@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -138,7 +138,7 @@ export default function RoomModal({
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11,
               color: theme.muted
-            }}>{t("per_night_slash")}</span>
+            }}>{t("common.per_night_slash")}</span>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex flex-col items-end gap-0.5">
@@ -146,7 +146,7 @@ export default function RoomModal({
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 8,
                 color: theme.muted
-              }}>{t("size")}</span>
+              }}>{t("common.size")}</span>
                 <span style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 12,
@@ -167,7 +167,7 @@ export default function RoomModal({
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 8,
                 color: theme.muted
-              }}>{t("google")}</span>
+              }}>{t("common.google")}</span>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function RoomModal({
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 9,
             color: theme.muted
-          }}>{t("key_amenities")}</p>
+          }}>{t("common.key_amenities")}</p>
               {(room.detailedAmenities as DetailedAmenityCategory[]).map(cat => <div key={cat.title}>
                   <p className="mb-2" style={{
               fontFamily: "'DM Sans',sans-serif",
@@ -209,7 +209,7 @@ export default function RoomModal({
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 9,
             color: theme.muted
-          }}>{t("amenities")}</p>
+          }}>{t("common.amenities")}</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {room.amenities.map(item => <div key={item.label} className="flex items-center gap-2 px-3 py-2.5" style={{
               background: theme.amenityBg,
@@ -232,7 +232,7 @@ export default function RoomModal({
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 9,
             color: theme.muted
-          }}>{t("highlights")}</p>
+          }}>{t("common.highlights")}</p>
             <div className="flex flex-wrap gap-2">
               {room.highlights.map(h => <div key={h} className="flex items-center gap-1.5 px-3 py-1.5" style={{
               background: theme.highlightBg,
@@ -257,7 +257,7 @@ export default function RoomModal({
             backgroundColor: "#d49a1f"
           }} whileTap={{
             scale: 0.98
-          }}>
+          }} onClick={() => window.open(`https://api.whatsapp.com/send?phone=50370917674&text=${encodeURIComponent(`Hello, I'm interested in ${room.name}.`)}`, '_blank')}>
               <span style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11.2,
@@ -267,7 +267,7 @@ export default function RoomModal({
               textTransform: "uppercase",
               whiteSpace: "nowrap",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("book_this_room")}</span>
+            }}>{t("common.book_this_room")}</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="#0c1a10" strokeLinecap="round" strokeWidth="2" />
               </svg>
@@ -290,7 +290,7 @@ export default function RoomModal({
               textTransform: "uppercase",
               whiteSpace: "nowrap",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("close")}</span>
+            }}>{t("common.close")}</span>
             </motion.button>
           </div>
         </div>

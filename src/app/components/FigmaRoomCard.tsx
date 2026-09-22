@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -95,7 +95,7 @@ export default function FigmaRoomCard({
           letterSpacing: "0.928px",
           color: "#595961",
           fontVariationSettings: '"opsz" 9'
-        }}>{t("most_popular")}</p>
+        }}>{t("common.most_popular")}</p>
           </div>}
         {/* Room number badge image */}
         <img src={room.badge} alt={room.index} className="absolute pointer-events-none" style={{
@@ -143,7 +143,7 @@ export default function FigmaRoomCard({
             lineHeight: "10.3px",
             color: isDark ? "#ede8d8" : "#0c1a10",
             fontVariationSettings: '"opsz" 9'
-          }}>{t("per_night_short")}</p>
+          }}>{t("common.per_night_short")}</p>
           </div>
         </div>
 
@@ -206,7 +206,7 @@ export default function FigmaRoomCard({
             textTransform: "uppercase",
             whiteSpace: "nowrap",
             fontVariationSettings: '"opsz" 14'
-          }}>{t("explore_card")}</span>
+          }}>{t("common.explore")}</span>
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
             </svg>

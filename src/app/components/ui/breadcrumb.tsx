@@ -1,4 +1,4 @@
-import i18n from "../../../i18n";
+import i18n from "../../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
@@ -52,7 +52,7 @@ function BreadcrumbEllipsis({
 }: React.ComponentProps<"span">) {
   return <span data-slot="breadcrumb-ellipsis" role="presentation" aria-hidden="true" className={cn("flex size-9 items-center justify-center", className)} {...props}>
       <MoreHorizontal className="size-4" />
-      <span className="sr-only">{t("text_1")}</span>
+      <span className="sr-only">{t("common.apaneca")}</span>
     </span>;
 }
 export { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbPage, BreadcrumbSeparator, BreadcrumbEllipsis };

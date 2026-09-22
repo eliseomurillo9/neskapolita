@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -27,7 +27,7 @@ export default function RutaFloresPage({
         imageLeft: true,
         city: "Juayúa",
         subtitle: "Food Festival & Waterfalls",
-        description: t("ruta_desc_1"),
+        description: t("ruta.desc_1"),
         image: rutaJuayua
     }, {
         stop: "STOP 2",
@@ -35,7 +35,7 @@ export default function RutaFloresPage({
         imageLeft: false,
         city: "Apaneca",
         subtitle: "Coffee Farms & Adventure",
-        description: t("ruta_desc_2"),
+        description: t("ruta.desc_2"),
         image: rutaApaneca
     }, {
         stop: "STOP 3",
@@ -43,7 +43,7 @@ export default function RutaFloresPage({
         imageLeft: true,
         city: "Ataco",
         subtitle: "Street Art & Handcrafts",
-        description: t("ruta_desc_3"),
+        description: t("ruta.desc_3"),
         image: rutaAtaco
     }, {
         stop: "STOP 4",
@@ -51,7 +51,7 @@ export default function RutaFloresPage({
         imageLeft: false,
         city: "Salcoatitán",
         subtitle: "Art Galleries & Yucca Cuisine",
-        description: t("ruta_desc_4"),
+        description: t("ruta.desc_4"),
         image: rutaSalcoatitan
     }, {
         stop: "STOP 5",
@@ -59,7 +59,7 @@ export default function RutaFloresPage({
         imageLeft: true,
         city: "Nahuizalco",
         subtitle: "Candlelit Night Market",
-        description: t("ruta_desc_5"),
+        description: t("ruta.desc_5"),
         image: rutaNahuizalco
     }, {
         stop: "STOP 6",
@@ -67,7 +67,7 @@ export default function RutaFloresPage({
         imageLeft: false,
         city: "Sonsonate",
         subtitle: "Colonial Gateway & Thermal Pools",
-        description: t("ruta_desc_6"),
+        description: t("ruta.desc_6"),
         image: rutaSonsonate
     }];
     const RUTA_FAQS = [{
@@ -125,11 +125,11 @@ export default function RutaFloresPage({
             lineHeight: 1.12,
             fontVariationSettings: '"SOFT" 0, "WONK" 1',
             color: "#1c2420"
-          }}>{t("cozy_refuge")}{" "}
+          }}>{t("common.cozy_refuge")}{" "}
               <em style={{
               color: "#3d9e72",
               fontStyle: "italic"
-            }}>{t("ruta_de_las_flores")}</em>
+            }}>{t("common.ruta_de_las_flores")}</em>
             </h1>
             <p style={{
             fontFamily: "'DM Sans',sans-serif",
@@ -137,7 +137,7 @@ export default function RutaFloresPage({
             lineHeight: 1.6,
             color: "#54625d",
             fontVariationSettings: '"opsz" 14'
-          }}>{t("set_in_heart")}</p>
+          }}>{t("common.set_in_heart")}</p>
             <button onClick={onExploreRooms} className="self-start flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
             background: "#3d9e72"
           }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}>
@@ -150,7 +150,7 @@ export default function RutaFloresPage({
               textTransform: "uppercase",
               whiteSpace: "nowrap",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("see_all_rooms_2")}</span>
+            }}>{t("common.see_all_rooms_1")}</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
               </svg>
@@ -181,7 +181,7 @@ export default function RutaFloresPage({
             lineHeight: 1.2,
             color: "#1c2420",
             fontVariationSettings: '"SOFT" 0, "WONK" 1'
-          }}>{t("explore_ruta")}</h2>
+          }}>{t("common.explore_ruta")}</h2>
             <p style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 15,
@@ -189,7 +189,7 @@ export default function RutaFloresPage({
             color: "#54625d",
             maxWidth: 600,
             fontVariationSettings: '"opsz" 14'
-          }}>{t("discover_best")}</p>
+          }}>{t("common.discover_best")}</p>
           </div>
 
           {/* Alternating stops */}
@@ -272,7 +272,7 @@ export default function RutaFloresPage({
             lineHeight: 1.2,
             color: "#0c1a10",
             fontVariationSettings: '"SOFT" 0, "WONK" 1'
-          }}>{t("ready_to_explore")}</h2>
+          }}>{t("common.ready_to_explore")}</h2>
             <p style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 16,
@@ -280,7 +280,7 @@ export default function RutaFloresPage({
             color: "#0c1a10",
             opacity: 0.8,
             fontVariationSettings: '"opsz" 14'
-          }}>{t("book_your_stay")}</p>
+          }}>{t("common.book_your_stay")}</p>
           </div>
           <button onClick={onExploreRooms} className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors shrink-0" style={{
           background: "#3d9e72"
@@ -294,7 +294,7 @@ export default function RutaFloresPage({
             textTransform: "uppercase",
             whiteSpace: "nowrap",
             fontVariationSettings: '"opsz" 14'
-          }}>{t("see_all_rooms_2")}</span>
+          }}>{t("common.see_all_rooms_1")}</span>
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
             </svg>
@@ -315,7 +315,7 @@ export default function RutaFloresPage({
           lineHeight: 1.2,
           color: "#1c2420",
           fontVariationSettings: '"SOFT" 0, "WONK" 1'
-        }}>{t("ruta_quick_tips")}</h2>
+        }}>{t("common.ruta_quick_tips")}</h2>
           <div className="flex flex-col gap-4">
             {RUTA_FAQS.map((faq, i) => <div key={i} className="rounded-xl overflow-hidden cursor-pointer" style={{
             background: "#ffffff",
@@ -372,80 +372,80 @@ const CITY_PLACES: Record<string, {
     mapsUrl: string;
 }[]> = {
     "Juayúa": [{
-        name: t("place_1"),
+        name: t("ruta.place_1"),
         desc: "A series of stunning cascades fed by volcanic springs, ideal for swimming.",
         mapsUrl: "https://www.google.com/maps/search/Los+Chorros+Waterfalls+Juayua+El+Salvador"
     }, {
-        name: t("place_2"),
+        name: t("ruta.place_2"),
         desc: "Open-air market every weekend overflowing with local pupusas, grilled meats, and fresh juices.",
         mapsUrl: "https://www.google.com/maps/search/Juayua+Food+Festival+El+Salvador"
     }, {
-        name: t("place_3"),
+        name: t("ruta.place_3"),
         desc: "A peaceful volcanic lagoon surrounded by lush highland forest — perfect for sunrise hikes.",
         mapsUrl: "https://www.google.com/maps/search/Laguna+Las+Ninfas+El+Salvador"
     }],
     "Apaneca": [{
-        name: t("place_4"),
+        name: t("ruta.place_4"),
         desc: "A striking emerald-green crater lake cradled inside an extinct volcanic caldera.",
         mapsUrl: "https://www.google.com/maps/search/Laguna+Verde+Apaneca+El+Salvador"
     }, {
-        name: t("place_5"),
+        name: t("ruta.place_5"),
         desc: "High-altitude zip-line adventure through cloud-forest canopy with panoramic ridge views.",
         mapsUrl: "https://www.google.com/maps/search/Canopy+Apaneca+El+Salvador"
     }, {
-        name: t("place_6"),
+        name: t("ruta.place_6"),
         desc: "Award-winning coffee farm offering guided tours from seed to cup.",
         mapsUrl: "https://www.google.com/maps/search/Finca+Santa+Leticia+Apaneca+El+Salvador"
     }],
     "Ataco": [{
-        name: t("place_7"),
+        name: t("ruta.place_7"),
         desc: "Cobblestone streets lined with vivid pastel murals painted by local and international artists.",
         mapsUrl: "https://www.google.com/maps/search/Ataco+Mural+District+El+Salvador"
     }, {
-        name: t("place_8"),
+        name: t("ruta.place_8"),
         desc: "A colorful artisan market selling handwoven textiles, ceramics, and woodwork.",
         mapsUrl: "https://www.google.com/maps/search/Mercado+Artesanias+Ataco+El+Salvador"
     }, {
-        name: t("place_9"),
+        name: t("ruta.place_9"),
         desc: "Cloud forest reserve with rare wildlife, volcanic lookouts, and challenging trails nearby.",
         mapsUrl: "https://www.google.com/maps/search/El+Imposible+National+Park+El+Salvador"
     }],
     "Salcoatitán": [{
-        name: t("place_10"),
+        name: t("ruta.place_10"),
         desc: "The tranquil central park framed by colonial architecture and flowering gardens.",
         mapsUrl: "https://www.google.com/maps/search/Parque+Central+Salcoatitan+El+Salvador"
     }, {
-        name: t("place_11"),
+        name: t("ruta.place_11"),
         desc: "Open-air stalls serving the town's famous yucca wrapped in banana leaves with local curtido.",
         mapsUrl: "https://www.google.com/maps/search/Salcoatitan+yucca+market+El+Salvador"
     }, {
-        name: t("place_12"),
+        name: t("ruta.place_12"),
         desc: "Family-run galleries showcasing intricate hand-carved furniture and traditional wooden crafts.",
         mapsUrl: "https://www.google.com/maps/search/Salcoatitan+artisan+wood+gallery+El+Salvador"
     }],
     "Nahuizalco": [{
-        name: t("place_13"),
+        name: t("ruta.place_13"),
         desc: "El Salvador's only candlelit night market — warm pupusas, live marimba, and local craft stalls.",
         mapsUrl: "https://www.google.com/maps/search/Mercado+Nocturno+Nahuizalco+El+Salvador"
     }, {
-        name: t("place_14"),
+        name: t("ruta.place_14"),
         desc: "Watch master artisans weave ancestral Nahua basketry and furniture using tule reed.",
         mapsUrl: "https://www.google.com/maps/search/Nahuizalco+wicker+workshop+El+Salvador"
     }, {
-        name: t("place_15"),
+        name: t("ruta.place_15"),
         desc: "Colonial-era church with a distinctive white façade, central to the town's indigenous festivals.",
         mapsUrl: "https://www.google.com/maps/search/Iglesia+Nahuizalco+El+Salvador"
     }],
     "Sonsonate": [{
-        name: t("place_16"),
+        name: t("ruta.place_16"),
         desc: "An imposing Baroque cathedral built in the 18th century with ornate gold-leaf altarpieces.",
         mapsUrl: "https://www.google.com/maps/search/Cathedral+Sonsonate+El+Salvador"
     }, {
-        name: t("place_17"),
+        name: t("ruta.place_17"),
         desc: "Natural volcanic thermal pools with mineral-rich waters — a perfect post-hike recovery spot.",
         mapsUrl: "https://www.google.com/maps/search/thermal+hot+springs+Sonsonate+El+Salvador"
     }, {
-        name: t("place_18"),
+        name: t("ruta.place_18"),
         desc: "A hidden multi-tiered waterfall deep in the Nahuaterique mountains, reached via jungle trail.",
         mapsUrl: "https://www.google.com/maps/search/Cascada+El+Escuco+Sonsonate+El+Salvador"
     }]
@@ -511,7 +511,7 @@ function CityPopIn({
                         color: "#3d9e72",
                         textTransform: "uppercase",
                         fontVariationSettings: '"opsz" 14'
-                    }}>{t("top_places")}</p>
+                    }}>{t("common.top_places")}</p>
                     <p style={{
                         fontFamily: "'Fraunces',serif",
                         fontWeight: 900,
@@ -553,7 +553,7 @@ function CityPopIn({
                         letterSpacing: "0.5px",
                         color: "#3d9e72",
                         whiteSpace: "nowrap"
-                    }}>{t("tap_place")}</p>
+                    }}>{t("common.tap_place")}</p>
                 </div>
 
                 {/* Places list */}

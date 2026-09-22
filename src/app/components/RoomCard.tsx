@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -157,7 +157,7 @@ export default function RoomCard({
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 10,
             color: theme.muted
-          }}>{t("per_night")}</span>
+          }}>{t("common.per_night")}</span>
           </div>
         </div>
 
@@ -209,7 +209,7 @@ export default function RoomCard({
               textTransform: "uppercase",
               whiteSpace: "nowrap",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("explore_card")}</span>
+            }}>{t("common.explore")}</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
               </svg>
@@ -220,7 +220,7 @@ export default function RoomCard({
             backgroundColor: "#d49a1f"
           }} whileTap={{
             scale: 0.97
-          }}>
+          }} onClick={() => window.open(`https://api.whatsapp.com/send?phone=50370917674&text=${encodeURIComponent(`Hello, I'm interested in ${room.name}.`)}`, '_blank')}>
               <span style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11.2,
@@ -230,7 +230,7 @@ export default function RoomCard({
               textTransform: "uppercase",
               whiteSpace: "nowrap",
               fontVariationSettings: '"opsz" 14'
-            }}>{t("book")}</span>
+            }}>{t("common.book")}</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="#0c1a10" strokeLinecap="round" strokeWidth="2" />
               </svg>

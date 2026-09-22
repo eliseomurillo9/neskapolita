@@ -1,0 +1,1964 @@
+[
+  {
+    "key": "text_1",
+    "value": "Apaneca",
+    "files": [
+      "src/app/components/ui/breadcrumb.tsx",
+      "src/imports/ApanecaPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_2",
+    "value": "A striking emerald-green crater lake cradled inside an extinct volcanic caldera.",
+    "files": [
+      "src/app/components/ui/carousel.tsx",
+      "src/imports/ApanecaPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_3",
+    "value": "High-altitude zip-line adventure through cloud-forest canopy with panoramic ridge views.",
+    "files": [
+      "src/app/components/ui/carousel.tsx",
+      "src/imports/ApanecaPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_4",
+    "value": "Award-winning coffee farm offering guided tours from seed to cup.",
+    "files": [
+      "src/app/components/ui/pagination.tsx",
+      "src/imports/ApanecaPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_5",
+    "value": "Ataco",
+    "files": [
+      "src/app/components/ui/pagination.tsx",
+      "src/imports/AtacoPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_6",
+    "value": "Cobblestone streets lined with vivid pastel murals painted by local and international artists.",
+    "files": [
+      "src/app/components/ui/pagination.tsx",
+      "src/imports/AtacoPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_7",
+    "value": "A colorful artisan market selling handwoven textiles, ceramics, and woodwork.",
+    "files": [
+      "src/app/components/ui/sidebar.tsx",
+      "src/imports/AtacoPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_8",
+    "value": "Cloud forest reserve with rare wildlife, volcanic lookouts, and challenging trails nearby.",
+    "files": [
+      "src/app/components/ui/sidebar.tsx",
+      "src/imports/AtacoPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_9",
+    "value": "when you book direct with us via WhatsApp or our website, no platform fees, more money stays in the highlands.",
+    "files": [
+      "src/app/components/ui/sidebar.tsx",
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_10",
+    "value": "Book Your Stay",
+    "files": [
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_11",
+    "value": "PayPal",
+    "files": [
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_12",
+    "value": "PayPal",
+    "files": [
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_13",
+    "value": "Cash (USD)",
+    "files": [
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_14",
+    "value": "VISA",
+    "files": [
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_15",
+    "value": "Cards Accepted",
+    "files": [
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_16",
+    "value": "Free cancellation within 48h",
+    "files": [
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_17",
+    "value": "We accept various ways to pay so you can focus on the adventure",
+    "files": [
+      "src/imports/BookingPayments/index.tsx"
+    ]
+  },
+  {
+    "key": "text_18",
+    "value": "Explore the must-visit spots",
+    "files": [
+      "src/imports/ButtonPrimary/index.tsx"
+    ]
+  },
+  {
+    "key": "text_19",
+    "value": "24/7 washers and dryers so you can pack light and stay fresh.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_20",
+    "value": "Cozy community space with deep couches, books, and vinyl records.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_21",
+    "value": "Fully equipped space to cook, share recipes, and connect over food.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_22",
+    "value": "Fully equipped space to cook, share recipes, and connect over food.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_23",
+    "value": "A lush, tranquil green oasis to unwind, read, or enjoy morning coffee.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_24",
+    "value": "A lush, tranquil green oasis to unwind, read, or enjoy morning coffee.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_25",
+    "value": "Casa nieves",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_26",
+    "value": "Chambre Twin avec salle de bain priv\u00e9e",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_27",
+    "value": "Casa nieves",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_28",
+    "value": "Chambre Twin avec salle de bain priv\u00e9e",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_29",
+    "value": "Casa nieves",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_30",
+    "value": "Chambre Twin avec salle de bain priv\u00e9e",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_31",
+    "value": "Casa nieves",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_32",
+    "value": "Chambre Twin avec salle de bain priv\u00e9e",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_33",
+    "value": "Rooms",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_34",
+    "value": "Story",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_35",
+    "value": "Find Us",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_36",
+    "value": "EN",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_37",
+    "value": "ES",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_38",
+    "value": "Book Now",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_39",
+    "value": "Booking raiting",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_40",
+    "value": "From shared dorms to private rooms with a view \u2014 every space at Neskapolita has its own story to tell.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_41",
+    "value": "when you book direct with us via WhatsApp or our website, no platform fees, more money stays in the highlands.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_42",
+    "value": "Book Your Stay",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_43",
+    "value": "PayPal",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_44",
+    "value": "PayPal",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_45",
+    "value": "Cash (USD)",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_46",
+    "value": "VISA",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_47",
+    "value": "Cards Accepted",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_48",
+    "value": "Secure booking \u00b7 No hidden fees \u00b7 Free cancellation within 48h",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_49",
+    "value": "We accept various ways to pay so you can focus on the adventure",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_50",
+    "value": "you need",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_51",
+    "value": "for a perfect stay",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_52",
+    "value": "Explore the must-visit spots.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_53",
+    "value": "Your refuge on the Ruta de las flores. Juayu\u00e1, El Salvador.",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_54",
+    "value": "\u00a9 2026 Neskapolita Hostel",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_55",
+    "value": "Stay",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_56",
+    "value": "Book Now",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_57",
+    "value": "FAQ",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_58",
+    "value": "Gallery",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_59",
+    "value": "Connect",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_60",
+    "value": "Instagram",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_61",
+    "value": "WhatsApp",
+    "files": [
+      "src/imports/DesktopV1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_62",
+    "value": "Rooms",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_63",
+    "value": "Story",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_64",
+    "value": "Find Us",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_65",
+    "value": "Book Now",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_66",
+    "value": "on the Ruta de las flores",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_67",
+    "value": "Google raiting",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_68",
+    "value": "1,100m",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_69",
+    "value": "Above Sea Level",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_70",
+    "value": "From shared dorms to private rooms with a view \u2014 every space at Neskapolita has its own story to tell.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_71",
+    "value": "Casa nieves",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_72",
+    "value": "Chambre Twin avec salle de bain priv\u00e9e",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_73",
+    "value": "Casa nieves",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_74",
+    "value": "Chambre Twin avec salle de bain priv\u00e9e",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_75",
+    "value": "Casa nieves",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_76",
+    "value": "Chambre Twin avec salle de bain priv\u00e9e",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_77",
+    "value": "Casa nieves",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_78",
+    "value": "Chambre Twin avec salle de bain priv\u00e9e",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_79",
+    "value": "when you book direct with us via WhatsApp or our website \u2014 no platform fees, more money stays in the highlands.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_80",
+    "value": "Book Your Stay",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_81",
+    "value": "PayPal",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_82",
+    "value": "PayPal",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_83",
+    "value": "Cash (USD)",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_84",
+    "value": "VISA",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_85",
+    "value": "Cards Accepted",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_86",
+    "value": "Secure booking \u00b7 No hidden fees \u00b7 Free cancellation within 48h",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_87",
+    "value": "you need",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_88",
+    "value": "for a perfect stay",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_89",
+    "value": "A lush, tranquil green oasis to unwind, read, or enjoy morning coffee.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_90",
+    "value": "Fully equipped space to cook, share recipes, and connect over food.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_91",
+    "value": "Cozy community space with deep couches, books, and vinyl records.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_92",
+    "value": "24/7 washers and dryers so you can pack light and stay fresh.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_93",
+    "value": "A lush, tranquil green oasis to unwind, read, or enjoy morning coffee.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_94",
+    "value": "Fully equipped space to cook, share recipes, and connect over food.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_95",
+    "value": "Cozy community space with deep couches, books, and vinyl records.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_96",
+    "value": "24/7 washers and dryers so you can pack light and stay fresh.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_97",
+    "value": "Your refuge on the Ruta de las flores. Juayu\u00e1, El Salvador.",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_98",
+    "value": "\u00a9 2026 Neskapolita Hostel",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_99",
+    "value": "Stay",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_100",
+    "value": "Private Rooms",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_101",
+    "value": "Dormitory",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_102",
+    "value": "Book Now",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_103",
+    "value": "Gallery",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_104",
+    "value": "Getting Here",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_105",
+    "value": "FAQ",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_106",
+    "value": "Connect",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_107",
+    "value": "Instagram",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_108",
+    "value": "Facebook",
+    "files": [
+      "src/imports/Document/index.tsx"
+    ]
+  },
+  {
+    "key": "text_109",
+    "value": "Your refuge on the Ruta de las flores. Juayu\u00e1, El Salvador.",
+    "files": [
+      "src/imports/Footer/index.tsx"
+    ]
+  },
+  {
+    "key": "text_110",
+    "value": "\u00a9 2026 Neskapolita Hostel",
+    "files": [
+      "src/imports/Footer/index.tsx"
+    ]
+  },
+  {
+    "key": "text_111",
+    "value": "Juay\u00faa",
+    "files": [
+      "src/imports/JuayuaPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_112",
+    "value": "A series of stunning cascades fed by volcanic springs, ideal for swimming.",
+    "files": [
+      "src/imports/JuayuaPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_113",
+    "value": "Open-air market every weekend overflowing with local pupusas, grilled meats, and fresh juices.",
+    "files": [
+      "src/imports/JuayuaPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_114",
+    "value": "A peaceful volcanic lagoon surrounded by lush highland forest \u2014 perfect for sunrise hikes.",
+    "files": [
+      "src/imports/JuayuaPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_115",
+    "value": "Your refuge on the Ruta de las flores. Juayu\u00e1, El Salvador.",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_116",
+    "value": "Stay",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_117",
+    "value": "Book Now",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_118",
+    "value": "FAQ",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_119",
+    "value": "Gallery",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_120",
+    "value": "Connect",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_121",
+    "value": "Instagram",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_122",
+    "value": "WhatsApp",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_123",
+    "value": "\u00a9 2026 Neskapolita Hostel",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_124",
+    "value": "booking raiting",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_125",
+    "value": "From shared dorms to private rooms with a view \u2014 every space at Neskapolita has its own story to tell.",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_126",
+    "value": "when you book direct with us via WhatsApp or our website, no platform fees, more money stays in the highlands.",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_127",
+    "value": "Book Your Stay",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_128",
+    "value": "PayPal",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_129",
+    "value": "PayPal",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_130",
+    "value": "Cash (USD)",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_131",
+    "value": "VISA",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_132",
+    "value": "Cards Accepted",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_133",
+    "value": "Free cancellation within 48h",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_134",
+    "value": "We accept various ways to pay so you can focus on the adventure",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_135",
+    "value": "A lush, tranquil green oasis to unwind, read, or enjoy morning coffee.",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_136",
+    "value": "A lush, tranquil green oasis to unwind, read, or enjoy morning coffee.",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_137",
+    "value": "Cozy community space with deep couches, books, and vinyl records.",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_138",
+    "value": "24/7 washers and dryers so you can pack light and stay fresh.",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_139",
+    "value": "Explore the must-visit spots",
+    "files": [
+      "src/imports/MobileVar1SingleColumn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_140",
+    "value": "Nahuizalco",
+    "files": [
+      "src/imports/NahuizalcoPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_141",
+    "value": "Watch master artisans weave ancestral Nahua basketry and furniture using tule reed.",
+    "files": [
+      "src/imports/NahuizalcoPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_142",
+    "value": "Your refuge on the Ruta de las flores. Juayu\u00e1, El Salvador.",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_143",
+    "value": "Stay",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_144",
+    "value": "Book Now",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_145",
+    "value": "FAQ",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_146",
+    "value": "Gallery",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_147",
+    "value": "Connect",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_148",
+    "value": "Instagram",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_149",
+    "value": "WhatsApp",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_150",
+    "value": "\u00a9 2026 Neskapolita Hostel",
+    "files": [
+      "src/imports/NarBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_151",
+    "value": "Your refuge on the Ruta de las flores. Juayu\u00e1, El Salvador.",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_152",
+    "value": "Stay",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_153",
+    "value": "Book Now",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_154",
+    "value": "FAQ",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_155",
+    "value": "Gallery",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_156",
+    "value": "Connect",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_157",
+    "value": "Instagram",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_158",
+    "value": "WhatsApp",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_159",
+    "value": "\u00a9 2026 Neskapolita Hostel",
+    "files": [
+      "src/imports/NarBar-1/index.tsx"
+    ]
+  },
+  {
+    "key": "data_160",
+    "value": "Rooms",
+    "files": [
+      "src/imports/NavBar/index.tsx"
+    ]
+  },
+  {
+    "key": "data_161",
+    "value": "Find Us",
+    "files": [
+      "src/imports/NavBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_162",
+    "value": "EN",
+    "files": [
+      "src/imports/NavBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_163",
+    "value": "ES",
+    "files": [
+      "src/imports/NavBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_164",
+    "value": "Book Now",
+    "files": [
+      "src/imports/NavBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_165",
+    "value": "EN",
+    "files": [
+      "src/imports/NavBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_166",
+    "value": "ES",
+    "files": [
+      "src/imports/NavBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_167",
+    "value": "Book via WhatsApp",
+    "files": [
+      "src/imports/NavBar/index.tsx"
+    ]
+  },
+  {
+    "key": "text_168",
+    "value": "Rooms",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright/index.tsx"
+    ]
+  },
+  {
+    "key": "text_169",
+    "value": "Explore Ruta",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright/index.tsx"
+    ]
+  },
+  {
+    "key": "text_170",
+    "value": "Booking",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright/index.tsx"
+    ]
+  },
+  {
+    "key": "text_171",
+    "value": "EN",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright/index.tsx"
+    ]
+  },
+  {
+    "key": "text_172",
+    "value": "ES",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright/index.tsx"
+    ]
+  },
+  {
+    "key": "text_173",
+    "value": "Dark",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright/index.tsx"
+    ]
+  },
+  {
+    "key": "text_174",
+    "value": "Book via WhatsApp",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright/index.tsx"
+    ]
+  },
+  {
+    "key": "text_175",
+    "value": "Rooms",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_176",
+    "value": "Explore Ruta",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_177",
+    "value": "Booking",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_178",
+    "value": "EN",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_179",
+    "value": "ES",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_180",
+    "value": "Dark",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_181",
+    "value": "Book via WhatsApp",
+    "files": [
+      "src/imports/NeskapolitaMenuV2Bright-1/index.tsx"
+    ]
+  },
+  {
+    "key": "text_182",
+    "value": "explore \u201cruta de las flores\u201d",
+    "files": [
+      "src/imports/RutaDeLasFloresLight/index.tsx"
+    ]
+  },
+  {
+    "key": "text_183",
+    "value": "Set in the heart of Juay\u00faa, Neskapolita makes exploring the region effortless",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_184",
+    "value": "Discover the best of Juay\u00faa and neighboring mountain towns from the famous weekend food festival and coffee farms to hidden waterfalls and colonial artisan markets.",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_185",
+    "value": "STOP 1",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_186",
+    "value": "Juay\u00faa",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_187",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_188",
+    "value": "STOP 2",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_189",
+    "value": "8 km north",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_190",
+    "value": "Apaneca",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_191",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_192",
+    "value": "STOP 3",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_193",
+    "value": "12 km north",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_194",
+    "value": "Ataco",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_195",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_196",
+    "value": "STOP 4",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_197",
+    "value": "5 km south",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_198",
+    "value": "Salcoatit\u00e1n",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_199",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_200",
+    "value": "STOP 5",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_201",
+    "value": "15 km south",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_202",
+    "value": "Nahuizalco",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_203",
+    "value": "Candlelit Night Market",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_204",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_205",
+    "value": "STOP 6",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_206",
+    "value": "25 km south",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_207",
+    "value": "Sonsonate",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_208",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_209",
+    "value": "Book your stay at Neskapolita in Juay\u00faa\u2014the perfect, central base for all your western mountain adventures.",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_210",
+    "value": "How many days do you need for Ruta de las Flores?",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_211",
+    "value": "We recommend 2 to 3 days to fully explore the food markets, hike to waterfalls, and tour coffee farms at a relaxed highland pace.",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_212",
+    "value": "What is the best town to visit in Ruta de las Flores?",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_213",
+    "value": "Juay\u00faa is the perfect culinary and adventure hub, while Ataco shines with its street art, and Apaneca offers high-altitude nature.",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_214",
+    "value": "Can you visit Ruta de las Flores without a car?",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_215",
+    "value": "What is the best time of year to visit Ruta de las Flores?",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_216",
+    "value": "The dry season from November to April offers beautiful sunny weather, but the green season (May to October) makes waterfalls spectacular.",
+    "files": [
+      "src/imports/RutaFloresMapPageDesktop/index.tsx"
+    ]
+  },
+  {
+    "key": "text_217",
+    "value": "Set in the heart of Juay\u00faa, Neskapolita makes exploring the region effortless",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_218",
+    "value": "Discover the best of Juay\u00faa and neighboring mountain towns from the famous weekend food festival and coffee farms to hidden waterfalls and colonial artisan markets.",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_219",
+    "value": "STOP 1",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_220",
+    "value": "Juay\u00faa",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_221",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_222",
+    "value": "STOP 2",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_223",
+    "value": "8 km north",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_224",
+    "value": "Apaneca",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_225",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_226",
+    "value": "STOP 3",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_227",
+    "value": "12 km north",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_228",
+    "value": "Ataco",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_229",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_230",
+    "value": "STOP 4",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_231",
+    "value": "5 km south",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_232",
+    "value": "Salcoatit\u00e1n",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_233",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_234",
+    "value": "STOP 5",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_235",
+    "value": "15 km south",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_236",
+    "value": "Nahuizalco",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_237",
+    "value": "Candlelit Night Market",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_238",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_239",
+    "value": "STOP 6",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_240",
+    "value": "25 km south",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_241",
+    "value": "Sonsonate",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_242",
+    "value": "Get Route Directions",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_243",
+    "value": "Book your stay at Neskapolita in Juay\u00faa\u2014the perfect, central base for all your western mountain adventures.",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_244",
+    "value": "How many days do you need for Ruta de las Flores?",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_245",
+    "value": "We recommend 2 to 3 days to fully explore the food markets, hike to waterfalls, and tour coffee farms at a relaxed highland pace.",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_246",
+    "value": "What is the best town to visit in Ruta de las Flores?",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_247",
+    "value": "Juay\u00faa is the perfect culinary and adventure hub, while Ataco shines with its street art, and Apaneca offers high-altitude nature.",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_248",
+    "value": "Can you visit Ruta de las Flores without a car?",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_249",
+    "value": "What is the best time of year to visit Ruta de las Flores?",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_250",
+    "value": "The dry season from November to April offers beautiful sunny weather, but the green season (May to October) makes waterfalls spectacular.",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_251",
+    "value": "Your tropical refuge in the high coffee lands. The perfect basecamp for wandering painters, hikers, and curious souls.",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_252",
+    "value": "Calle Merceditas Caceres 1-5, 01101 Juay\u00faa, El Salvador",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_253",
+    "value": "Town Guide",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_254",
+    "value": "Los Chorros",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_255",
+    "value": "Food Festival",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_256",
+    "value": "Hostel",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_257",
+    "value": "Our Rooms",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_258",
+    "value": "The Garden",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_259",
+    "value": "Shared Kitchen",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_260",
+    "value": "\u00a9 2026 Neskapolita Hostel. Handcrafted in El Salvador.",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_261",
+    "value": "Designed for Adventure",
+    "files": [
+      "src/imports/RutaFloresMapPageMobile/index.tsx"
+    ]
+  },
+  {
+    "key": "text_262",
+    "value": "Salcoatit\u00e1n",
+    "files": [
+      "src/imports/SalcoatitanPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_263",
+    "value": "The tranquil central park framed by colonial architecture and flowering gardens.",
+    "files": [
+      "src/imports/SalcoatitanPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_264",
+    "value": "Family-run galleries showcasing intricate hand-carved furniture and traditional wooden crafts.",
+    "files": [
+      "src/imports/SalcoatitanPopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_265",
+    "value": "when you book direct with us via WhatsApp or our website, no platform fees, more money stays in the highlands.",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_266",
+    "value": "Book Your Stay",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_267",
+    "value": "PayPal",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_268",
+    "value": "PayPal",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_269",
+    "value": "Cash (USD)",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_270",
+    "value": "VISA",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_271",
+    "value": "Cards Accepted",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_272",
+    "value": "Secure booking \u00b7 No hidden fees \u00b7 Free cancellation within 48h",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_273",
+    "value": "We accept various ways to pay so you can focus on the adventure",
+    "files": [
+      "src/imports/SavingsBannerSection/index.tsx"
+    ]
+  },
+  {
+    "key": "text_274",
+    "value": "Sonsonate",
+    "files": [
+      "src/imports/SonsonatePopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_275",
+    "value": "An imposing Baroque cathedral built in the 18th century with ornate gold-leaf altarpieces.",
+    "files": [
+      "src/imports/SonsonatePopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_276",
+    "value": "Natural volcanic thermal pools with mineral-rich waters \u2014 a perfect post-hike recovery spot.",
+    "files": [
+      "src/imports/SonsonatePopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_277",
+    "value": "A hidden multi-tiered waterfall deep in the Nahuaterique mountains, reached via jungle trail.",
+    "files": [
+      "src/imports/SonsonatePopIn/index.tsx"
+    ]
+  },
+  {
+    "key": "text_278",
+    "value": "booking raiting",
+    "files": [
+      "src/imports/Variation3FullBleedOverlay/index.tsx"
+    ]
+  },
+  {
+    "key": "text_279",
+    "value": "booking raiting",
+    "files": [
+      "src/imports/Variation3FullBleedOverlay-1/index.tsx"
+    ]
+  }
+]

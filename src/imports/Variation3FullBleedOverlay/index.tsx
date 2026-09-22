@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import imgVariation3FullBleedOverlay from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
 function Spacer() {
@@ -13,7 +13,7 @@ function RatingCenterGroup() {
       </p>
       <p className="font-['DM_Sans:Regular',sans-serif] font-normal opacity-80 relative shrink-0 text-[#ede8d8] text-[10px] tracking-[1px] uppercase" style={{
       fontVariationSettings: '"opsz" 14'
-    }}>{t("text_278")}</p>
+    }}>{t("index.booking_raiting_1")}</p>
     </div>;
 }
 function CenteredTextColumn() {
@@ -21,10 +21,10 @@ function CenteredTextColumn() {
       <RatingCenterGroup />
       <p className="font-['Fraunces:Black_Italic',sans-serif] font-black italic min-w-full relative shrink-0 text-[#f2b138] text-[38px] text-center w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_title_2")}</p>
+    }}>{t("hero.title")}</p>
       <p className="font-['Fraunces:Black',sans-serif] font-black min-w-full relative shrink-0 text-[#ede8d8] text-[24px] text-center w-[min-content]" style={{
       fontVariationSettings: '"SOFT" 0, "WONK" 1'
-    }}>{t("hero_subtitle_2")}</p>
+    }}>{t("hero.subtitle")}</p>
     </div>;
 }
 function Frame() {
@@ -32,7 +32,7 @@ function Frame() {
       <div className="bg-[#f2b138] relative shrink-0 w-full" data-name="V1 / Primary Button">
         <div className="flex flex-row items-center justify-center size-full">
           <div className="[word-break:break-word] content-stretch flex font-bold gap-[10px] items-center justify-center leading-[normal] px-[32px] py-[16px] relative size-full text-[#0c1a10] whitespace-nowrap">
-            <p className="font-['Sora:Bold',sans-serif] relative shrink-0 text-[11px] tracking-[3px] uppercase">{t("nav_explore_rooms_2")}</p>
+            <p className="font-['Sora:Bold',sans-serif] relative shrink-0 text-[11px] tracking-[3px] uppercase">{t("nav.explore_rooms")}</p>
             <p className="font-['Sora:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] relative shrink-0 text-[14px]">→</p>
           </div>
         </div>
@@ -40,7 +40,7 @@ function Frame() {
       <div className="bg-[#3d9e72] drop-shadow-[0px_4px_6px_rgba(61,158,114,0.3)] relative shrink-0 w-full" data-name="V2 / Primary Button">
         <div className="flex flex-row items-center justify-center size-full">
           <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center justify-center leading-[normal] px-[28px] py-[14px] relative size-full text-white whitespace-nowrap">
-            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("nav_our_story_2")}</p>
+            <p className="font-['Nunito:ExtraBold',sans-serif] font-extrabold relative shrink-0 text-[14px] tracking-[0.5px]">{t("nav.our_story")}</p>
             <p className="font-['Nunito:Bold','Noto_Sans:Bold','Noto_Sans_Math:Regular','Noto_Sans_Symbols:Bold','Noto_Sans_Symbols2:Regular',sans-serif] font-bold relative shrink-0 text-[16px]">→</p>
           </div>
         </div>

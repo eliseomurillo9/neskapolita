@@ -27,6 +27,8 @@ export function useAppNavigation() {
   const handleFooterLink = (link: string) => {
     if (link === "FAQ") {
       scrollToFaq();
+    } else if (link === "Book Now") {
+      window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank');
     }
   };
 

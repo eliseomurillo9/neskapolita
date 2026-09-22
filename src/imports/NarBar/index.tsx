@@ -1,4 +1,4 @@
-import i18n from "../../i18n";
+import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 type NarBarProps = {
   className?: string;
@@ -18,69 +18,69 @@ function NarBar({
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['Fraunces:Black_Italic',sans-serif] font-black italic leading-[33.6px] relative shrink-0 text-[#3d9e72] text-[22.4px] whitespace-nowrap" style={{
               fontVariationSettings: '"SOFT" 0, "WONK" 1'
-            }}>{t("hero_title_2")}</p>
+            }}>{t("hero.title")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[23.4px] relative shrink-0 text-[#54625d] text-[13px] text-center w-[300px]" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_142")}</p>
+            }}>{t("index.your_refuge_on_the")}</p>
             </div>
           </div>
           <div className="content-stretch flex flex-col gap-[6px] items-center justify-center min-w-[100px] relative shrink-0" data-name="Container">
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#4c6e58] text-[11px] tracking-[2px] uppercase whitespace-nowrap" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_143")}</p>
+            }}>{t("index.stay")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
-              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
+              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap cursor-pointer" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_144")}</p>
+            }} onClick={() => window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank')}>{t("index.book_now")}</p>
             </div>
           </div>
           <div className="content-stretch flex flex-col gap-[6px] items-center justify-center min-w-[100px] relative shrink-0" data-name="Container">
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#4c6e58] text-[11px] tracking-[2px] uppercase whitespace-nowrap" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("explore_card")}</p>
+            }}>{t("common.explore")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("nav_our_story_2")}</p>
+            }}>{t("nav.our_story")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_145")}</p>
+            }}>{t("index.faq")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_146")}</p>
+            }}>{t("index.gallery")}</p>
             </div>
           </div>
           <div className="content-stretch flex flex-col gap-[6px] items-center justify-center min-w-[100px] relative shrink-0" data-name="Container">
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[16.5px] relative shrink-0 text-[#4c6e58] text-[11px] tracking-[2px] uppercase whitespace-nowrap" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_147")}</p>
+            }}>{t("index.connect")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_148")}</p>
+            }}>{t("index.instagram")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
               <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("text_149")}</p>
+            }}>{t("index.whatsapp")}</p>
             </div>
           </div>
           <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
             <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[16.5px] relative shrink-0 text-[#54625d] text-[11px] whitespace-nowrap" style={{
             fontVariationSettings: '"opsz" 14'
-          }}>{t("text_150")}</p>
+          }}>{t("index.2026_neskapolita_hostel")}</p>
           </div>
         </div>
       </div>
