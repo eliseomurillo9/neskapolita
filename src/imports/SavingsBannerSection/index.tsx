@@ -1,262 +1,196 @@
+import i18n from "../../i18n";
+const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-1nqmf93wrd";
-
 function BadgeCircle() {
-  return (
-    <div className="bg-[#f2b138] content-stretch drop-shadow-[0px_5.375px_8.063px_rgba(76,110,88,0.05)] flex flex-col items-center justify-center relative rounded-[43px] shrink-0 size-[86px]" data-name="Badge Circle">
+  return <div className="bg-[#f2b138] content-stretch drop-shadow-[0px_5.375px_8.063px_rgba(76,110,88,0.05)] flex flex-col items-center justify-center relative rounded-[43px] shrink-0 size-[86px]" data-name="Badge Circle">
       <p className="[word-break:break-word] font-['Outfit:ExtraBold',sans-serif] font-extrabold leading-[normal] relative shrink-0 text-[24.188px] text-white whitespace-nowrap">10%</p>
-    </div>
-  );
+    </div>;
 }
-
 function TitleAndPitch() {
-  return (
-    <div className="flex flex-col gap-[8px] items-center lg:items-start text-center lg:text-left relative w-full min-w-0" data-name="Title and Pitch">
-      <p className="font-['Fraunces:Black',sans-serif] font-black leading-tight relative shrink-0 text-[#1c2420] text-2xl sm:text-[28px]" style={{ fontVariationSettings: '"SOFT" 0, "WONK" 1' }}>
+  return <div className="flex flex-col gap-[8px] items-center lg:items-start text-center lg:text-left relative w-full min-w-0" data-name="Title and Pitch">
+      <p className="font-['Fraunces:Black',sans-serif] font-black leading-tight relative shrink-0 text-[#1c2420] text-2xl sm:text-[28px]" style={{
+      fontVariationSettings: '"SOFT" 0, "WONK" 1'
+    }}>
         <span>{`Save `}</span>
         <span className="text-[#0c1a10]">10%</span>
       </p>
-      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-relaxed relative text-[#0c1a10] text-[13.5px] sm:text-[14.4px] max-w-[480px]" style={{ fontVariationSettings: '"opsz" 14' }}>
-        when you book direct with us via WhatsApp or our website, no platform fees, more money stays in the highlands.
-      </p>
-    </div>
-  );
+      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-relaxed relative text-[#0c1a10] text-[13.5px] sm:text-[14.4px] max-w-[480px]" style={{
+      fontVariationSettings: '"opsz" 14'
+    }}>{t("text_265")}</p>
+    </div>;
 }
-
 function ArrowRight() {
-  return (
-    <div className="relative shrink-0 size-[12px]" data-name="arrow-right">
+  return <div className="relative shrink-0 size-[12px]" data-name="arrow-right">
       <svg className="absolute block inset-0 size-full" fill="none" height="12" preserveAspectRatio="none" viewBox="0 0 12 12" width="12">
         <g id="arrow-right">
           <path d={svgPaths.p278a3600} id="Vector" stroke="white" strokeLinecap="round" strokeWidth="2" />
         </g>
       </svg>
-    </div>
-  );
+    </div>;
 }
-
 function ActionButton() {
-  return (
-    <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] flex gap-[8px] items-center px-[30px] py-[14px] relative rounded-[4px] shrink-0 cursor-pointer transition-colors hover:bg-[#2d8a60]" data-name="Action Button">
-      <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11.2px] text-white tracking-[1.34px] uppercase whitespace-nowrap" style={{ fontVariationSettings: '"opsz" 14' }}>
-        Book Your Stay
-      </p>
+  return <div className="bg-[#3d9e72] content-stretch drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] flex gap-[8px] items-center px-[30px] py-[14px] relative rounded-[4px] shrink-0 cursor-pointer transition-colors hover:bg-[#2d8a60]" data-name="Action Button">
+      <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11.2px] text-white tracking-[1.34px] uppercase whitespace-nowrap" style={{
+      fontVariationSettings: '"opsz" 14'
+    }}>{t("text_266")}</p>
       <ArrowRight />
-    </div>
-  );
+    </div>;
 }
-
 function LeftColumn() {
-  return (
-    <div className="flex flex-col gap-[16px] items-center lg:items-start relative w-full lg:flex-1 lg:max-w-[540px] min-w-0" data-name="Left Column">
+  return <div className="flex flex-col gap-[16px] items-center lg:items-start relative w-full lg:flex-1 lg:max-w-[540px] min-w-0" data-name="Left Column">
       <BadgeCircle />
       <TitleAndPitch />
       <ActionButton />
-    </div>
-  );
+    </div>;
 }
-
-
-
 function Icon() {
-  return (
-    <div className="relative shrink-0 size-[20px]" data-name="Icon">
+  return <div className="relative shrink-0 size-[20px]" data-name="Icon">
       <svg className="absolute block inset-0 size-full" fill="none" height="20" preserveAspectRatio="none" viewBox="0 0 20 20" width="20">
         <g id="Icon">
           <path d={svgPaths.p30a86180} fill="#009CDE" id="Vector" opacity="0.9" />
           <path d={svgPaths.p2941ff00} fill="#012169" id="Vector_2" opacity="0.8" />
         </g>
       </svg>
-    </div>
-  );
+    </div>;
 }
-
 function Text() {
-  return (
-    <div className="relative shrink-0" data-name="Text">
+  return <div className="relative shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
-        <p className="[word-break:break-word] font-['DM_Sans:SemiBold',sans-serif] font-semibold leading-[21.6px] relative shrink-0 text-[#0c1a10] text-[14.4px] tracking-[-0.144px] whitespace-nowrap" style={{ fontVariationSettings: '"opsz" 14' }}>
-          PayPal
-        </p>
+        <p className="[word-break:break-word] font-['DM_Sans:SemiBold',sans-serif] font-semibold leading-[21.6px] relative shrink-0 text-[#0c1a10] text-[14.4px] tracking-[-0.144px] whitespace-nowrap" style={{
+        fontVariationSettings: '"opsz" 14'
+      }}>{t("text_267")}</p>
       </div>
-    </div>
-  );
+    </div>;
 }
-
 function Container() {
-  return (
-    <div className="content-stretch flex gap-[5.6px] items-center relative shrink-0" data-name="Container">
+  return <div className="content-stretch flex gap-[5.6px] items-center relative shrink-0" data-name="Container">
       <Icon />
       <Text />
-    </div>
-  );
+    </div>;
 }
-
 function MethodPayPal() {
-  return (
-    <div className="bg-[#f2f4f3] flex-1 min-w-0 relative rounded-[8px]" data-name="Method PayPal">
+  return <div className="bg-[#f2f4f3] flex-1 min-w-0 relative rounded-[8px]" data-name="Method PayPal">
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col gap-[10px] items-center px-2 py-3 sm:px-3 sm:py-3.5 xl:p-[16px] relative size-full">
           <Container />
-          <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{ fontVariationSettings: '"opsz" 14' }}>
-            PayPal
-          </p>
+          <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
+          fontVariationSettings: '"opsz" 14'
+        }}>{t("text_268")}</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 }
-
-
 function Frame() {
-  return (
-    <div className="content-stretch flex items-center justify-center px-[8px] py-[2px] relative rounded-[4px] shrink-0 w-[42px]" data-name="Frame">
+  return <div className="content-stretch flex items-center justify-center px-[8px] py-[2px] relative rounded-[4px] shrink-0 w-[42px]" data-name="Frame">
       <div aria-hidden className="absolute border border-[#3d9e72] border-solid inset-0 pointer-events-none rounded-[4px]" />
-      <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#3d9e72] text-[14px] whitespace-nowrap" style={{ fontVariationSettings: '"opsz" 14' }}>
+      <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#3d9e72] text-[14px] whitespace-nowrap" style={{
+      fontVariationSettings: '"opsz" 14'
+    }}>
         $
       </p>
-    </div>
-  );
+    </div>;
 }
-
 function MethodCash() {
-  return (
-    <div className="bg-[#f2f4f3] flex-1 min-w-0 relative rounded-[8px]" data-name="Method Cash">
+  return <div className="bg-[#f2f4f3] flex-1 min-w-0 relative rounded-[8px]" data-name="Method Cash">
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col gap-[10px] items-center px-2 py-3 sm:px-3 sm:py-3.5 xl:p-[16px] relative size-full">
           <Frame />
-          <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{ fontVariationSettings: '"opsz" 14' }}>
-            Cash (USD)
-          </p>
+          <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
+          fontVariationSettings: '"opsz" 14'
+        }}>{t("text_269")}</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 }
-
-
 function Text1() {
-  return (
-    <div className="relative shrink-0" data-name="Text">
+  return <div className="relative shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
-        <p className="[word-break:break-word] font-['DM_Sans:ExtraBold',sans-serif] font-extrabold leading-[10.8px] relative shrink-0 text-[7.2px] text-white tracking-[0.144px] whitespace-nowrap" style={{ fontVariationSettings: '"opsz" 14' }}>
-          VISA
-        </p>
+        <p className="[word-break:break-word] font-['DM_Sans:ExtraBold',sans-serif] font-extrabold leading-[10.8px] relative shrink-0 text-[7.2px] text-white tracking-[0.144px] whitespace-nowrap" style={{
+        fontVariationSettings: '"opsz" 14'
+      }}>{t("text_270")}</p>
       </div>
-    </div>
-  );
+    </div>;
 }
-
 function Container2() {
-  return (
-    <div className="bg-[#1a1f71] h-[18px] relative rounded-[3px] shrink-0 w-[28px]" data-name="Container">
+  return <div className="bg-[#1a1f71] h-[18px] relative rounded-[3px] shrink-0 w-[28px]" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative size-full">
         <Text1 />
       </div>
-    </div>
-  );
+    </div>;
 }
-
 function Container3() {
   return <div className="absolute bg-[#eb001b] left-0 opacity-85 rounded-[11px] size-[22px] top-0" data-name="Container" />;
 }
-
 function ContainerMargin() {
-  return (
-    <div className="h-[22px] relative shrink-0 w-[12px]" data-name="Container:margin">
+  return <div className="h-[22px] relative shrink-0 w-[12px]" data-name="Container:margin">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <Container3 />
       </div>
-    </div>
-  );
+    </div>;
 }
-
 function Container4() {
   return <div className="bg-[#f79e1b] opacity-85 relative rounded-[11px] shrink-0 size-[22px]" data-name="Container" />;
 }
-
 function Container1() {
-  return (
-    <div className="content-stretch flex gap-[6.4px] items-center relative shrink-0" data-name="Container">
+  return <div className="content-stretch flex gap-[6.4px] items-center relative shrink-0" data-name="Container">
       <Container2 />
       <ContainerMargin />
       <Container4 />
-    </div>
-  );
+    </div>;
 }
-
 function MethodVisa() {
-  return (
-    <div className="bg-[#f2f4f3] flex-1 min-w-0 relative rounded-[8px]" data-name="Method Visa">
+  return <div className="bg-[#f2f4f3] flex-1 min-w-0 relative rounded-[8px]" data-name="Method Visa">
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col gap-[10px] items-center px-2 py-3 sm:px-3 sm:py-3.5 xl:p-[16px] relative size-full">
           <Container1 />
-          <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{ fontVariationSettings: '"opsz" 14' }}>
-            Cards Accepted
-          </p>
+          <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[#54625d] text-[9.6px] tracking-[0.96px] uppercase whitespace-nowrap" style={{
+          fontVariationSettings: '"opsz" 14'
+        }}>{t("text_271")}</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 }
-
 function PaymentMethodsRow() {
-  return (
-    <div className="grid grid-cols-3 gap-2 sm:gap-3 xl:gap-[20px] items-stretch relative w-full min-w-0" data-name="Payment Methods Row">
+  return <div className="grid grid-cols-3 gap-2 sm:gap-3 xl:gap-[20px] items-stretch relative w-full min-w-0" data-name="Payment Methods Row">
       <MethodPayPal />
       <MethodCash />
       <MethodVisa />
-    </div>
-  );
+    </div>;
 }
-
 function LockSimple() {
-  return (
-    <div className="relative shrink-0 size-[19px]" data-name="LockSimple">
+  return <div className="relative shrink-0 size-[19px]" data-name="LockSimple">
       <svg className="absolute block inset-0 size-full" fill="none" height="19" preserveAspectRatio="none" viewBox="0 0 19 19" width="19">
         <g id="LockSimple">
           <path d={svgPaths.p1a665000} fill="#18271C" id="Vector" />
         </g>
       </svg>
-    </div>
-  );
+    </div>;
 }
-
 function SecurityNote() {
-  return (
-    <div className="flex gap-[8px] items-center justify-center lg:justify-end text-center lg:text-right w-full min-w-0" data-name="Security Note">
+  return <div className="flex gap-[8px] items-center justify-center lg:justify-end text-center lg:text-right w-full min-w-0" data-name="Security Note">
       <LockSimple />
-      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] text-[#18271c] text-[10px] sm:text-[10.88px] tracking-[0.5px]" style={{ fontVariationSettings: '"opsz" 14' }}>
-        Secure booking · No hidden fees · Free cancellation within 48h
-      </p>
-    </div>
-  );
+      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[normal] text-[#18271c] text-[10px] sm:text-[10.88px] tracking-[0.5px]" style={{
+      fontVariationSettings: '"opsz" 14'
+    }}>{t("text_272")}</p>
+    </div>;
 }
-
 function RightColumn() {
-  return (
-    <div className="flex flex-col gap-[16px] sm:gap-[20px] items-center lg:items-end justify-end relative w-full lg:flex-1 lg:max-w-[560px] min-w-0" data-name="Right Column">
-      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[25.34px] relative text-[#1c2420] text-[13.5px] sm:text-[14.08px] text-center lg:text-right w-full max-w-[480px]" style={{ fontVariationSettings: '"opsz" 14' }}>
-        We accept various ways to pay so you can focus on the adventure
-      </p>
+  return <div className="flex flex-col gap-[16px] sm:gap-[20px] items-center lg:items-end justify-end relative w-full lg:flex-1 lg:max-w-[560px] min-w-0" data-name="Right Column">
+      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[25.34px] relative text-[#1c2420] text-[13.5px] sm:text-[14.08px] text-center lg:text-right w-full max-w-[480px]" style={{
+      fontVariationSettings: '"opsz" 14'
+    }}>{t("text_273")}</p>
       <PaymentMethodsRow />
       <SecurityNote />
-    </div>
-  );
+    </div>;
 }
-
 function ContentSplit() {
-  return (
-    <div className="flex flex-col lg:flex-row gap-8 lg:gap-6 xl:gap-[48px] items-center justify-between relative w-full max-w-[1920px] mx-auto min-w-0" data-name="Content Split">
+  return <div className="flex flex-col lg:flex-row gap-8 lg:gap-6 xl:gap-[48px] items-center justify-between relative w-full max-w-[1920px] mx-auto min-w-0" data-name="Content Split">
       <LeftColumn />
       <RightColumn />
-    </div>
-  );
+    </div>;
 }
-
 export default function SavingsBannerSection() {
-  return (
-    <div className="bg-[#ede8d8] flex flex-col items-center justify-center px-6 md:px-8 lg:px-8 xl:px-12 2xl:px-[80px] py-10 md:py-[50px] relative w-full overflow-hidden" data-name="Savings Banner Section">
+  return <div className="bg-[#ede8d8] flex flex-col items-center justify-center px-6 md:px-8 lg:px-8 xl:px-12 2xl:px-[80px] py-10 md:py-[50px] relative w-full overflow-hidden" data-name="Savings Banner Section">
       <ContentSplit />
-    </div>
-  );
+    </div>;
 }
