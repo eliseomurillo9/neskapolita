@@ -3,24 +3,8 @@ const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Wifi, Wind, Star, Users, Bath, Mountain, ArrowRight, Check, Tv, ShieldCheck, UtensilsCrossed, AirVent, TreePine, BedDouble, Layers } from "lucide-react";
-import NavBar from "@/imports/NavBar";
-import Footer from "@/imports/Footer";
-import MobileFooterLight from "@/imports/NarBar";
-import MobileFooterDark from "@/imports/NarBar-1";
-import SavingsBannerSection from "@/imports/SavingsBannerSection";
-import BookingPayments from "@/imports/BookingPayments";
-import ButtonPrimary from "@/imports/ButtonPrimary";
-// Ruta de las Flores — 4 variants (desktop/mobile × light/dark)
-import rutaDesktopLight from "@/imports/ruta-de-las-flores-light-desktop-image-light.jpg";
-import rutaDesktopDark from "@/imports/ruta-de-las-flores-light-desktop-image-dark.jpg";
-import rutaMobileLight from "@/imports/ruta-de-las-flores-mobile-image-light.jpg";
-import rutaMobileDark from "@/imports/ruta-de-las-flores-mobile-image-dark.jpg";
-import room1Img from "@/imports/Document/6c88d1ade3e7b7f98af20a56562688e565b1e477.png";
-import room2Img from "@/imports/Document/2cbaef43d2ebac70a3bdec47dfc3e0e8b7f8a628.png";
-import room3Img from "@/imports/Document/6f13b43bff73692f3535ad9ee71e65d34379edcf.png";
-import room4Img from "@/imports/Document/851cd36c23ad4da155b6cf0f50ec6693c5ab0088.png";
+
 // Ruta de las Flores page assets
-import rutaMapImg from "@/imports/RutaFloresMapPageDesktop/a59195a9e27cccf80d5295fb9bf15ac226f28f11.png";
 import rutaHeroPhoto from "@/imports/RutaFloresMapPageDesktop/850dde4affad5f2560eb4e5d70ef9add7b7d9ff3.png";
 import rutaJuayua from "@/imports/RutaFloresMapPageDesktop/dbb8d5036dc30326df8b5297904a5b53b0cfb5f8.png";
 import rutaApaneca from "@/imports/RutaFloresMapPageDesktop/f23c47939fd00eae014ff37746cb0058f242c565.png";
@@ -28,20 +12,7 @@ import rutaAtaco from "@/imports/RutaFloresMapPageDesktop/fce5276ce245dee3f5c2fd
 import rutaSalcoatitan from "@/imports/RutaFloresMapPageDesktop/828973c65dab400d9481607663e04c1e6267bbca.png";
 import rutaNahuizalco from "@/imports/RutaFloresMapPageDesktop/f5b5961e54952719ffe5e43d303abb6cd7bd7565.png";
 import rutaSonsonate from "@/imports/RutaFloresMapPageDesktop/a846ec44cc9d1a94bdbcbeb391dfc00b91a5018a.png";
-// Homepage assets
-import heroBg from "@/imports/DesktopV1/1a87c5d486772503401990064608c4940c7da7fc.png";
-import storyPortrait from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.png";
-import logoImg from "@/imports/DesktopV1/7a4368b70120d47e02aec91da9b968e1f2acd65c.png";
-import heroForest from "@/imports/DesktopV1/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
-import heroMobile from "@/imports/Variation3FullBleedOverlay/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
-import bgLight from "@/imports/DesktopV1/302c2113c9e9de6558ff52e0df271ec24307bdf2.png";
-import bgFlowers from "@/imports/DesktopV1/0b3cdd2aed1034c1d0964bb9eb901d692e980bec.png";
-import svgPaths from "@/imports/DesktopV1/svg-a56cgiz6y";
-// Room number badge images (from Figma DesktopV1)
-import badge01 from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.png";
-import badge02 from "@/imports/DesktopV1/5df5da27dcee43241fc35f4a3e842b4708328f40.png";
-import badge16 from "@/imports/DesktopV1/146d43f51e15479edc5b6567ca17c752c93c098a.png";
-import badge17 from "@/imports/DesktopV1/1a3d1e56d1305cc21af19544fb8fab9094a03110.png";
+
 export default function RutaFloresPage({
   onExploreRooms
 }: {
@@ -49,6 +20,70 @@ export default function RutaFloresPage({
 }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activePopIn, setActivePopIn] = useState<string | null>(null);
+
+    const RUTA_STOPS = [{
+        stop: "STOP 1",
+        distance: "0 km — you're here!",
+        imageLeft: true,
+        city: "Juayúa",
+        subtitle: "Food Festival & Waterfalls",
+        description: t("ruta_desc_1"),
+        image: rutaJuayua
+    }, {
+        stop: "STOP 2",
+        distance: "8 km north",
+        imageLeft: false,
+        city: "Apaneca",
+        subtitle: "Coffee Farms & Adventure",
+        description: t("ruta_desc_2"),
+        image: rutaApaneca
+    }, {
+        stop: "STOP 3",
+        distance: "12 km north",
+        imageLeft: true,
+        city: "Ataco",
+        subtitle: "Street Art & Handcrafts",
+        description: t("ruta_desc_3"),
+        image: rutaAtaco
+    }, {
+        stop: "STOP 4",
+        distance: "5 km south",
+        imageLeft: false,
+        city: "Salcoatitán",
+        subtitle: "Art Galleries & Yucca Cuisine",
+        description: t("ruta_desc_4"),
+        image: rutaSalcoatitan
+    }, {
+        stop: "STOP 5",
+        distance: "15 km south",
+        imageLeft: true,
+        city: "Nahuizalco",
+        subtitle: "Candlelit Night Market",
+        description: t("ruta_desc_5"),
+        image: rutaNahuizalco
+    }, {
+        stop: "STOP 6",
+        distance: "25 km south",
+        imageLeft: false,
+        city: "Sonsonate",
+        subtitle: "Colonial Gateway & Thermal Pools",
+        description: t("ruta_desc_6"),
+        image: rutaSonsonate
+    }];
+    const RUTA_FAQS = [{
+        q: "How many days do you need for Ruta de las Flores?",
+        a: "We recommend 2 to 3 days to fully explore the food markets, hike to waterfalls, and tour coffee farms at a relaxed highland pace."
+    }, {
+        q: "What is the best town to visit in Ruta de las Flores?",
+        a: "Juayúa is the perfect culinary and adventure hub, while Ataco shines with its street art, and Apaneca offers high-altitude nature."
+    }, {
+        q: "Can you visit Ruta de las Flores without a car?",
+        a: "Yes! Colorful local buses (called 'chicken buses') run constantly between all towns for just a few cents, and tuk-tuks are easy to hail."
+    }, {
+        q: "What is the best time of year to visit Ruta de las Flores?",
+        a: "The dry season from November to April offers beautiful sunny weather, but the green season (May to October) makes waterfalls spectacular."
+    }];
+
   const YellowCTA = ({
     label,
     onClick
@@ -331,4 +366,238 @@ export default function RutaFloresPage({
     </div>;
 }
 
-// ─── Root ─────────────────────────────────────────────────────────────────────
+const CITY_PLACES: Record<string, {
+    name: string;
+    desc: string;
+    mapsUrl: string;
+}[]> = {
+    "Juayúa": [{
+        name: t("place_1"),
+        desc: "A series of stunning cascades fed by volcanic springs, ideal for swimming.",
+        mapsUrl: "https://www.google.com/maps/search/Los+Chorros+Waterfalls+Juayua+El+Salvador"
+    }, {
+        name: t("place_2"),
+        desc: "Open-air market every weekend overflowing with local pupusas, grilled meats, and fresh juices.",
+        mapsUrl: "https://www.google.com/maps/search/Juayua+Food+Festival+El+Salvador"
+    }, {
+        name: t("place_3"),
+        desc: "A peaceful volcanic lagoon surrounded by lush highland forest — perfect for sunrise hikes.",
+        mapsUrl: "https://www.google.com/maps/search/Laguna+Las+Ninfas+El+Salvador"
+    }],
+    "Apaneca": [{
+        name: t("place_4"),
+        desc: "A striking emerald-green crater lake cradled inside an extinct volcanic caldera.",
+        mapsUrl: "https://www.google.com/maps/search/Laguna+Verde+Apaneca+El+Salvador"
+    }, {
+        name: t("place_5"),
+        desc: "High-altitude zip-line adventure through cloud-forest canopy with panoramic ridge views.",
+        mapsUrl: "https://www.google.com/maps/search/Canopy+Apaneca+El+Salvador"
+    }, {
+        name: t("place_6"),
+        desc: "Award-winning coffee farm offering guided tours from seed to cup.",
+        mapsUrl: "https://www.google.com/maps/search/Finca+Santa+Leticia+Apaneca+El+Salvador"
+    }],
+    "Ataco": [{
+        name: t("place_7"),
+        desc: "Cobblestone streets lined with vivid pastel murals painted by local and international artists.",
+        mapsUrl: "https://www.google.com/maps/search/Ataco+Mural+District+El+Salvador"
+    }, {
+        name: t("place_8"),
+        desc: "A colorful artisan market selling handwoven textiles, ceramics, and woodwork.",
+        mapsUrl: "https://www.google.com/maps/search/Mercado+Artesanias+Ataco+El+Salvador"
+    }, {
+        name: t("place_9"),
+        desc: "Cloud forest reserve with rare wildlife, volcanic lookouts, and challenging trails nearby.",
+        mapsUrl: "https://www.google.com/maps/search/El+Imposible+National+Park+El+Salvador"
+    }],
+    "Salcoatitán": [{
+        name: t("place_10"),
+        desc: "The tranquil central park framed by colonial architecture and flowering gardens.",
+        mapsUrl: "https://www.google.com/maps/search/Parque+Central+Salcoatitan+El+Salvador"
+    }, {
+        name: t("place_11"),
+        desc: "Open-air stalls serving the town's famous yucca wrapped in banana leaves with local curtido.",
+        mapsUrl: "https://www.google.com/maps/search/Salcoatitan+yucca+market+El+Salvador"
+    }, {
+        name: t("place_12"),
+        desc: "Family-run galleries showcasing intricate hand-carved furniture and traditional wooden crafts.",
+        mapsUrl: "https://www.google.com/maps/search/Salcoatitan+artisan+wood+gallery+El+Salvador"
+    }],
+    "Nahuizalco": [{
+        name: t("place_13"),
+        desc: "El Salvador's only candlelit night market — warm pupusas, live marimba, and local craft stalls.",
+        mapsUrl: "https://www.google.com/maps/search/Mercado+Nocturno+Nahuizalco+El+Salvador"
+    }, {
+        name: t("place_14"),
+        desc: "Watch master artisans weave ancestral Nahua basketry and furniture using tule reed.",
+        mapsUrl: "https://www.google.com/maps/search/Nahuizalco+wicker+workshop+El+Salvador"
+    }, {
+        name: t("place_15"),
+        desc: "Colonial-era church with a distinctive white façade, central to the town's indigenous festivals.",
+        mapsUrl: "https://www.google.com/maps/search/Iglesia+Nahuizalco+El+Salvador"
+    }],
+    "Sonsonate": [{
+        name: t("place_16"),
+        desc: "An imposing Baroque cathedral built in the 18th century with ornate gold-leaf altarpieces.",
+        mapsUrl: "https://www.google.com/maps/search/Cathedral+Sonsonate+El+Salvador"
+    }, {
+        name: t("place_17"),
+        desc: "Natural volcanic thermal pools with mineral-rich waters — a perfect post-hike recovery spot.",
+        mapsUrl: "https://www.google.com/maps/search/thermal+hot+springs+Sonsonate+El+Salvador"
+    }, {
+        name: t("place_18"),
+        desc: "A hidden multi-tiered waterfall deep in the Nahuaterique mountains, reached via jungle trail.",
+        mapsUrl: "https://www.google.com/maps/search/Cascada+El+Escuco+Sonsonate+El+Salvador"
+    }]
+};
+
+function CityPopIn({
+                       city,
+                       onClose
+                   }: {
+    city: string;
+    onClose: () => void;
+}) {
+    const places = CITY_PLACES[city] || [];
+    return <motion.div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center" initial={{
+        opacity: 0
+    }} animate={{
+        opacity: 1
+    }} exit={{
+        opacity: 0
+    }} transition={{
+        duration: 0.22
+    }} onClick={onClose}>
+        {/* Backdrop */}
+        <div className="absolute inset-0" style={{
+            background: "rgba(0,0,0,0.5)",
+            backdropFilter: "blur(4px)",
+            WebkitBackdropFilter: "blur(4px)"
+        }} />
+
+        {/* Panel */}
+        <motion.div className="relative z-10 w-full sm:max-w-[448px] bg-white flex flex-col overflow-hidden rounded-t-[20px] sm:rounded-[16px] max-h-[90vh] sm:max-h-[85vh]" style={{
+            boxShadow: "0px 25px 50px -12px rgba(0,0,0,0.25)"
+        }} initial={{
+            opacity: 0,
+            y: 60
+        }} animate={{
+            opacity: 1,
+            y: 0
+        }} exit={{
+            opacity: 0,
+            y: 40
+        }} transition={{
+            duration: 0.38,
+            ease: [0.22, 1, 0.36, 1]
+        }} onClick={e => e.stopPropagation()}>
+            {/* Drag handle — mobile only */}
+            <div className="flex sm:hidden justify-center pt-3 pb-1 shrink-0">
+                <div className="w-10 h-1 rounded-full" style={{
+                    background: "#d5dad7"
+                }} />
+            </div>
+
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-5 shrink-0" style={{
+                borderBottom: "1px solid #d5dad7"
+            }}>
+                <div className="flex flex-col gap-0.5">
+                    <p style={{
+                        fontFamily: "'DM Sans',sans-serif",
+                        fontWeight: 700,
+                        fontSize: 11,
+                        letterSpacing: "2px",
+                        color: "#3d9e72",
+                        textTransform: "uppercase",
+                        fontVariationSettings: '"opsz" 14'
+                    }}>{t("top_places")}</p>
+                    <p style={{
+                        fontFamily: "'Fraunces',serif",
+                        fontWeight: 900,
+                        fontSize: 22,
+                        lineHeight: "27.5px",
+                        color: "#1c2420",
+                        fontVariationSettings: '"SOFT" 0, "WONK" 1'
+                    }}>
+                        {city}
+                    </p>
+                </div>
+                <button onClick={onClose} className="flex items-center justify-center rounded-full shrink-0 transition-colors" style={{
+                    width: 32,
+                    height: 32,
+                    background: "transparent"
+                }} onMouseEnter={e => e.currentTarget.style.background = "#f2f4f3"} onMouseLeave={e => e.currentTarget.style.background = "transparent"}>
+                    <X size={16} color="#54625D" strokeWidth={1.33} />
+                </button>
+            </div>
+
+            {/* Body */}
+            <div className="flex flex-col gap-3 pt-3 pb-4 overflow-y-auto">
+                {/* Instruction */}
+                <div className="flex items-center gap-3 justify-center px-6 py-1">
+                    <div className="flex items-center justify-center rounded-full shrink-0" style={{
+                        width: 28,
+                        height: 28,
+                        background: "rgba(61,158,114,0.09)"
+                    }}>
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <path d="M6.5 1C4.567 1 3 2.567 3 4.5c0 2.625 3.5 7.5 3.5 7.5S10 7.125 10 4.5C10 2.567 8.433 1 6.5 1Z" stroke="#3D9E72" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.083" />
+                            <circle cx="6.5" cy="4.5" r="1.3" stroke="#3D9E72" strokeWidth="1.083" />
+                        </svg>
+                    </div>
+                    <p style={{
+                        fontFamily: "'Nunito',sans-serif",
+                        fontWeight: 800,
+                        fontSize: 14,
+                        letterSpacing: "0.5px",
+                        color: "#3d9e72",
+                        whiteSpace: "nowrap"
+                    }}>{t("tap_place")}</p>
+                </div>
+
+                {/* Places list */}
+                <div className="flex flex-col">
+                    {places.map((place, i) => <a key={place.name} href={place.mapsUrl} target="_blank" rel="noopener noreferrer" className="flex gap-4 items-start px-6 py-4 transition-colors cursor-pointer no-underline" style={{
+                        borderBottom: i < places.length - 1 ? "1px solid #f2f4f3" : "none"
+                    }} onMouseEnter={e => e.currentTarget.style.background = "#fafbfa"} onMouseLeave={e => e.currentTarget.style.background = "transparent"}>
+                        <div className="shrink-0 pt-0.5">
+                            <div className="flex items-center justify-center rounded-full" style={{
+                                width: 28,
+                                height: 28,
+                                background: "rgba(61,158,114,0.09)"
+                            }}>
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                    <path d="M6.5 1C4.567 1 3 2.567 3 4.5c0 2.625 3.5 7.5 3.5 7.5S10 7.125 10 4.5C10 2.567 8.433 1 6.5 1Z" stroke="#3D9E72" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.083" />
+                                    <circle cx="6.5" cy="4.5" r="1.3" stroke="#3D9E72" strokeWidth="1.083" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                            <p style={{
+                                fontFamily: "'DM Sans',sans-serif",
+                                fontWeight: 700,
+                                fontSize: 14,
+                                lineHeight: "21px",
+                                color: "#1c2420",
+                                fontVariationSettings: '"opsz" 14'
+                            }}>
+                                {place.name}
+                            </p>
+                            <p style={{
+                                fontFamily: "'DM Sans',sans-serif",
+                                fontWeight: 400,
+                                fontSize: 13,
+                                lineHeight: "19.5px",
+                                color: "#54625d",
+                                fontVariationSettings: '"opsz" 14'
+                            }}>
+                                {place.desc}
+                            </p>
+                        </div>
+                    </a>)}
+                </div>
+            </div>
+        </motion.div>
+    </motion.div>;
+}
