@@ -3,6 +3,7 @@ const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import svgPaths from "./svg-9yr61w7rzh";
 import menuSvgPaths from "@/imports/NeskapolitaMenuV2Bright-1/svg-d640mmtgs0";
+import { GOOGLE_MAPS_URL } from "@/app/hooks/useAppNavigation";
 type NavBarProps = {
   className?: string;
   style?: "dark" | "light";
@@ -62,7 +63,13 @@ export default function NavBar({
             letterSpacing: "1.38px",
             color: textColor,
             fontVariationSettings: '"opsz" 14'
-          }} onClick={() => onNavLink?.(l)}>
+          }} onClick={() => {
+            if (onNavLink) {
+              onNavLink(l);
+            } else if (l === "Find Us") {
+              window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
+            }
+          }}>
                 {l}
               </button>)}
           </div>
@@ -253,10 +260,12 @@ export default function NavBar({
             fontVariationSettings: '"opsz" 14',
             opacity: page ? 1 : 0.45
           }} onClick={() => {
-            if (page) {
-              onNavLink?.(label);
-              toggleMenu(false);
+            if (onNavLink) {
+              onNavLink(label);
+            } else if (label === t("index.find_us") || label === "Find Us") {
+              window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
             }
+            toggleMenu(false);
           }}>
                 {label}
               </button>;

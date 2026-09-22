@@ -64,10 +64,10 @@ export default function FigmaRoomCard({
   const bodyFg = isDark ? "rgba(237,232,216,0.62)" : "#0a1209";
   const iconBg = "rgba(61,158,114,0.2)";
   const border = isDark ? "rgba(61,158,114,0.14)" : "rgba(61,158,114,0.12)";
-  return <div className="relative overflow-hidden" style={{
+  return <div className="relative overflow-hidden flex flex-col" style={{
     background: cardBg,
     border: `1px solid ${border}`,
-    minHeight: 416,
+    height: 442,
     cursor: "default"
   }} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
       {/* Image */}
@@ -148,7 +148,7 @@ export default function FigmaRoomCard({
         </div>
 
         {/* Description / amenity icons (hover) / full-width button */}
-        <div className="flex flex-col gap-3 w-full">
+        <div className="flex flex-col gap-3 w-full flex-1">
           {/* Description */}
           <p className="relative shrink-0" style={{
           fontFamily: "'DM Sans',sans-serif",
@@ -191,8 +191,8 @@ export default function FigmaRoomCard({
                 </div>)}
             </div>}
 
-          {/* Explore button — always full width */}
-          <button className="w-full flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)]" style={{
+          {/* Explore button — perfectly static at the bottom */}
+          <button className="absolute bottom-[10px] left-[12px] right-[12px] flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)]" style={{
           background: "#3d9e72",
           padding: "14px 30px",
           transition: "background 0.2s"
