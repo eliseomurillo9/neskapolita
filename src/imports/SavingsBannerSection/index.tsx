@@ -47,13 +47,14 @@ function ActionButton() {
 
 function LeftColumn() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[580px]" data-name="Left Column">
+    <div className="content-stretch flex flex-col gap-[16px] items-center lg:items-start relative shrink-0 w-full max-w-[580px]" data-name="Left Column">
       <BadgeCircle />
       <TitleAndPitch />
       <ActionButton />
     </div>
   );
 }
+
 
 function Icon() {
   return (
@@ -197,7 +198,7 @@ function MethodVisa() {
 
 function PaymentMethodsRow() {
   return (
-    <div className="content-stretch flex gap-[24px] items-start relative shrink-0 w-full" data-name="Payment Methods Row">
+    <div className="content-stretch flex gap-2 sm:gap-4 lg:gap-[24px] items-start relative shrink-0 w-full" data-name="Payment Methods Row">
       <MethodPayPal />
       <MethodCash />
       <MethodVisa />
@@ -230,7 +231,7 @@ function SecurityNote() {
 
 function RightColumn() {
   return (
-    <div className="content-stretch flex flex-col gap-[20px] items-center justify-end relative shrink-0 w-[580px]" data-name="Right Column">
+    <div className="content-stretch flex flex-col gap-[20px] items-center justify-end relative shrink-0 w-full max-w-[580px]" data-name="Right Column">
       <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[25.34px] min-w-full relative shrink-0 text-[#1c2420] text-[14.08px] text-center w-[min-content]" style={{ fontVariationSettings: '"opsz" 14' }}>
         We accept various ways to pay so you can focus on the adventure
       </p>
@@ -242,7 +243,7 @@ function RightColumn() {
 
 function ContentSplit() {
   return (
-    <div className="content-stretch flex gap-[48px] items-center relative shrink-0 w-full" data-name="Content Split">
+    <div className="content-stretch flex flex-col lg:flex-row gap-8 lg:gap-[48px] items-center justify-between relative shrink-0 w-full max-w-[1920px] mx-auto" data-name="Content Split">
       <LeftColumn />
       <RightColumn />
     </div>
@@ -251,7 +252,7 @@ function ContentSplit() {
 
 export default function SavingsBannerSection() {
   return (
-    <div className="bg-[#ede8d8] content-stretch flex flex-col items-center justify-center px-[80px] py-[50px] relative size-full" data-name="Savings Banner Section">
+    <div className="bg-[#ede8d8] content-stretch flex flex-col items-center justify-center px-6 md:px-12 lg:px-[80px] py-[50px] relative w-full" data-name="Savings Banner Section">
       <ContentSplit />
     </div>
   );
