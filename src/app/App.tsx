@@ -1,30 +1,35 @@
-import { useState, useEffect } from "react";
-import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import NavBar from "@/imports/NavBar";
 import Footer from "@/imports/Footer";
 import MobileFooterLight from "@/imports/NarBar";
 import MobileFooterDark from "@/imports/NarBar-1";
-import { DARK, LIGHT } from "./theme";
 import { rooms, Room } from "./data";
 import RoomModal from "./components/RoomModal";
 import RoomCard from "./components/RoomCard";
 import HomePage from "./views/HomePage";
 import RutaFloresPage from "./views/RutaFloresPage";
 
+import { useTheme } from "./hooks/useTheme";
+import { useLanguage } from "./hooks/useLanguage";
+import { useAppNavigation } from "./hooks/useAppNavigation";
+
 export default function App() {
-  const [isDark, setIsDark] = useState(true);
+  const { isDark, t, toggleTheme } = useTheme();
+  const { lang, toggleLang } = useLanguage();
+  const { 
+    location, 
+    currentPage, 
+    goHome, 
+    goRooms, 
+    goRuta, 
+    handleNavLink, 
+    handleFooterLink 
+  } = useAppNavigation();
+
   const [selectedRoom, setSelectedRoom] = useState<Room | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [lang, setLang] = useState<"EN" | "ES">("EN");
-  const t = isDark ? DARK : LIGHT;
-
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  let page = "home";
-  if (location.pathname === "/rooms") page = "rooms";
-  if (location.pathname === "/ruta") page = "ruta";
 
   return (
     <motion.div
@@ -48,15 +53,12 @@ export default function App() {
         <NavBar
           style={isDark ? "dark" : "light"}
           lang={lang}
-          currentPage={page}
-          onToggleMode={() => setIsDark((d) => !d)}
-          onToggleLang={() => setLang((l) => l === "EN" ? "ES" : "EN")}
+          currentPage={currentPage}
+          onToggleMode={toggleTheme}
+          onToggleLang={toggleLang}
           onMenuChange={setMobileMenuOpen}
-          onLogoClick={() => navigate("/")}
-          onNavLink={(link) => {
-            if (link === "Rooms") navigate("/rooms");
-            else if (link === "Our Story" || link === "Story" || link === "Find Us") navigate("/");
-          }}
+          onLogoClick={goHome}
+          onNavLink={handleNavLink}
           className="w-full relative"
         />
       </div>
@@ -67,9 +69,9 @@ export default function App() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
               <HomePage
                 t={t} isDark={isDark} rooms={rooms}
-                onExploreRooms={() => navigate("/rooms")}
+                onExploreRooms={goRooms}
                 onOpenModal={setSelectedRoom}
-                onExploreRuta={() => navigate("/ruta")}
+                onExploreRuta={goRuta}
               />
             </motion.div>
           } />
@@ -78,14 +80,14 @@ export default function App() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
               <div className="flex items-center px-6 md:px-[80px] pt-8 pb-2">
                 <button
-                  onClick={() => navigate("/")}
+                  onClick={goHome}
                   className="flex items-center gap-1.5 uppercase tracking-widest"
                   style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 10, color: "#54625d", background: "none", border: "none", cursor: "pointer" }}
                 >
                   ← Back to Home
                 </button>
               </div>
-              <RutaFloresPage onExploreRooms={() => navigate("/rooms")} />
+              <RutaFloresPage onExploreRooms={goRooms} />
             </motion.div>
           } />
           
@@ -94,7 +96,7 @@ export default function App() {
               {/* Rooms page header */}
               <div className="flex flex-col items-center text-center pt-16 pb-12 px-6">
                 <button
-                  onClick={() => navigate("/")}
+                  onClick={goHome}
                   className="self-start flex items-center gap-1.5 mb-8 uppercase tracking-widest"
                   style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 10, color: t.muted, background: "none", border: "none", cursor: "pointer" }}
                 >
@@ -118,14 +120,7 @@ export default function App() {
       <div className="hidden md:block">
         <Footer
           style={isDark ? "dark" : "light"}
-          onLinkClick={(link) => {
-            if (link === "FAQ") {
-              navigate("/ruta");
-              setTimeout(() => {
-                document.getElementById("ruta-faq")?.scrollIntoView({ behavior: "smooth" });
-              }, 100);
-            }
-          }}
+          onLinkClick={handleFooterLink}
         />
       </div>
       <div className="block md:hidden">
