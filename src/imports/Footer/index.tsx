@@ -75,7 +75,15 @@ export default function Footer({
             fontSize: 13,
             color: linkColor,
             fontVariationSettings: '"opsz" 14'
-          }} onClick={() => onLinkClick?.(link)}>
+          }} onClick={() => {
+            if (onLinkClick) {
+              onLinkClick(link);
+            } else if (link === "Instagram") {
+              window.open('https://www.instagram.com/neskapolitahostel', '_blank');
+            } else if (link === "WhatsApp" || link === "Book Now") {
+              window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank');
+            }
+          }}>
                   {link}
                 </p>)}
             </div>)}

@@ -25,10 +25,17 @@ export function useAppNavigation() {
   };
 
   const handleFooterLink = (link: string) => {
-    if (link === "FAQ") {
+    const l = link.toLowerCase().trim();
+    if (l === "faq" || l.includes("faq") || l.includes("preguntas")) {
       scrollToFaq();
-    } else if (link === "Book Now") {
+    } else if (l === "book now" || l === "book_now" || l.includes("reservar") || l === "whatsapp") {
       window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank');
+    } else if (l === "instagram" || l === "ig") {
+      window.open('https://www.instagram.com/neskapolitahostel', '_blank');
+    } else if (l === "our story" || l === "our_story" || l.includes("historia")) {
+      navigate("/");
+    } else if (l === "gallery" || l.includes("galería")) {
+      navigate("/rooms");
     }
   };
 

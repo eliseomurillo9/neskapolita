@@ -4,11 +4,13 @@ type NarBarProps = {
   className?: string;
   format?: "mobile";
   style?: "light";
+  onLinkClick?: (link: string) => void;
 };
 function NarBar({
   className,
   format = "mobile",
-  style = "light"
+  style = "light",
+  onLinkClick
 }: NarBarProps) {
   return <div className={className || "bg-[#ede8d8] relative w-[393px]"}>
       <div aria-hidden className="absolute border-[rgba(28,36,32,0.09)] border-solid border-t-[0.522px] inset-0 pointer-events-none" />
@@ -33,9 +35,9 @@ function NarBar({
             }}>{t("index.stay")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
-              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap cursor-pointer" style={{
+              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap cursor-pointer transition-opacity hover:opacity-60" style={{
               fontVariationSettings: '"opsz" 14'
-            }} onClick={() => window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank')}>{t("index.book_now")}</p>
+            }} onClick={() => onLinkClick ? onLinkClick("Book Now") : window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank')}>{t("index.book_now")}</p>
             </div>
           </div>
           <div className="content-stretch flex flex-col gap-[6px] items-center justify-center min-w-[100px] relative shrink-0" data-name="Container">
@@ -45,19 +47,19 @@ function NarBar({
             }}>{t("common.explore")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Paragraph">
-              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
+              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap cursor-pointer transition-opacity hover:opacity-60" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("nav.our_story")}</p>
+            }} onClick={() => onLinkClick?.("Our Story")}>{t("nav.our_story")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Paragraph">
-              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
+              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap cursor-pointer transition-opacity hover:opacity-60" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("index.faq")}</p>
+            }} onClick={() => onLinkClick?.("FAQ")}>{t("index.faq")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Paragraph">
-              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
+              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap cursor-pointer transition-opacity hover:opacity-60" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("index.gallery")}</p>
+            }} onClick={() => onLinkClick?.("Gallery")}>{t("index.gallery")}</p>
             </div>
           </div>
           <div className="content-stretch flex flex-col gap-[6px] items-center justify-center min-w-[100px] relative shrink-0" data-name="Container">
@@ -67,14 +69,14 @@ function NarBar({
             }}>{t("index.connect")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
-              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
+              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap cursor-pointer transition-opacity hover:opacity-60" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("index.instagram")}</p>
+            }} onClick={() => onLinkClick ? onLinkClick("Instagram") : window.open('https://www.instagram.com/neskapolitahostel', '_blank')}>{t("index.instagram")}</p>
             </div>
             <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
-              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap" style={{
+              <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[19.5px] relative shrink-0 text-[#1c2420] text-[13px] whitespace-nowrap cursor-pointer transition-opacity hover:opacity-60" style={{
               fontVariationSettings: '"opsz" 14'
-            }}>{t("index.whatsapp")}</p>
+            }} onClick={() => onLinkClick ? onLinkClick("WhatsApp") : window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank')}>{t("index.whatsapp")}</p>
             </div>
           </div>
           <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Paragraph">
@@ -86,6 +88,6 @@ function NarBar({
       </div>
     </div>;
 }
-export default function NarBar1() {
-  return <NarBar className="bg-[#ede8d8] relative w-full" />;
+export default function NarBar1({ onLinkClick }: { onLinkClick?: (link: string) => void } = {}) {
+  return <NarBar className="bg-[#ede8d8] relative w-full" onLinkClick={onLinkClick} />;
 }
