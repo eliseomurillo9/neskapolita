@@ -37,8 +37,8 @@ export default function App() {
     duration: 0.55,
     ease: [0.22, 1, 0.36, 1]
   }}>
-      {/* Nav — fixed at top across all screens */}
-      <div className="fixed top-0 left-0 right-0 z-40 w-full transition-colors duration-300" style={{
+      {/* Nav — sticky at top across all screens */}
+      <div className="sticky top-0 z-50 w-full transition-colors duration-300" style={{
       top: 0,
       backdropFilter: "blur(20px)",
       WebkitBackdropFilter: "blur(20px)",

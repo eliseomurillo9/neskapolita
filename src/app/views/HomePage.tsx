@@ -111,7 +111,7 @@ export default function HomePage({
         <div className="absolute inset-0" style={{
         background: "linear-gradient(181.76deg, rgba(12,26,16,0.21) 18.55%, rgba(12,26,16,0.49) 71.94%, rgba(12,26,16,0.665) 102.8%)"
       }} />
-        <div className="relative z-10 flex flex-col justify-center gap-8 lg:gap-10 px-6 md:px-14 lg:px-[90px] pt-24 md:pt-28 pb-20 md:pb-[112px] max-w-[1920px] mx-auto w-full" style={{
+        <div className="relative z-10 flex flex-col justify-center gap-8 lg:gap-10 px-6 md:px-14 lg:px-[90px] pt-12 md:pt-16 pb-20 md:pb-[112px] max-w-[1920px] mx-auto w-full" style={{
         minHeight: 600
       }}>
           <motion.div className="flex flex-col gap-5" initial={{
@@ -206,7 +206,7 @@ export default function HomePage({
 
       {/* ── Hero — Mobile ── */}
       <div className="block md:hidden w-full overflow-hidden relative flex flex-col justify-between" style={{
-      paddingTop: "calc(env(safe-area-inset-top) + 72px)",
+      paddingTop: "env(safe-area-inset-top)",
       minHeight: 560
     }}>
         {/* Full-bleed photo */}
