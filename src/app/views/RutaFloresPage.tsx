@@ -1,6 +1,6 @@
 import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Wifi, Wind, Star, Users, Bath, Mountain, ArrowRight, Check, Tv, ShieldCheck, UtensilsCrossed, AirVent, TreePine, BedDouble, Layers } from "lucide-react";
 
@@ -18,6 +18,14 @@ export default function RutaFloresPage({
 }: {
   onExploreRooms: () => void;
 }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    const root = document.getElementById("root");
+    if (root) root.scrollTop = 0;
+  }, []);
+
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activePopIn, setActivePopIn] = useState<string | null>(null);
 

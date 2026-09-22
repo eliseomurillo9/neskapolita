@@ -18,6 +18,14 @@ interface AppRoutesProps {
   setSelectedRoom: (room: Room | null) => void;
 }
 
+const resetWindowScroll = () => {
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  const root = document.getElementById("root");
+  if (root) root.scrollTop = 0;
+};
+
 export default function AppRoutes({
   location,
   theme,
@@ -28,7 +36,7 @@ export default function AppRoutes({
   setSelectedRoom,
 }: AppRoutesProps) {
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait" onExitComplete={resetWindowScroll}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
@@ -43,7 +51,7 @@ export default function AppRoutes({
         
         <Route path="/ruta" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-            <div className="max-w-[1920px] mx-auto w-full flex items-center px-6 md:px-14 lg:px-[80px] pt-8 pb-2">
+            <div className="max-w-[1920px] mx-auto w-full flex items-center px-6 md:px-14 lg:px-[80px] pt-24 md:pt-28 pb-2">
               <button
                 onClick={goHome}
                 className="flex items-center gap-1.5 uppercase tracking-widest"

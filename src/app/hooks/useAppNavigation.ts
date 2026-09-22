@@ -8,13 +8,33 @@ export function useAppNavigation() {
   if (location.pathname === "/rooms") currentPage = "rooms";
   if (location.pathname === "/ruta") currentPage = "ruta";
 
-  const goHome = () => navigate("/");
-  const goRooms = () => navigate("/rooms");
-  const goRuta = () => navigate("/ruta");
+  const goHome = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+    }
+  };
+
+  const goRooms = () => {
+    if (location.pathname === "/rooms") {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    } else {
+      navigate("/rooms");
+    }
+  };
+
+  const goRuta = () => {
+    if (location.pathname === "/ruta") {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    } else {
+      navigate("/ruta");
+    }
+  };
   
   const handleNavLink = (link: string) => {
-    if (link === "Rooms") navigate("/rooms");
-    else if (link === "Our Story" || link === "Story" || link === "Find Us") navigate("/");
+    if (link === "Rooms") goRooms();
+    else if (link === "Our Story" || link === "Story" || link === "Find Us") goHome();
   };
   
   const scrollToFaq = () => {

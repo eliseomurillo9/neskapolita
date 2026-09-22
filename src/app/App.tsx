@@ -37,9 +37,9 @@ export default function App() {
     duration: 0.55,
     ease: [0.22, 1, 0.36, 1]
   }}>
-      {/* Nav — fixed on mobile (overlays hero), sticky on desktop */}
-      <div className="fixed md:sticky z-40 w-full transition-colors duration-300" style={{
-      top: "env(safe-area-inset-top)",
+      {/* Nav — fixed at top across all screens */}
+      <div className="fixed top-0 left-0 right-0 z-40 w-full transition-colors duration-300" style={{
+      top: 0,
       backdropFilter: "blur(20px)",
       WebkitBackdropFilter: "blur(20px)",
       background: mobileMenuOpen ? isDark ? "#0c1a10" : "#f2f4f3" : isDark ? "rgba(12,26,16,0.82)" : "rgba(242,244,243,0.88)",

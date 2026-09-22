@@ -1,6 +1,6 @@
 import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Wifi, Wind, Star, Users, Bath, Mountain, ArrowRight, Check, Tv, ShieldCheck, UtensilsCrossed, AirVent, TreePine, BedDouble, Layers } from "lucide-react";
 import NavBar from "@/imports/NavBar";
@@ -88,6 +88,14 @@ export default function HomePage({
   onOpenModal: (r: Room) => void;
   onExploreRuta: () => void;
 }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    const root = document.getElementById("root");
+    if (root) root.scrollTop = 0;
+  }, []);
+
   return <div className="w-full">
       {/* ── Hero — Desktop ── */}
       <section className="hidden md:block relative w-full overflow-hidden" style={{
@@ -103,7 +111,7 @@ export default function HomePage({
         <div className="absolute inset-0" style={{
         background: "linear-gradient(181.76deg, rgba(12,26,16,0.21) 18.55%, rgba(12,26,16,0.49) 71.94%, rgba(12,26,16,0.665) 102.8%)"
       }} />
-        <div className="relative z-10 flex flex-col justify-center gap-8 lg:gap-10 px-6 md:px-14 lg:px-[90px] pt-16 md:pt-20 pb-20 md:pb-[112px] max-w-[1920px] mx-auto w-full" style={{
+        <div className="relative z-10 flex flex-col justify-center gap-8 lg:gap-10 px-6 md:px-14 lg:px-[90px] pt-24 md:pt-28 pb-20 md:pb-[112px] max-w-[1920px] mx-auto w-full" style={{
         minHeight: 600
       }}>
           <motion.div className="flex flex-col gap-5" initial={{
