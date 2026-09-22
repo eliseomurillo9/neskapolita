@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { rooms, Room } from "./data";
 import HomePage from "./views/HomePage";
 import RutaFloresPage from "./views/RutaFloresPage";
-import RoomCard from "./components/RoomCard";
+import RoomsPage from "./views/RoomsPage";
 import { Theme } from "./theme";
 
 interface AppRoutesProps {
@@ -58,24 +58,12 @@ export default function AppRoutes({
         
         <Route path="/rooms" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-            {/* Rooms page header */}
-            <div className="max-w-[1920px] mx-auto w-full flex flex-col items-center text-center pt-16 pb-12 px-6 md:px-14">
-              <button
-                onClick={goHome}
-                className="self-start flex items-center gap-1.5 mb-8 uppercase tracking-widest"
-                style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 10, color: theme.muted, background: "none", border: "none", cursor: "pointer" }}
-              >
-                {t("back_to_home_2")}
-              </button>
-              <h1 className="font-black leading-tight mb-4 italic" style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(32px,5vw,56px)", color: theme.heading, fontVariationSettings: '"SOFT" 0,"WONK" 1' }}>
-                {t("find_your_casa")}
-              </h1>
-            </div>
-            <main>
-              {rooms.map((room, i) => (
-                <RoomCard key={room.id} room={room} theme={theme} index={i} onOpenModal={setSelectedRoom} />
-              ))}
-            </main>
+            <RoomsPage 
+              theme={theme} 
+              rooms={rooms} 
+              goHome={goHome} 
+              onOpenModal={setSelectedRoom} 
+            />
           </motion.div>
         } />
       </Routes>
