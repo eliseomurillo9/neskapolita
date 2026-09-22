@@ -90,12 +90,13 @@ const features = [
 ];
 
 
+
 export default function HomePage({ t, isDark, rooms, onExploreRooms, onOpenModal, onExploreRuta }: {
   t: Theme; isDark: boolean; rooms: Room[];
   onExploreRooms: () => void; onOpenModal: (r: Room) => void; onExploreRuta: () => void;
 }) {
   return (
-    <div>
+    <div className="w-full">
       {/* ── Hero — Desktop ── */}
       <section className="hidden md:block relative w-full overflow-hidden" style={{ background: "#0c1a10", minHeight: 600 }}>
         <img src={heroForest} alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" style={{ opacity: 0.8 }} />
@@ -104,7 +105,7 @@ export default function HomePage({ t, isDark, rooms, onExploreRooms, onOpenModal
           className="absolute inset-0"
           style={{ background: "linear-gradient(181.76deg, rgba(12,26,16,0.21) 18.55%, rgba(12,26,16,0.49) 71.94%, rgba(12,26,16,0.665) 102.8%)" }}
         />
-        <div className="relative z-10 flex flex-col justify-center gap-10 px-[90px] pt-20 pb-[112px]" style={{ minHeight: 600 }}>
+        <div className="relative z-10 flex flex-col justify-center gap-8 lg:gap-10 px-6 md:px-14 lg:px-[90px] pt-16 md:pt-20 pb-20 md:pb-[112px] max-w-[1920px] mx-auto w-full" style={{ minHeight: 600 }}>
           <motion.div
             className="flex flex-col gap-5"
             initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.85, ease: [0.22,1,0.36,1] }}
@@ -123,10 +124,10 @@ export default function HomePage({ t, isDark, rooms, onExploreRooms, onOpenModal
             </p>
           </motion.div>
           <motion.div
-            className="flex flex-col gap-[60px]"
+            className="flex flex-col gap-8 md:gap-[60px]"
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.18, ease: [0.22,1,0.36,1] }}
           >
-            <div className="flex flex-wrap gap-5 items-center">
+            <div className="flex flex-wrap gap-4 md:gap-5 items-center">
               <button
                 onClick={onExploreRooms}
                 className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(242,177,56,0.2)] transition-colors"
@@ -171,47 +172,47 @@ export default function HomePage({ t, isDark, rooms, onExploreRooms, onOpenModal
           className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
         />
         {/* Top spacer */}
-        <div className="h-[100px] relative shrink-0 w-full" />
+        <div className="h-[40px] sm:h-[80px] relative shrink-0 w-full" />
         {/* Bottom scrim panel — gradient matches Figma exactly */}
         <motion.div
           className="relative shrink-0 flex flex-col gap-6 items-center w-full"
           style={{
             background: "linear-gradient(to bottom, rgba(12,26,16,0) 0%, rgba(12,26,16,0.9) 40%, #0c1a10 100%)",
-            paddingTop: 60,
-            paddingBottom: 40,
-            paddingLeft: 24,
-            paddingRight: 24,
+            paddingTop: 50,
+            paddingBottom: 36,
+            paddingLeft: 20,
+            paddingRight: 20,
           }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
         >
           {/* Rating + title + subtitle */}
-          <div className="flex flex-col gap-3 items-center w-full">
+          <div className="flex flex-col gap-2.5 items-center w-full">
             <div className="flex items-center gap-2">
-              <span style={{ fontFamily: "'Fraunces',serif", fontSize: 20, fontWeight: 700, color: "#f2b138", fontVariationSettings: '"SOFT" 0,"WONK" 1' }}>★ 4.9</span>
+              <span style={{ fontFamily: "'Fraunces',serif", fontSize: 19, fontWeight: 700, color: "#f2b138", fontVariationSettings: '"SOFT" 0,"WONK" 1' }}>★ 4.9</span>
               <span style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 10, color: "#ede8d8", opacity: 0.8, letterSpacing: "1px", textTransform: "uppercase", fontVariationSettings: '"opsz" 14' }}>Booking Rating</span>
             </div>
             <p
               className="font-black italic text-center w-full"
-              style={{ fontFamily: "'Fraunces',serif", fontSize: 38, color: "#f2b138", fontVariationSettings: '"SOFT" 0,"WONK" 1', lineHeight: 1.1 }}
+              style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(32px, 8.5vw, 38px)", color: "#f2b138", fontVariationSettings: '"SOFT" 0,"WONK" 1', lineHeight: 1.1 }}
             >
               Neskapolita
             </p>
             <p
               className="font-black text-center w-full"
-              style={{ fontFamily: "'Fraunces',serif", fontSize: 24, color: "#ede8d8", fontVariationSettings: '"SOFT" 0,"WONK" 1', lineHeight: 1.25 }}
+              style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(20px, 5.5vw, 24px)", color: "#ede8d8", fontVariationSettings: '"SOFT" 0,"WONK" 1', lineHeight: 1.25 }}
             >
               Your refuge on the Ruta de las flores
             </p>
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col gap-[10px] w-full">
+          <div className="flex flex-col gap-[10px] w-full max-w-[400px]">
             <button
               onClick={onExploreRooms}
               className="w-full flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(242,177,56,0.2)]"
-              style={{ background: "#f2b138", padding: "14px 30px" }}
+              style={{ background: "#f2b138", padding: "14px 24px" }}
               onTouchStart={(e) => (e.currentTarget.style.background = "#d49a1f")}
               onTouchEnd={(e) => (e.currentTarget.style.background = "#f2b138")}
             >
@@ -222,7 +223,7 @@ export default function HomePage({ t, isDark, rooms, onExploreRooms, onOpenModal
             </button>
             <button
               className="w-full flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)]"
-              style={{ background: "#3d9e72", padding: "14px 30px" }}
+              style={{ background: "#3d9e72", padding: "14px 24px" }}
               onTouchStart={(e) => (e.currentTarget.style.background = "#2d8a60")}
               onTouchEnd={(e) => (e.currentTarget.style.background = "#3d9e72")}
             >
@@ -236,31 +237,39 @@ export default function HomePage({ t, isDark, rooms, onExploreRooms, onOpenModal
       </div>
 
       {/* ── Story ── */}
-      <section className="relative overflow-hidden" style={{ minHeight: 350 }}>
+      <section className="relative overflow-hidden w-full" style={{ minHeight: 350, background: "#f2f0eb" }}>
         {/* Background layers */}
         <div className="absolute inset-0" style={{ background: "#f2f0eb" }} />
-        <img src={bgLight} alt="" className="absolute pointer-events-none select-none"
-          style={{ width: 1528, height: 761, left: -28, top: -332, objectFit: "cover", maxWidth: "none" }} />
-        <img src={bgFlowers} alt="" className="absolute pointer-events-none select-none"
-          style={{ width: 1448, height: 721, left: -8, top: -254, objectFit: "cover", maxWidth: "none" }} />
+        <div className="absolute inset-0 max-w-[1920px] mx-auto w-full overflow-hidden pointer-events-none select-none">
+          <img
+            src={bgLight}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <img
+            src={bgFlowers}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
 
         {/* Content: logo left + text right */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 px-6 md:px-[80px] py-[68px]">
+        <div className="relative z-10 max-w-[1920px] mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 px-6 md:px-14 lg:px-[80px] py-12 md:py-[68px]">
           {/* Logo */}
           <img
             src={logoImg}
             alt="Neskapolita logo"
-            className="shrink-0"
-            style={{ width: 250, height: 210, objectFit: "contain" }}
+            className="shrink-0 w-[180px] h-[150px] sm:w-[220px] sm:h-[185px] md:w-[250px] md:h-[210px]"
+            style={{ objectFit: "contain" }}
           />
 
           {/* Text */}
           <div className="flex flex-col items-center gap-5 flex-1 text-center">
-            <div className="flex flex-col items-center gap-6">
-              {/* Heading */}
+            <div className="flex flex-col items-center gap-4 md:gap-6">
+              {/* Heading — NOTE: Background is always cream (#f2f0eb), so text MUST be dark (#0c1a10) */}
               <h2
                 className="font-black"
-                style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(24px,3vw,32px)", lineHeight: 1.2, color: isDark ? "#ede8d8" : "#0c1a10", fontVariationSettings: '"SOFT" 0,"WONK" 1', maxWidth: 843 }}
+                style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(22px,2.8vw,32px)", lineHeight: 1.2, color: "#0c1a10", fontVariationSettings: '"SOFT" 0,"WONK" 1', maxWidth: 843 }}
               >
                 Neskapolita: The Story of the{" "}
                 <br className="hidden md:block" />
@@ -294,87 +303,94 @@ export default function HomePage({ t, isDark, rooms, onExploreRooms, onOpenModal
       </section>
 
       {/* ── Find Your Casa ── */}
-      <section className="py-20 px-6 md:px-14" style={{ background: t.pageBg }}>
-        <div className="text-center mb-12">
-          <h2 className="font-black italic" style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(24px,3vw,32px)", lineHeight: 1.2, color: t.heading, fontVariationSettings: '"SOFT" 0,"WONK" 1' }}>
-            Find Your <span style={{ color: t.green }}>Casa</span>
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {rooms.map((room) => (
-            <FigmaRoomCard key={room.id} room={room} t={t} isDark={isDark} onExplore={onExploreRooms} />
-          ))}
+      <section className="py-16 md:py-20 px-6 md:px-14 w-full" style={{ background: t.pageBg }}>
+        <div className="max-w-[1920px] mx-auto w-full">
+          <div className="text-center mb-10 md:mb-12">
+            <h2 className="font-black italic" style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(24px,3vw,32px)", lineHeight: 1.2, color: t.heading, fontVariationSettings: '"SOFT" 0,"WONK" 1' }}>
+              Find Your <span style={{ color: t.green }}>Casa</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {rooms.map((room) => (
+              <FigmaRoomCard key={room.id} room={room} t={t} isDark={isDark} onExplore={onExploreRooms} />
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ── Save 10% ── */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block w-full">
         <SavingsBannerSection />
       </div>
-      <div className="block md:hidden">
+      <div className="block lg:hidden w-full">
         <BookingPayments />
       </div>
 
       {/* ── Everything you need ── */}
-      <section className="py-20 px-6 md:px-14" style={{ background: t.pageBg }}>
-        <div className="max-w-5xl mx-auto">
-          <h2 className="font-black italic mb-12" style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(24px,3vw,32px)", lineHeight: 1.2, color: t.heading, fontVariationSettings: '"SOFT" 0,"WONK" 1', maxWidth: 420 }}>
-            Everything you need for a perfect stay
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {features.map((f) => (
-              <div key={f.title} className="flex gap-5 p-6 rounded-xl" style={{ background: t.cardBg, border: `1px solid ${t.amenityBorder}` }}>
-                <div className="shrink-0 mt-0.5">{f.icon}</div>
-                <div>
-                  <p className="font-bold mb-1" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: t.heading }}>{f.title}</p>
-                  <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, color: t.body, lineHeight: 1.7 }}>{f.desc}</p>
+      <section className="py-16 md:py-20 px-6 md:px-14 w-full" style={{ background: t.pageBg }}>
+        <div className="max-w-[1920px] mx-auto w-full">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-black italic mb-10 md:mb-12" style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(24px,3vw,32px)", lineHeight: 1.2, color: t.heading, fontVariationSettings: '"SOFT" 0,"WONK" 1', maxWidth: 420 }}>
+              Everything you need for a perfect stay
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {features.map((f) => (
+                <div key={f.title} className="flex gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl" style={{ background: t.cardBg, border: `1px solid ${t.amenityBorder}` }}>
+                  <div className="shrink-0 mt-0.5">{f.icon}</div>
+                  <div>
+                    <p className="font-bold mb-1" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: t.heading }}>{f.title}</p>
+                    <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, color: t.body, lineHeight: 1.7 }}>{f.desc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          {/* Traveler Community — full width */}
-          <div className="flex gap-5 p-6 rounded-xl mt-4" style={{ background: t.cardBg, border: `1px solid ${t.amenityBorder}` }}>
-            <div className="shrink-0 mt-0.5">
-              <svg fill="none" viewBox="0 0 28 28" width="28" height="28">
-                <path d={svgPaths.p1cb142c0} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
-              </svg>
+              ))}
             </div>
-            <div>
-              <p className="font-bold mb-1" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: t.heading }}>Traveler Community</p>
-              <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, color: t.body, lineHeight: 1.7 }}>Weekly events, dinners, and meetups for modern global nomads.</p>
+            {/* Traveler Community — full width */}
+            <div className="flex gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl mt-4" style={{ background: t.cardBg, border: `1px solid ${t.amenityBorder}` }}>
+              <div className="shrink-0 mt-0.5">
+                <svg fill="none" viewBox="0 0 28 28" width="28" height="28">
+                  <path d={svgPaths.p1cb142c0} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
+                </svg>
+              </div>
+              <div>
+                <p className="font-bold mb-1" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: t.heading }}>Traveler Community</p>
+                <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, color: t.body, lineHeight: 1.7 }}>Weekly events, dinners, and meetups for modern global nomads.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── Ruta de las Flores map ── */}
-      <section className="w-full overflow-hidden relative">
-        {/* Desktop image */}
-        <img
-          src={isDark ? rutaDesktopDark : rutaDesktopLight}
-          alt="Ruta de las Flores map"
-          className="hidden md:block w-full object-cover"
-        />
-        {/* Mobile image */}
-        <img
-          src={isDark ? rutaMobileDark : rutaMobileLight}
-          alt="Ruta de las Flores map"
-          className="block md:hidden w-full object-cover"
-        />
+      <section className="w-full overflow-hidden relative" style={{ background: isDark ? "#0c1a10" : "#f2f4f3" }}>
+        <div className="max-w-[1920px] mx-auto w-full relative">
+          {/* Desktop image */}
+          <img
+            src={isDark ? rutaDesktopDark : rutaDesktopLight}
+            alt="Ruta de las Flores map"
+            className="hidden md:block w-full object-cover max-h-[850px]"
+          />
+          {/* Mobile image */}
+          <img
+            src={isDark ? rutaMobileDark : rutaMobileLight}
+            alt="Ruta de las Flores map"
+            className="block md:hidden w-full object-cover"
+          />
 
-        {/* Desktop CTA — bottom-right, 80px from edges */}
-        <div className="hidden md:block absolute bottom-[80px] right-[80px]">
-          <ButtonPrimary onClick={onExploreRuta} />
-        </div>
+          {/* Desktop CTA — bottom-right, relative to the centered 1920 container */}
+          <div className="hidden md:block absolute bottom-8 md:bottom-[80px] right-8 md:right-[80px]">
+            <ButtonPrimary onClick={onExploreRuta} />
+          </div>
 
-        {/* Mobile CTA — centered at the bottom of the image */}
-        <div className="md:hidden absolute bottom-5 left-1/2 -translate-x-1/2">
-          <ButtonPrimary onClick={onExploreRuta} />
+          {/* Mobile CTA — centered at the bottom of the image */}
+          <div className="md:hidden absolute bottom-5 left-1/2 -translate-x-1/2">
+            <ButtonPrimary onClick={onExploreRuta} />
+          </div>
         </div>
       </section>
     </div>
   );
 }
+
 
 // ─── Ruta de las Flores page ──────────────────────────────────────────────────
 

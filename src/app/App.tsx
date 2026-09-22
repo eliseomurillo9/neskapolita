@@ -78,7 +78,7 @@ export default function App() {
           
           <Route path="/ruta" element={
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-              <div className="flex items-center px-6 md:px-[80px] pt-8 pb-2">
+              <div className="max-w-[1920px] mx-auto w-full flex items-center px-6 md:px-14 lg:px-[80px] pt-8 pb-2">
                 <button
                   onClick={goHome}
                   className="flex items-center gap-1.5 uppercase tracking-widest"
@@ -94,7 +94,7 @@ export default function App() {
           <Route path="/rooms" element={
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
               {/* Rooms page header */}
-              <div className="flex flex-col items-center text-center pt-16 pb-12 px-6">
+              <div className="max-w-[1920px] mx-auto w-full flex flex-col items-center text-center pt-16 pb-12 px-6 md:px-14">
                 <button
                   onClick={goHome}
                   className="self-start flex items-center gap-1.5 mb-8 uppercase tracking-widest"

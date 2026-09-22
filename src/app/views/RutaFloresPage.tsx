@@ -44,6 +44,7 @@ import badge02 from "@/imports/DesktopV1/5df5da27dcee43241fc35f4a3e842b4708328f4
 import badge16 from "@/imports/DesktopV1/146d43f51e15479edc5b6567ca17c752c93c098a.png";
 import badge17 from "@/imports/DesktopV1/1a3d1e56d1305cc21af19544fb8fab9094a03110.png";
 
+
 export default function RutaFloresPage({ onExploreRooms }: { onExploreRooms: () => void }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activePopIn, setActivePopIn] = useState<string | null>(null);
@@ -67,8 +68,8 @@ export default function RutaFloresPage({ onExploreRooms }: { onExploreRooms: () 
     <div className="w-full" style={{ background: "#f2f4f3" }}>
 
       {/* ── Hero ── */}
-      <section style={{ background: "#f2f4f3" }}>
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 px-6 py-12 md:px-[80px] md:py-[80px]">
+      <section className="w-full" style={{ background: "#f2f4f3" }}>
+        <div className="max-w-[1920px] mx-auto w-full flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 px-6 py-12 md:px-14 lg:px-[80px] md:py-[80px]">
 
           {/* Left: text */}
           <div className="flex flex-col gap-6 md:w-[500px] shrink-0">
@@ -107,8 +108,8 @@ export default function RutaFloresPage({ onExploreRooms }: { onExploreRooms: () 
       </section>
 
       {/* ── Destinations ── */}
-      <section style={{ background: "#ffffff" }}>
-        <div className="px-6 py-12 md:px-[80px] md:py-[80px] flex flex-col gap-12 md:gap-[80px]">
+      <section className="w-full" style={{ background: "#ffffff" }}>
+        <div className="max-w-[1920px] mx-auto w-full px-6 py-12 md:px-14 lg:px-[80px] md:py-[80px] flex flex-col gap-12 md:gap-[80px]">
 
           {/* Intro */}
           <div className="text-center flex flex-col gap-3 items-center">
@@ -179,8 +180,8 @@ export default function RutaFloresPage({ onExploreRooms }: { onExploreRooms: () 
       </section>
 
       {/* ── CTA Banner ── */}
-      <section style={{ background: "#ede8d8" }}>
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-12 md:px-[64px] md:py-[64px]">
+      <section className="w-full" style={{ background: "#ede8d8" }}>
+        <div className="max-w-[1920px] mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-12 md:px-14 lg:px-[64px] md:py-[64px]">
           <div className="flex flex-col gap-3 md:max-w-[700px]">
             <h2
               className="font-black"
@@ -194,7 +195,7 @@ export default function RutaFloresPage({ onExploreRooms }: { onExploreRooms: () 
           </div>
           <button
             onClick={onExploreRooms}
-            className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors"
+            className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors shrink-0"
             style={{ background: "#3d9e72" }}
             onMouseEnter={(e) => (e.currentTarget.style.background = "#2d8a60")}
             onMouseLeave={(e) => (e.currentTarget.style.background = "#3d9e72")}
@@ -208,8 +209,8 @@ export default function RutaFloresPage({ onExploreRooms }: { onExploreRooms: () 
       </section>
 
       {/* ── Quick Tips FAQ ── */}
-      <section id="ruta-faq" style={{ background: "#f2f4f3", borderTop: "1px solid #d5dad7", borderBottom: "1px solid #d5dad7" }}>
-        <div className="px-6 py-12 md:px-[80px] md:py-[80px] flex flex-col gap-10 md:gap-12">
+      <section id="ruta-faq" className="w-full" style={{ background: "#f2f4f3", borderTop: "1px solid #d5dad7", borderBottom: "1px solid #d5dad7" }}>
+        <div className="max-w-[1920px] mx-auto w-full px-6 py-12 md:px-14 lg:px-[80px] md:py-[80px] flex flex-col gap-10 md:gap-12">
           <h2
             className="font-black text-center"
             style={{ fontFamily: "'Fraunces',serif", fontSize: "clamp(24px,3vw,36px)", lineHeight: 1.2, color: "#1c2420", fontVariationSettings: '"SOFT" 0, "WONK" 1' }}
@@ -254,6 +255,7 @@ export default function RutaFloresPage({ onExploreRooms }: { onExploreRooms: () 
           </div>
         </div>
       </section>
+
 
       {/* City pop-in modal */}
       <AnimatePresence>

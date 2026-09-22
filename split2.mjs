@@ -15,16 +15,20 @@ const getLines = (startStr, endStr) => {
   return lines.slice(startIdx, endIdx).join('\n') + '\n';
 };
 
-const homePage = getLines('export default function HomePage(', '// ─── Ruta Flores Page');
-const rutaFloresPage = getLines('export default function RutaFloresPage(', '// ─── Root');
+let homePage = getLines('function HomePage(', '// ─── Ruta Flores Page');
+let rutaFloresPage = getLines('function RutaFloresPage(', '// ─── Root');
+
+homePage = homePage.replace('function HomePage(', 'export default function HomePage(');
+rutaFloresPage = rutaFloresPage.replace('function RutaFloresPage(', 'export default function RutaFloresPage(');
 
 const hpOld = fs.readFileSync('src/app/views/HomePage.tsx', 'utf8');
 const rpOld = fs.readFileSync('src/app/views/RutaFloresPage.tsx', 'utf8');
 
 const updateView = (oldContent, newBody, functionStartStr) => {
-    const importPart = oldContent.split(functionStartStr)[0];
+    // Keep everything before the function
+    const importPart = oldContent.split(/export default function|function/)[0];
     return importPart + newBody;
 };
 
-fs.writeFileSync('src/app/views/HomePage.tsx', updateView(hpOld, homePage, 'export default function HomePage('));
-fs.writeFileSync('src/app/views/RutaFloresPage.tsx', updateView(rpOld, rutaFloresPage, 'export default function RutaFloresPage('));
+fs.writeFileSync('src/app/views/HomePage.tsx', updateView(hpOld, homePage, 'HomePage'));
+fs.writeFileSync('src/app/views/RutaFloresPage.tsx', updateView(rpOld, rutaFloresPage, 'RutaFloresPage'));
