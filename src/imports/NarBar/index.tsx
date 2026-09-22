@@ -85,5 +85,5 @@ function NarBar({ className, format = "mobile", style = "light" }: NarBarProps) 
 }
 
 export default function NarBar1() {
-  return <NarBar className="bg-[#ede8d8] relative size-full" />;
+  return <NarBar className="bg-[#ede8d8] relative w-full" />;
 }

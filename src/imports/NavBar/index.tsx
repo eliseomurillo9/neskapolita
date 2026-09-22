@@ -43,7 +43,7 @@ export default function NavBar({ className, style = "light", lang = "EN", curren
     <>
       {/* ── Nav bar strip ── */}
       <div className={className || "w-full relative"}>
-        <div className="flex items-center justify-between w-full h-[72px] px-5 md:px-14">
+        <div className="flex items-center justify-between w-full h-[72px] px-5 md:px-14 max-w-[1920px] mx-auto">
 
           {/* Desktop left: nav links */}
           <div className="hidden md:flex gap-10 flex-1 items-center">

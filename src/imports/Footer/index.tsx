@@ -26,7 +26,7 @@ export default function Footer({ className, style = "light", onLinkClick }: Foot
       className={className}
       style={{ background: bg, borderTop: `1px solid ${border}`, paddingBottom: "env(safe-area-inset-bottom)" }}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-14 py-14 flex flex-col md:flex-row gap-12 md:gap-0 md:justify-between">
+      <div className="max-w-[1920px] mx-auto px-6 md:px-14 py-14 flex flex-col md:flex-row gap-12 md:gap-0 md:justify-between">
 
         {/* Left: brand block */}
         <div className="flex flex-col gap-4 max-w-[300px]">
