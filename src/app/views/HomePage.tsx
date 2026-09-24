@@ -10,8 +10,6 @@ import rutaDesktopDark from "@/imports/ruta-de-las-flores-light-desktop-image-da
 import rutaMobileLight from "@/imports/ruta-de-las-flores-mobile-image-light.jpg";
 import rutaMobileDark from "@/imports/ruta-de-las-flores-mobile-image-dark.jpg";
 // Ruta de las Flores page assets
-// Homepage assets
-// Room number badge images (from Figma DesktopV1)
 import logoImg from "@/imports/DesktopV1/7a4368b70120d47e02aec91da9b968e1f2acd65c.png";
 import heroForest from "@/imports/DesktopV1/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
 import heroMobile from "@/imports/Variation3FullBleedOverlay/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
@@ -55,7 +53,6 @@ export default function HomePage({
   isDark,
   rooms,
   onExploreRooms,
-  onOpenModal,
   onExploreRuta
 }: {
   theme: Theme;
