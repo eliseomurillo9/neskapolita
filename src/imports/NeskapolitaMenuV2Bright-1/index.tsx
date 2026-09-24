@@ -79,13 +79,23 @@ function Text2() {
 }
 function ButtonSwitchLanguage() {
   const { i18n } = useTranslation();
-  const toggleLanguage = () => i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
+  const baseLang = (i18n.language || "en").split('-')[0].toLowerCase();
+  const isEn = baseLang !== "es";
+  const toggleLanguage = () => i18n.changeLanguage(isEn ? "es" : "en");
 
-  return <div className="bg-[rgba(28,36,32,0.05)] border border-[#3d9e72] border-solid content-stretch flex gap-[5px] h-[36px] items-center px-[14px] relative rounded-[16777200px] shrink-0" data-name="Button - Switch language" onClick={toggleLanguage} style={{ cursor: "pointer" }}>
-      <Text />
-      <Text1 />
-      <Text2 />
-    </div>;
+  return (
+    <div className="bg-[rgba(28,36,32,0.05)] border border-[#3d9e72] border-solid content-stretch flex gap-[5px] h-[36px] items-center px-[14px] relative rounded-[16777200px] shrink-0" data-name="Button - Switch language" onClick={toggleLanguage} style={{ cursor: "pointer" }}>
+      <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Text">
+        <p className={`[word-break:break-word] font-['DM_Sans:${isEn ? 'Bold' : 'Regular'}',sans-serif] ${isEn ? 'font-bold' : 'font-normal'} leading-[16.5px] relative shrink-0 ${isEn ? 'text-[#3d9e72]' : 'text-[#1c2420]'} text-[11px] text-center tracking-[1px] whitespace-nowrap`} style={{ fontVariationSettings: '"opsz" 14' }}>{t("index.en")}</p>
+      </div>
+      <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Text">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[15px] not-italic relative shrink-0 text-[rgba(28,36,32,0.5)] text-[10px] text-center tracking-[0.1172px] whitespace-nowrap">/</p>
+      </div>
+      <div className="content-stretch flex flex-col items-center relative shrink-0" data-name="Text">
+        <p className={`[word-break:break-word] font-['DM_Sans:${!isEn ? 'Bold' : 'Regular'}',sans-serif] ${!isEn ? 'font-bold' : 'font-normal'} leading-[16.5px] relative shrink-0 ${!isEn ? 'text-[#3d9e72]' : 'text-[#1c2420]'} text-[11px] text-center tracking-[1px] whitespace-nowrap`} style={{ fontVariationSettings: '"opsz" 14' }}>{t("index.es")}</p>
+      </div>
+    </div>
+  );
 }
 function Icon() {
   return <div className="absolute left-0 size-[14px] top-0" data-name="Icon">
