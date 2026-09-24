@@ -1,9 +1,10 @@
 import i18n from "../../locales/i18n";
-const t = i18n.t.bind(i18n);
-import { useState } from "react";
+import {useState} from "react";
 import svgPaths from "./svg-9yr61w7rzh";
 import menuSvgPaths from "@/imports/NeskapolitaMenuV2Bright-1/svg-d640mmtgs0";
-import { GOOGLE_MAPS_URL } from "@/app/hooks/useAppNavigation";
+import {GOOGLE_MAPS_URL} from "@/app/hooks/useAppNavigation";
+
+const t = i18n.t.bind(i18n);
 type NavBarProps = {
   className?: string;
   style?: "dark" | "light";
@@ -188,24 +189,27 @@ export default function NavBar({
         </div>
       </div>
 
-      {/* ── Full-screen menu overlay ── */}
-      <div className="fixed inset-0 z-50 flex flex-col md:hidden" style={{
+      {/* ── Menu overlay ── */}
+      <div className="absolute top-0 left-0 w-full z-50 flex flex-col md:hidden shadow-lg" style={{
       background: menuBg,
+          borderBottom: isDark ? "1px solid rgba(237,232,216,0.07)" : "1px solid rgba(28,36,32,0.10)",
       opacity: menuOpen ? 1 : 0,
       visibility: menuOpen ? "visible" : "hidden",
       transform: menuOpen ? "translateY(0)" : "translateY(-10px)",
-      transition: "opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease"
+          transition: "opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease",
+          pointerEvents: menuOpen ? "auto" : "none"
     }}>
         {/* Safe-area spacer */}
         <div className="shrink-0" style={{
         height: "env(safe-area-inset-top)"
       }} />
 
-        {/* Header */}
+          {/* Header inside overlay */}
         <div className="flex items-center justify-between shrink-0 px-6" style={{
         height: 72
       }}>
-          <p className="font-black italic whitespace-nowrap cursor-pointer" style={{
+            {/* Left: Logo */}
+            <p className="font-black italic whitespace-nowrap cursor-pointer z-10" style={{
           fontFamily: "'Fraunces',serif",
           fontSize: 22,
           color: isDark ? "#ede8d8" : "#4c6e58",
@@ -214,7 +218,11 @@ export default function NavBar({
           onLogoClick?.();
           toggleMenu(false);
         }}>{t("hero.title")}</p>
-          <button onClick={() => toggleMenu(false)} className="flex items-center justify-center cursor-pointer border-0 bg-transparent p-2 rounded-full -mr-2" aria-label="Close menu">
+
+            {/* Right: Close button */}
+            <button onClick={() => toggleMenu(false)}
+                    className="flex items-center justify-center cursor-pointer border-0 bg-transparent p-2 rounded-full -mr-2 z-10"
+                    aria-label="Close menu">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <g clipPath="url(#clip_xcircle)">
                 <path d={menuSvgPaths.p30a06080} stroke={isDark ? "#ede8d8" : "#0C1A10"} strokeLinecap="round" strokeWidth="2" />
@@ -227,7 +235,7 @@ export default function NavBar({
         </div>
 
         {/* Navigation links */}
-        <div className="flex flex-col items-center flex-1 gap-4 pt-12 pb-6 px-6 overflow-y-auto">
+          <div className="flex flex-col items-center flex-1 gap-4 pt-6 pb-6 px-6 overflow-y-auto">
           {NAV_LINKS.map(({
           label,
           page
