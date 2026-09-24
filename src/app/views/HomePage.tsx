@@ -1,12 +1,6 @@
 import i18n from "../../locales/i18n";
-const t = i18n.t.bind(i18n);
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { X, Wifi, Wind, Star, Users, Bath, Mountain, ArrowRight, Check, Tv, ShieldCheck, UtensilsCrossed, AirVent, TreePine, BedDouble, Layers } from "lucide-react";
-import NavBar from "@/imports/NavBar";
-import Footer from "@/imports/Footer";
-import MobileFooterLight from "@/imports/NarBar";
-import MobileFooterDark from "@/imports/NarBar-1";
+import {useEffect} from "react";
+import {motion} from "motion/react";
 import SavingsBannerSection from "@/imports/SavingsBannerSection";
 import BookingPayments from "@/imports/BookingPayments";
 import ButtonPrimary from "@/imports/ButtonPrimary";
@@ -15,40 +9,23 @@ import rutaDesktopLight from "@/imports/ruta-de-las-flores-light-desktop-image-l
 import rutaDesktopDark from "@/imports/ruta-de-las-flores-light-desktop-image-dark.jpg";
 import rutaMobileLight from "@/imports/ruta-de-las-flores-mobile-image-light.jpg";
 import rutaMobileDark from "@/imports/ruta-de-las-flores-mobile-image-dark.jpg";
-import room1Img from "@/imports/Document/6c88d1ade3e7b7f98af20a56562688e565b1e477.png";
-import room2Img from "@/imports/Document/2cbaef43d2ebac70a3bdec47dfc3e0e8b7f8a628.png";
-import room3Img from "@/imports/Document/6f13b43bff73692f3535ad9ee71e65d34379edcf.png";
-import room4Img from "@/imports/Document/851cd36c23ad4da155b6cf0f50ec6693c5ab0088.png";
 // Ruta de las Flores page assets
-import rutaMapImg from "@/imports/RutaFloresMapPageDesktop/a59195a9e27cccf80d5295fb9bf15ac226f28f11.png";
-import rutaHeroPhoto from "@/imports/RutaFloresMapPageDesktop/850dde4affad5f2560eb4e5d70ef9add7b7d9ff3.png";
-import rutaJuayua from "@/imports/RutaFloresMapPageDesktop/dbb8d5036dc30326df8b5297904a5b53b0cfb5f8.png";
-import rutaApaneca from "@/imports/RutaFloresMapPageDesktop/f23c47939fd00eae014ff37746cb0058f242c565.png";
-import rutaAtaco from "@/imports/RutaFloresMapPageDesktop/fce5276ce245dee3f5c2fdfd286db078a60800e0.png";
-import rutaSalcoatitan from "@/imports/RutaFloresMapPageDesktop/828973c65dab400d9481607663e04c1e6267bbca.png";
-import rutaNahuizalco from "@/imports/RutaFloresMapPageDesktop/f5b5961e54952719ffe5e43d303abb6cd7bd7565.png";
-import rutaSonsonate from "@/imports/RutaFloresMapPageDesktop/a846ec44cc9d1a94bdbcbeb391dfc00b91a5018a.png";
 // Homepage assets
-import heroBg from "@/imports/DesktopV1/1a87c5d486772503401990064608c4940c7da7fc.png";
-import storyPortrait from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.png";
+// Room number badge images (from Figma DesktopV1)
 import logoImg from "@/imports/DesktopV1/7a4368b70120d47e02aec91da9b968e1f2acd65c.png";
 import heroForest from "@/imports/DesktopV1/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
 import heroMobile from "@/imports/Variation3FullBleedOverlay/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
 import bgLight from "@/imports/DesktopV1/302c2113c9e9de6558ff52e0df271ec24307bdf2.png";
 import bgFlowers from "@/imports/DesktopV1/0b3cdd2aed1034c1d0964bb9eb901d692e980bec.png";
 import svgPaths from "@/imports/DesktopV1/svg-a56cgiz6y";
-// Room number badge images (from Figma DesktopV1)
-import badge01 from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.png";
-import badge02 from "@/imports/DesktopV1/5df5da27dcee43241fc35f4a3e842b4708328f40.png";
-import badge16 from "@/imports/DesktopV1/146d43f51e15479edc5b6567ca17c752c93c098a.png";
-import badge17 from "@/imports/DesktopV1/1a3d1e56d1305cc21af19544fb8fab9094a03110.png";
-import { Theme } from '../theme';
-import { Room, AmenityItem, features } from '../data';
-import RoomCard from '../components/RoomCard';
+import {Theme} from '../theme';
+import {Room} from '../data';
 import FigmaRoomCard from '../components/FigmaRoomCard';
+
+const t = i18n.t.bind(i18n);
 // ─── Homepage ────────────────────────────────────────────────────────────────
 
-const localFeatures = [{
+const getLocalFeatures = () => [{
   icon: <svg fill="none" viewBox="0 0 24 24" width="24" height="24">
         <path d={svgPaths.p1f220c80} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
@@ -426,7 +403,8 @@ export default function HomePage({
             maxWidth: 420
           }}>{t("common.everything_you_need")}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {localFeatures.map(f => <div key={f.title} className="flex gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl" style={{
+                {getLocalFeatures().map(f => <div key={f.title} className="flex gap-4 sm:gap-5 p-5 sm:p-6 rounded-xl"
+                                                  style={{
               background: theme.cardBg,
               border: `1px solid ${theme.amenityBorder}`
             }}>

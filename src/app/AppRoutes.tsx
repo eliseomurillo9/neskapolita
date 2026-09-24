@@ -3,7 +3,7 @@ import {useTranslation} from "react-i18next";
 import i18n from "../locales/i18n";
 import {Route, Routes} from "react-router-dom";
 import {AnimatePresence, motion} from "motion/react";
-import {Room, rooms} from "./data";
+import {getRooms, Room} from "./data";
 import HomePage from "./views/HomePage";
 import RutaFloresPage from "./views/RutaFloresPage";
 import RoomsPage from "./views/RoomsPage";
@@ -56,7 +56,7 @@ export default function AppRoutes({
         <Route path="/" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
             <HomePage
-              theme={theme} isDark={isDark} rooms={rooms}
+                theme={theme} isDark={isDark} rooms={getRooms()}
               onExploreRooms={goRooms}
               onOpenModal={setSelectedRoom}
               onExploreRuta={goRuta}
@@ -83,7 +83,7 @@ export default function AppRoutes({
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
             <RoomsPage
               theme={theme}
-              rooms={rooms}
+              rooms={getRooms()}
               goHome={goHome}
               onOpenModal={setSelectedRoom}
             />

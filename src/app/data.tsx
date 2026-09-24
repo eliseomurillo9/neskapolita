@@ -1,48 +1,18 @@
 import i18n from "../locales/i18n";
-const t = i18n.t.bind(i18n);
-import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { X, Wifi, Wind, Star, Users, Bath, Mountain, ArrowRight, Check, Tv, ShieldCheck, UtensilsCrossed, AirVent, TreePine, BedDouble, Layers } from "lucide-react";
-import NavBar from "@/imports/NavBar";
-import Footer from "@/imports/Footer";
-import MobileFooterLight from "@/imports/NarBar";
-import MobileFooterDark from "@/imports/NarBar-1";
-import SavingsBannerSection from "@/imports/SavingsBannerSection";
-import BookingPayments from "@/imports/BookingPayments";
-import ButtonPrimary from "@/imports/ButtonPrimary";
-// Ruta de las Flores — 4 variants (desktop/mobile × light/dark)
-import rutaDesktopLight from "@/imports/ruta-de-las-flores-light-desktop-image-light.jpg";
-import rutaDesktopDark from "@/imports/ruta-de-las-flores-light-desktop-image-dark.jpg";
-import rutaMobileLight from "@/imports/ruta-de-las-flores-mobile-image-light.jpg";
-import rutaMobileDark from "@/imports/ruta-de-las-flores-mobile-image-dark.jpg";
 import room1Img from "@/imports/Document/6c88d1ade3e7b7f98af20a56562688e565b1e477.png";
 import room2Img from "@/imports/Document/2cbaef43d2ebac70a3bdec47dfc3e0e8b7f8a628.png";
 import room3Img from "@/imports/Document/6f13b43bff73692f3535ad9ee71e65d34379edcf.png";
 import room4Img from "@/imports/Document/851cd36c23ad4da155b6cf0f50ec6693c5ab0088.png";
-// Ruta de las Flores page assets
-import rutaMapImg from "@/imports/RutaFloresMapPageDesktop/a59195a9e27cccf80d5295fb9bf15ac226f28f11.png";
-import rutaHeroPhoto from "@/imports/RutaFloresMapPageDesktop/850dde4affad5f2560eb4e5d70ef9add7b7d9ff3.png";
-import rutaJuayua from "@/imports/RutaFloresMapPageDesktop/dbb8d5036dc30326df8b5297904a5b53b0cfb5f8.png";
-import rutaApaneca from "@/imports/RutaFloresMapPageDesktop/f23c47939fd00eae014ff37746cb0058f242c565.png";
-import rutaAtaco from "@/imports/RutaFloresMapPageDesktop/fce5276ce245dee3f5c2fdfd286db078a60800e0.png";
-import rutaSalcoatitan from "@/imports/RutaFloresMapPageDesktop/828973c65dab400d9481607663e04c1e6267bbca.png";
-import rutaNahuizalco from "@/imports/RutaFloresMapPageDesktop/f5b5961e54952719ffe5e43d303abb6cd7bd7565.png";
-import rutaSonsonate from "@/imports/RutaFloresMapPageDesktop/a846ec44cc9d1a94bdbcbeb391dfc00b91a5018a.png";
-// Homepage assets
-import heroBg from "@/imports/DesktopV1/1a87c5d486772503401990064608c4940c7da7fc.png";
-import storyPortrait from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.png";
-import logoImg from "@/imports/DesktopV1/7a4368b70120d47e02aec91da9b968e1f2acd65c.png";
-import heroForest from "@/imports/DesktopV1/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
-import heroMobile from "@/imports/Variation3FullBleedOverlay/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
-import bgLight from "@/imports/DesktopV1/302c2113c9e9de6558ff52e0df271ec24307bdf2.png";
-import bgFlowers from "@/imports/DesktopV1/0b3cdd2aed1034c1d0964bb9eb901d692e980bec.png";
 import svgPaths from "@/imports/DesktopV1/svg-a56cgiz6y";
 // Room number badge images (from Figma DesktopV1)
 import badge01 from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.png";
 import badge02 from "@/imports/DesktopV1/5df5da27dcee43241fc35f4a3e842b4708328f40.png";
 import badge16 from "@/imports/DesktopV1/146d43f51e15479edc5b6567ca17c752c93c098a.png";
 import badge17 from "@/imports/DesktopV1/1a3d1e56d1305cc21af19544fb8fab9094a03110.png";
-import { DARK, LIGHT } from './theme';
+import {DARK} from './theme';
+
+const t = i18n.t.bind(i18n);
+
 export type Theme = typeof DARK;
 // ─── Custom SVG icon paths from Figma (Room 01) ───────────────────────────────
 
@@ -98,7 +68,7 @@ export function AmenityIcon({
 
 // ─── Room data ────────────────────────────────────────────────────────────────
 
-export const rooms = [{
+export const getRooms = (): Room[] => [{
   id: 1,
   index: "01",
   badge: badge01,
@@ -107,7 +77,7 @@ export const rooms = [{
   tagline: "",
   hoverDescription: t("rooms.nieves.hover"),
   price: 45,
-  tag: "Most popular",
+  tag: t("amenity_items.most_popular"),
   image: room1Img,
   description: t("rooms.nieves.desc"),
   guests: 2,
@@ -125,22 +95,22 @@ export const rooms = [{
     figma: ROOM01_ICONS.tv,
     label: t("amenities.tv")
   }],
-  highlights: ["Air conditioning", "Flat-screen TV & Netflix", "Private bathroom", "Outdoor dining area"],
+  highlights: [t("amenity_items.air_conditioning"), t("amenity_items.flat_screen_tv_netflix"), t("amenity_items.private_bathroom"), t("amenity_items.outdoor_dining_area")],
   detailedAmenities: [{
     title: t("categories.comfort"),
-    items: ["Air conditioning", "Bed linen provided", "Socket near the bed", "Clothes rack & Drying rack"]
+    items: [t("amenity_items.air_conditioning"), t("amenity_items.bed_linen_provided"), t("amenity_items.socket_near_bed"), t("amenity_items.clothes_rack_drying")]
   }, {
     title: t("categories.bathroom"),
-    items: ["Private bathroom", "Washing machine & Clothes dryer", "Iron & Ironing facilities", "Cleaning products"]
+    items: [t("amenity_items.private_bathroom"), t("amenity_items.washing_machine_dryer"), t("amenity_items.iron_facilities"), t("amenity_items.cleaning_products")]
   }, {
     title: t("categories.entertainment"),
-    items: ["Free High-Speed Wi-Fi", "Flat-screen TV with Satellite & Cable channels", "Streaming services (e.g., Netflix)"]
+    items: [t("amenity_items.free_wifi"), t("amenity_items.flat_screen_satellite"), t("amenity_items.streaming_services")]
   }, {
     title: t("categories.outdoor"),
-    items: ["Outdoor dining area"]
+    items: [t("amenity_items.outdoor_dining_area")]
   }, {
     title: t("categories.rules"),
-    items: ["Smoking Policy: Non-smoking room"]
+    items: [t("amenity_items.smoking_policy")]
   }] as DetailedAmenityCategory[]
 }, {
   id: 2,
@@ -175,19 +145,19 @@ export const rooms = [{
     },
     label: t("amenities.4bunks")
   }],
-  highlights: ["Safe deposit box", "Laptop safe", "Shared bathroom & hairdryer", "Outdoor dining area"],
+  highlights: [t("amenity_items.safe_deposit_box"), t("amenity_items.laptop_safe"), t("amenity_items.shared_bathroom_hairdryer"), t("amenity_items.outdoor_dining_area")],
   detailedAmenities: [{
     title: t("categories.comfort"),
-    items: ["Fan (Ventilador)", "Bed linen provided", "Socket near the bed", "Safe deposit box & Laptop safe", "Clothes rack & Drying rack"]
+    items: [t("amenity_items.fan_ventilador"), t("amenity_items.bed_linen_provided"), t("amenity_items.socket_near_bed"), t("amenity_items.safe_deposit_laptop"), t("amenity_items.clothes_rack_drying")]
   }, {
     title: t("categories.shared_bathroom"),
-    items: ["Shared bathroom with shower and hairdryer", "Free toiletries", "Washing machine & Clothes dryer", "Iron & Ironing facilities", "Cleaning products"]
+    items: [t("amenity_items.shared_bathroom_shower_hairdryer"), t("amenity_items.free_toiletries"), t("amenity_items.washing_machine_dryer"), t("amenity_items.iron_facilities"), t("amenity_items.cleaning_products")]
   }, {
     title: t("categories.connectivity"),
-    items: ["Free High-Speed Wi-Fi", "Outdoor dining area"]
+    items: [t("amenity_items.free_wifi"), t("amenity_items.outdoor_dining_area")]
   }, {
     title: t("categories.rules"),
-    items: ["Smoking Policy: Non-smoking room"]
+    items: [t("amenity_items.smoking_policy")]
   }] as DetailedAmenityCategory[]
 }, {
   id: 3,
@@ -228,22 +198,22 @@ export const rooms = [{
     },
     label: t("amenities.bath")
   }],
-  highlights: ["Private patio & terrace", "Garden & courtyard views", "Safe deposit box", "Outdoor dining area"],
+  highlights: [t("amenity_items.private_patio_terrace"), t("amenity_items.garden_courtyard_views"), t("amenity_items.safe_deposit_box"), t("amenity_items.outdoor_dining_area")],
   detailedAmenities: [{
     title: t("categories.room_details"),
-    items: ["Room size: 19 m²", "1 Single Bed + 1 Double Bed (2 beds total)", "Views: Garden, Inner courtyard, Patio & Terrace", "Entire unit on the ground floor"]
+    items: [t("amenity_items.room_size_19"), t("amenity_items.beds_1_single_1_double"), t("amenity_items.views_garden_patio"), t("amenity_items.entire_unit_ground_floor")]
   }, {
     title: t("categories.comfort"),
-    items: ["Fan (Ventilador)", "Bed linen provided", "Socket near the bed", "Safe deposit box & Laptop safe", "Clothes rack & Drying rack"]
+    items: [t("amenity_items.fan_ventilador"), t("amenity_items.bed_linen_provided"), t("amenity_items.socket_near_bed"), t("amenity_items.safe_deposit_laptop"), t("amenity_items.clothes_rack_drying")]
   }, {
     title: t("categories.bathroom"),
-    items: ["Private bathroom with shower", "Washing machine & Clothes dryer", "Iron & Ironing facilities", "Cleaning products"]
+    items: [t("amenity_items.private_bathroom_shower"), t("amenity_items.washing_machine_dryer"), t("amenity_items.iron_facilities"), t("amenity_items.cleaning_products")]
   }, {
     title: t("categories.connectivity_flores"),
-    items: ["Free High-Speed Wi-Fi", "Terrace & Private Patio", "Outdoor dining area"]
+    items: [t("amenity_items.free_wifi"), t("amenity_items.terrace_private_patio"), t("amenity_items.outdoor_dining_area")]
   }, {
     title: t("categories.rules"),
-    items: ["Smoking Policy: Non-smoking room"]
+    items: [t("amenity_items.smoking_policy")]
   }] as DetailedAmenityCategory[]
 }, {
   id: 4,
@@ -284,26 +254,26 @@ export const rooms = [{
     },
     label: t("amenities.bath")
   }],
-  highlights: ["Private balcony & terrace", "Mountain & city views", "Air conditioning", "Flat-screen TV & Netflix"],
+  highlights: [t("amenity_items.private_balcony_terrace"), t("amenity_items.mountain_city_views"), t("amenity_items.air_conditioning"), t("amenity_items.flat_screen_tv_netflix")],
   detailedAmenities: [{
     title: t("categories.climate"),
-    items: ["Air conditioning", "Bed linen provided", "Socket near the bed"]
+    items: [t("amenity_items.air_conditioning"), t("amenity_items.bed_linen_provided"), t("amenity_items.socket_near_bed")]
   }, {
     title: t("categories.bathroom"),
-    items: ["Private bathroom", "Washing machine & Clothes dryer", "Iron & Ironing facilities", "Clothes rack & Drying rack", "Cleaning products"]
+    items: [t("amenity_items.private_bathroom"), t("amenity_items.washing_machine_dryer"), t("amenity_items.iron_facilities"), t("amenity_items.clothes_rack_drying"), t("amenity_items.cleaning_products")]
   }, {
     title: t("categories.entertainment"),
-    items: ["Free High-Speed Wi-Fi", "Flat-screen TV with Satellite & Cable channels", "Streaming services (e.g., Netflix)"]
+    items: [t("amenity_items.free_wifi"), t("amenity_items.flat_screen_satellite"), t("amenity_items.streaming_services")]
   }, {
     title: t("categories.leisure"),
-    items: ["Private Balcony & Terrace", "Outdoor dining area"]
+    items: [t("amenity_items.private_balcony_terrace_cap"), t("amenity_items.outdoor_dining_area")]
   }, {
     title: t("categories.rules"),
-    items: ["Smoking: Non-smoking room"]
+    items: [t("amenity_items.smoking_non_smoking")]
   }] as DetailedAmenityCategory[]
 }];
 type DetailedAmenityCategory = {
   title: string;
   items: string[];
 };
-export type Room = (typeof rooms)[number];
+export type Room = ReturnType<typeof getRooms>[number];
