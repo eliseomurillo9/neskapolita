@@ -354,7 +354,7 @@ function Room3({
                         <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
                           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[#0c1a10] text-[9.308px] text-center w-full" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{`Discover the amenities and more : `}</p>
+                      }}>{t("amenities.discover_amenities")}</p>
                         </div>
                       </>}
                   </div>
@@ -578,7 +578,7 @@ function Room2({
                         <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
                           <p className="[word-break:break-word] font-['DM_Sans:Regular',sans-serif] font-normal leading-[14.319px] relative shrink-0 text-[9.308px] text-center text-white w-full" style={{
                         fontVariationSettings: '"opsz" 14'
-                      }}>{`Discover the amenities and more : `}</p>
+                      }}>{t("amenities.discover_amenities")}</p>
                           <div className="content-stretch flex gap-[8px] items-start relative shrink-0 w-full" data-name="Services Row">
                             <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-center min-w-px relative" data-name="Service Item">
                               <div className="bg-[rgba(61,158,114,0.2)] content-stretch flex flex-col items-center justify-center relative rounded-[6px] shrink-0 size-[24px]" data-name="Icon Frame">

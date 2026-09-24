@@ -53,25 +53,25 @@ const localFeatures = [{
         <path d={svgPaths.p1f220c80} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
   title: t("features.garden"),
-  desc: "A lush, tranquil green oasis to unwind, read, or enjoy morning coffee."
+  desc: t("index.a_lush_tranquil_green")
 }, {
   icon: <svg fill="none" viewBox="0 0 24 24" width="24" height="24">
         <path d={svgPaths.p3075da00} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
   title: t("features.kitchen"),
-  desc: "Fully equipped space to cook, share recipes, and connect over food."
+  desc: t("index.fully_equipped_space_to")
 }, {
   icon: <svg fill="none" viewBox="0 0 24 24" width="24" height="24">
         <path d={svgPaths.p2794d100} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
   title: t("features.lounge"),
-  desc: "Cozy community space with deep couches, books, and vinyl records."
+  desc: t("index.cozy_community_space_with")
 }, {
   icon: <svg fill="none" viewBox="0 0 24 24" width="24" height="24">
         <path d={svgPaths.pa962300} stroke="#F2B138" strokeLinecap="round" strokeWidth="2" />
       </svg>,
   title: t("features.laundry"),
-  desc: "24/7 washers and dryers so you can pack light and stay fresh."
+  desc: t("index.24_7_washers_and")
 }];
 export default function HomePage({
   theme,
