@@ -240,5 +240,10 @@
     "an_imposing_baroque_cathedral": "An imposing Baroque cathedral built in the 18th century with ornate gold-leaf altarpieces.",
     "natural_volcanic_thermal_pools": "Natural volcanic thermal pools with mineral-rich waters — a perfect post-hike recovery spot.",
     "a_hidden_multi_tiered": "A hidden multi-tiered waterfall deep in the Nahuaterique mountains, reached via jungle trail."
+  },
+  "page_titles": {
+    "home": "Home",
+    "ruta": "Ruta de las Flores",
+    "rooms": "Rooms"
   }
 }

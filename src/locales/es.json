@@ -240,5 +240,10 @@
     "an_imposing_baroque_cathedral": "Una imponente catedral barroca construida en el siglo XVIII con retablos ornamentados en pan de oro.",
     "natural_volcanic_thermal_pools": "Piscinas termales volcánicas naturales con aguas ricas en minerales — un lugar de recuperación perfecto después de una caminata.",
     "a_hidden_multi_tiered": "Una cascada oculta de múltiples niveles en lo profundo de las montañas de Nahuaterique, a la que se accede por un sendero en la selva."
+  },
+  "page_titles": {
+    "home": "Inicio",
+    "ruta": "Ruta de las Flores",
+    "rooms": "Habitaciones"
   }
 }
