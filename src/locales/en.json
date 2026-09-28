@@ -251,6 +251,14 @@
     "ruta": "Discover Neskapolita Hostel in Juayua, El Salvador. An intimate 4-room getaway perfectly located on the beautiful Ruta de las Flores.",
     "rooms": "Discover Neskapolita Hostel in Juayua, El Salvador. An intimate 4-room getaway perfectly located on the beautiful Ruta de las Flores."
   },
+  "page_messages": {
+    "under_construction": "Under",
+    "construction": "Construction",
+    "under_construction_desc": "We're working hard to bring you our full story. Please check back later for updates!",
+    "return_to_home": "Return to Home",
+    "not_found": "Not Found",
+    "not_found_desc": "Oops! We couldn't find the page you were looking for. It might have been moved or doesn't exist."
+  },
   "amenity_items": {
     "air_conditioning": "Air conditioning",
     "flat_screen_tv_netflix": "Flat-screen TV & Netflix",
