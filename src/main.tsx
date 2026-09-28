@@ -4,12 +4,16 @@ import { createRoot } from "react-dom/client";
   import "./styles/index.css";
 import "./locales/i18n";
 
+import { HelmetProvider } from "react-helmet-async";
+
 if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
   window.history.scrollRestoration = "manual";
 }
 
   createRoot(document.getElementById("root")!).render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </HelmetProvider>
   );

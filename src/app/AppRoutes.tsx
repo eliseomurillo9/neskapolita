@@ -8,6 +8,7 @@ import HomePage from "./views/HomePage";
 import RutaFloresPage from "./views/RutaFloresPage";
 import RoomsPage from "./views/RoomsPage";
 import {Theme} from "./theme";
+import { Helmet } from "react-helmet-async";
 
 const tStatic = i18n.t.bind(i18n);
 
@@ -40,18 +41,28 @@ export default function AppRoutes({
 }: AppRoutesProps) {
   const {t} = useTranslation();
 
-  useEffect(() => {
-    let titleKey = "page_titles.home";
-    if (location.pathname === "/ruta") {
-      titleKey = "page_titles.ruta";
-    } else if (location.pathname === "/rooms") {
-      titleKey = "page_titles.rooms";
-    }
-    document.title = `Neskapolita | ${t(titleKey)}`;
-  }, [location.pathname, t]);
+  let titleKey = "page_titles.home";
+  let descKey = "page_descriptions.home";
+  if (location.pathname === "/ruta") {
+    titleKey = "page_titles.ruta";
+    descKey = "page_descriptions.ruta";
+  } else if (location.pathname === "/rooms") {
+    titleKey = "page_titles.rooms";
+    descKey = "page_descriptions.rooms";
+  }
+  const pageTitle = `Neskapolita | ${t(titleKey)}`;
+  const pageDescription = t(descKey);
 
   return (
-    <AnimatePresence mode="wait" onExitComplete={resetWindowScroll}>
+    <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="twitter:title" content={pageTitle} />
+      </Helmet>
+      <AnimatePresence mode="wait" onExitComplete={resetWindowScroll}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
@@ -91,5 +102,6 @@ export default function AppRoutes({
         } />
       </Routes>
     </AnimatePresence>
+    </>
   );
 }

@@ -246,6 +246,11 @@
     "ruta": "Ruta de las Flores",
     "rooms": "Habitaciones"
   },
+  "page_descriptions": {
+    "home": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores.",
+    "ruta": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores.",
+    "rooms": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores."
+  },
   "amenity_items": {
     "air_conditioning": "Aire acondicionado",
     "flat_screen_tv_netflix": "TV de pantalla plana y Netflix",
