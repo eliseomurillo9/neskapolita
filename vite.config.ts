@@ -72,17 +72,27 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('@mui')) return 'vendor-mui';
-            if (id.includes('lucide-react')) return 'vendor-lucide';
-            if (id.includes('motion') || id.includes('framer-motion')) return 'vendor-motion';
-            if (id.includes('@radix-ui')) return 'vendor-radix';
-            if (id.includes('i18next') || id.includes('react-i18next')) return 'vendor-i18n';
-            if (id.includes('react-router') || id.includes('react-router-dom') || id.includes('react') || id.includes('react-dom')) {
+              if (id.includes('/node_modules/react/') || id.includes('/node_modules/react-dom/') || id.includes('/node_modules/react-router/') || id.includes('/node_modules/react-router-dom/')) {
               return 'vendor-react';
             }
-            if (id.includes('recharts')) return 'vendor-recharts';
-            if (id.includes('embla-carousel')) return 'vendor-embla';
-            return 'vendor-core';
+              if (id.includes('/node_modules/framer-motion/') || id.includes('/node_modules/motion/')) {
+                  return 'vendor-motion';
+              }
+              if (id.includes('/node_modules/@radix-ui/')) {
+                  return 'vendor-radix';
+              }
+              if (id.includes('/node_modules/lucide-react/')) {
+                  return 'vendor-lucide';
+              }
+              if (id.includes('/node_modules/recharts/')) {
+                  return 'vendor-recharts';
+              }
+              if (id.includes('/node_modules/i18next/') || id.includes('/node_modules/react-i18next/')) {
+                  return 'vendor-i18n';
+              }
+              if (id.includes('/node_modules/@mui/')) {
+                  return 'vendor-mui';
+              }
           }
         }
       }
