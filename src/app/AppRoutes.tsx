@@ -1,16 +1,17 @@
-import {useEffect} from "react";
+import {lazy, Suspense} from "react";
 import {useTranslation} from "react-i18next";
 import i18n from "../locales/i18n";
 import {Route, Routes} from "react-router-dom";
 import {AnimatePresence, motion} from "motion/react";
 import {getRooms, Room} from "./data";
-import HomePage from "./views/HomePage";
-import RutaFloresPage from "./views/RutaFloresPage";
-import RoomsPage from "./views/RoomsPage";
-import UnderConstructionPage from "./views/UnderConstructionPage";
-import NotFoundPage from "./views/NotFoundPage";
 import {Theme} from "./theme";
-import { Helmet } from "react-helmet-async";
+import {Helmet} from "react-helmet-async";
+
+const HomePage = lazy(() => import("./views/HomePage"));
+const RutaFloresPage = lazy(() => import("./views/RutaFloresPage"));
+const RoomsPage = lazy(() => import("./views/RoomsPage"));
+const UnderConstructionPage = lazy(() => import("./views/UnderConstructionPage"));
+const NotFoundPage = lazy(() => import("./views/NotFoundPage"));
 
 const tStatic = i18n.t.bind(i18n);
 
@@ -65,6 +66,7 @@ export default function AppRoutes({
         <meta property="twitter:title" content={pageTitle} />
       </Helmet>
       <AnimatePresence mode="wait" onExitComplete={resetWindowScroll}>
+          <Suspense fallback={<div style={{height: '100vh'}}/>}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
@@ -121,6 +123,7 @@ export default function AppRoutes({
           </motion.div>
         } />
       </Routes>
+          </Suspense>
     </AnimatePresence>
     </>
   );

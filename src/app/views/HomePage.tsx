@@ -76,10 +76,14 @@ export default function HomePage({
       background: "#0c1a10",
       minHeight: 600
     }}>
-        <img src={heroForest} alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" style={{
+          <img src={heroForest} alt=""
+               className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+               fetchPriority="high" style={{
         opacity: 0.8
       }} />
-        <img src={heroForest} alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" style={{
+          <img src={heroForest} alt=""
+               className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+               fetchPriority="high" style={{
         opacity: 0.8
       }} />
         <div className="absolute inset-0" style={{
@@ -185,7 +189,9 @@ export default function HomePage({
       minHeight: 560
     }}>
         {/* Full-bleed photo */}
-        <img src={heroMobile} alt="Neskapolita hostel entrance" className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" />
+          <img src={heroMobile} alt="Neskapolita hostel entrance"
+               className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+               fetchPriority="high"/>
         {/* Top spacer */}
         <div className="h-[40px] sm:h-[80px] relative shrink-0 w-full" />
         {/* Bottom scrim panel — gradient matches Figma exactly */}
@@ -458,9 +464,12 @@ export default function HomePage({
     }}>
         <div className="max-w-[1920px] mx-auto w-full relative">
           {/* Desktop image */}
-          <img src={isDark ? rutaDesktopDark : rutaDesktopLight} alt="Ruta de las Flores map" className="hidden md:block w-full object-cover max-h-[850px]" />
+            <img src={isDark ? rutaDesktopDark : rutaDesktopLight} alt="Ruta de las Flores map"
+                 className="hidden md:block w-full object-cover max-h-[850px]" width={1920} height={1080}
+                 loading="lazy"/>
           {/* Mobile image */}
-          <img src={isDark ? rutaMobileDark : rutaMobileLight} alt="Ruta de las Flores map" className="block md:hidden w-full object-cover" />
+            <img src={isDark ? rutaMobileDark : rutaMobileLight} alt="Ruta de las Flores map"
+                 className="block md:hidden w-full object-cover" width={1407} height={1120} loading="lazy"/>
 
           {/* Desktop CTA — bottom-right, relative to the centered 1920 container */}
           <div className="hidden md:block absolute bottom-8 md:bottom-[80px] right-8 md:right-[80px]">
