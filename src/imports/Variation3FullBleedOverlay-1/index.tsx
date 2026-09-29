@@ -1,6 +1,8 @@
 import i18n from "../../locales/i18n";
+import imgVariation3FullBleedOverlay from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.jpg";
+
 const t = i18n.t.bind(i18n);
-import imgVariation3FullBleedOverlay from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
+
 function Spacer() {
   return <div className="h-[100px] relative shrink-0 w-full" data-name="Spacer" />;
 }

@@ -5,10 +5,10 @@ import room3Img from "@/imports/Document/6f13b43bff73692f3535ad9ee71e65d34379edc
 import room4Img from "@/imports/Document/851cd36c23ad4da155b6cf0f50ec6693c5ab0088.png";
 import svgPaths from "@/imports/DesktopV1/svg-a56cgiz6y";
 // Room number badge images (from Figma DesktopV1)
-import badge01 from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.png";
-import badge02 from "@/imports/DesktopV1/5df5da27dcee43241fc35f4a3e842b4708328f40.png";
-import badge16 from "@/imports/DesktopV1/146d43f51e15479edc5b6567ca17c752c93c098a.png";
-import badge17 from "@/imports/DesktopV1/1a3d1e56d1305cc21af19544fb8fab9094a03110.png";
+import badge01 from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.jpg";
+import badge02 from "@/imports/DesktopV1/5df5da27dcee43241fc35f4a3e842b4708328f40.jpg";
+import badge16 from "@/imports/DesktopV1/146d43f51e15479edc5b6567ca17c752c93c098a.jpg";
+import badge17 from "@/imports/DesktopV1/1a3d1e56d1305cc21af19544fb8fab9094a03110.jpg";
 import {DARK} from './theme';
 
 const t = i18n.t.bind(i18n);

@@ -1,7 +1,6 @@
 import i18n from "../../locales/i18n";
-const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-23u8o1xksy";
-import imgRectangle from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
+import imgRectangle from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.jpg";
 import imgBgSimpleFlowers1 from "./0b3cdd2aed1034c1d0964bb9eb901d692e980bec.png";
 import imgRectangle1 from "./7a4368b70120d47e02aec91da9b968e1f2acd65c.png";
 import imgImage from "./1a87c5d486772503401990064608c4940c7da7fc.png";
@@ -18,6 +17,8 @@ import imgJuayua23 from "./dbb8d5036dc30326df8b5297904a5b53b0cfb5f8.png";
 import imgSalcoatitanIlustration23 from "./828973c65dab400d9481607663e04c1e6267bbca.png";
 import imgApanecaIlustration2 from "./f23c47939fd00eae014ff37746cb0058f242c565.png";
 import imgAtacoIlustration2 from "./fce5276ce245dee3f5c2fdfd286db078a60800e0.png";
+
+const t = i18n.t.bind(i18n);
 type NarBarProps = {
   className?: string;
   format?: "mobile";
