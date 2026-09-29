@@ -41,7 +41,7 @@ export function useAppNavigation() {
     } else if (l === "find us" || l.includes("find") || l.includes("encuentra") || l.includes("ubica")) {
       window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
     } else if (l === "our story" || l === "story" || l.includes("historia")) {
-      goHome();
+      navigate("/story");
     } else {
       goHome();
     }
@@ -65,7 +65,7 @@ export function useAppNavigation() {
     } else if (l === "find us" || l.includes("find") || l.includes("encuentra") || l.includes("ubica")) {
       window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
     } else if (l === "our story" || l === "our_story" || l.includes("historia")) {
-      navigate("/");
+      navigate("/story");
     } else if (l === "gallery" || l.includes("galería")) {
       navigate("/rooms");
     }

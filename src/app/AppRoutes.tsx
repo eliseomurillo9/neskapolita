@@ -7,6 +7,8 @@ import {getRooms, Room} from "./data";
 import HomePage from "./views/HomePage";
 import RutaFloresPage from "./views/RutaFloresPage";
 import RoomsPage from "./views/RoomsPage";
+import UnderConstructionPage from "./views/UnderConstructionPage";
+import NotFoundPage from "./views/NotFoundPage";
 import {Theme} from "./theme";
 import { Helmet } from "react-helmet-async";
 
@@ -97,6 +99,24 @@ export default function AppRoutes({
               rooms={getRooms()}
               goHome={goHome}
               onOpenModal={setSelectedRoom}
+            />
+          </motion.div>
+        } />
+
+        <Route path="/story" element={
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
+            <UnderConstructionPage
+              theme={theme}
+              goHome={goHome}
+            />
+          </motion.div>
+        } />
+
+        <Route path="*" element={
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
+            <NotFoundPage
+              theme={theme}
+              goHome={goHome}
             />
           </motion.div>
         } />

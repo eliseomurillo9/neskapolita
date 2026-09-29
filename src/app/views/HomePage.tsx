@@ -143,7 +143,8 @@ export default function HomePage({
               </button>
               <button className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
               background: "#3d9e72"
-            }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}>
+            }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}
+            onClick={() => { window.location.href = '/story'; }}>
                 <span style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 11.2,
@@ -263,7 +264,8 @@ export default function HomePage({
             <button className="w-full flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)]" style={{
             background: "#3d9e72",
             padding: "14px 24px"
-          }} onTouchStart={e => e.currentTarget.style.background = "#2d8a60"} onTouchEnd={e => e.currentTarget.style.background = "#3d9e72"}>
+          }} onTouchStart={e => e.currentTarget.style.background = "#2d8a60"} onTouchEnd={e => e.currentTarget.style.background = "#3d9e72"}
+          onClick={() => { window.location.href = '/story'; }}>
               <span style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11.2,
@@ -335,7 +337,8 @@ export default function HomePage({
             {/* Button */}
             <button className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
             background: "#3d9e72"
-          }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}>
+          }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}
+          onClick={() => { window.location.href = '/story'; }}>
               <span style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11.2,
