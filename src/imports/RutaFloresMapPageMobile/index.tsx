@@ -1,5 +1,4 @@
 import i18n from "../../locales/i18n";
-const t = i18n.t.bind(i18n);
 import imgMap from "./a59195a9e27cccf80d5295fb9bf15ac226f28f11.webp";
 import imgImg28131 from "./850dde4affad5f2560eb4e5d70ef9add7b7d9ff3.webp";
 import imgImage from "./dbb8d5036dc30326df8b5297904a5b53b0cfb5f8.webp";
@@ -8,6 +7,9 @@ import imgImage2 from "./fce5276ce245dee3f5c2fdfd286db078a60800e0.webp";
 import imgImage3 from "./828973c65dab400d9481607663e04c1e6267bbca.webp";
 import imgImage4 from "./f5b5961e54952719ffe5e43d303abb6cd7bd7565.webp";
 import imgImage5 from "./a846ec44cc9d1a94bdbcbeb391dfc00b91a5018a.webp";
+
+const t = i18n.t.bind(i18n);
+
 function RightMapPanel() {
   return <div className="bg-white h-[225px] relative rounded-[7.772px] shrink-0 w-full" data-name="Right Map Panel">
       <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[inherit] size-full">

@@ -1,8 +1,7 @@
 import i18n from "../../locales/i18n";
-const t = i18n.t.bind(i18n);
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { X, Wifi, Wind, Star, Users, Bath, Mountain, ArrowRight, Check, Tv, ShieldCheck, UtensilsCrossed, AirVent, TreePine, BedDouble, Layers } from "lucide-react";
+import {useEffect, useState} from "react";
+import {AnimatePresence, motion} from "motion/react";
+import {X} from "lucide-react";
 
 // Ruta de las Flores page assets
 import rutaHeroPhoto from "@/imports/RutaFloresMapPageDesktop/850dde4affad5f2560eb4e5d70ef9add7b7d9ff3.webp";
@@ -12,6 +11,8 @@ import rutaAtaco from "@/imports/RutaFloresMapPageDesktop/fce5276ce245dee3f5c2fd
 import rutaSalcoatitan from "@/imports/RutaFloresMapPageDesktop/828973c65dab400d9481607663e04c1e6267bbca.webp";
 import rutaNahuizalco from "@/imports/RutaFloresMapPageDesktop/f5b5961e54952719ffe5e43d303abb6cd7bd7565.webp";
 import rutaSonsonate from "@/imports/RutaFloresMapPageDesktop/a846ec44cc9d1a94bdbcbeb391dfc00b91a5018a.webp";
+
+const t = i18n.t.bind(i18n);
 
 export default function RutaFloresPage({
   onExploreRooms
