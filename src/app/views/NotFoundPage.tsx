@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import {useTranslation} from "react-i18next";
 import {Theme} from "../theme";
-import logoImg from "@/imports/DesktopV1/7a4368b70120d47e02aec91da9b968e1f2acd65c.png";
+import logoImg from "@/imports/DesktopV1/7a4368b70120d47e02aec91da9b968e1f2acd65c.webp";
 
 export default function NotFoundPage({
   theme,

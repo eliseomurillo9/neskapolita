@@ -1,13 +1,13 @@
 import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-lhxd6z9emk";
-import imgMap011 from "./a59195a9e27cccf80d5295fb9bf15ac226f28f11.png";
-import imgSonsonateIlustration22 from "./a846ec44cc9d1a94bdbcbeb391dfc00b91a5018a.png";
-import imgNahuzalcoIllustratyion22 from "./f5b5961e54952719ffe5e43d303abb6cd7bd7565.png";
-import imgJuayua22 from "./dbb8d5036dc30326df8b5297904a5b53b0cfb5f8.png";
-import imgSalcoatitanIlustration22 from "./828973c65dab400d9481607663e04c1e6267bbca.png";
-import imgApanecaIlustration2 from "./f23c47939fd00eae014ff37746cb0058f242c565.png";
-import imgAtacoIlustration2 from "./fce5276ce245dee3f5c2fdfd286db078a60800e0.png";
+import imgMap011 from "./a59195a9e27cccf80d5295fb9bf15ac226f28f11.webp";
+import imgSonsonateIlustration22 from "./a846ec44cc9d1a94bdbcbeb391dfc00b91a5018a.webp";
+import imgNahuzalcoIllustratyion22 from "./f5b5961e54952719ffe5e43d303abb6cd7bd7565.webp";
+import imgJuayua22 from "./dbb8d5036dc30326df8b5297904a5b53b0cfb5f8.webp";
+import imgSalcoatitanIlustration22 from "./828973c65dab400d9481607663e04c1e6267bbca.webp";
+import imgApanecaIlustration2 from "./f23c47939fd00eae014ff37746cb0058f242c565.webp";
+import imgAtacoIlustration2 from "./fce5276ce245dee3f5c2fdfd286db078a60800e0.webp";
 function ArrowRight() {
   return <div className="relative shrink-0 size-[20.093px]" data-name="arrow-right">
       <svg className="absolute block inset-0 size-full" fill="none" height="20.093" preserveAspectRatio="none" viewBox="0 0 20.093 20.093" width="20.093">

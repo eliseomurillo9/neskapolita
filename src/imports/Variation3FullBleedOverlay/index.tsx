@@ -1,5 +1,5 @@
 import i18n from "../../locales/i18n";
-import imgVariation3FullBleedOverlay from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.jpg";
+import imgVariation3FullBleedOverlay from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.webp";
 
 const t = i18n.t.bind(i18n);
 
