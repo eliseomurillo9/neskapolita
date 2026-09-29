@@ -1,17 +1,19 @@
 import i18n from "../../locales/i18n";
-const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-x8asy6p3zk";
-import imgImageLushTropicalFlowersAndForestOfElSalvador from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
-import imgLogoNeskaPolita1 from "./7a4368b70120d47e02aec91da9b968e1f2acd65c.png";
-import imgImage from "./6c88d1ade3e7b7f98af20a56562688e565b1e477.png";
-import img011 from "./c06fcb3e51191a325985054ce1370bf867d176ef.png";
-import imgImage1 from "./2cbaef43d2ebac70a3bdec47dfc3e0e8b7f8a628.png";
-import img021 from "./5df5da27dcee43241fc35f4a3e842b4708328f40.png";
-import imgImage2 from "./6f13b43bff73692f3535ad9ee71e65d34379edcf.png";
-import img161 from "./146d43f51e15479edc5b6567ca17c752c93c098a.png";
-import imgImage3 from "./851cd36c23ad4da155b6cf0f50ec6693c5ab0088.png";
-import img171 from "./1a3d1e56d1305cc21af19544fb8fab9094a03110.png";
-import imgChatGptImage21Juil20262252031 from "./d7d4cad0cd5f5cedffbd238fd28f3912e01c96e8.png";
+import imgImageLushTropicalFlowersAndForestOfElSalvador from "./4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.webp";
+import imgLogoNeskaPolita1 from "./7a4368b70120d47e02aec91da9b968e1f2acd65c.webp";
+import imgImage from "./6c88d1ade3e7b7f98af20a56562688e565b1e477.webp";
+import img011 from "./c06fcb3e51191a325985054ce1370bf867d176ef.webp";
+import imgImage1 from "./2cbaef43d2ebac70a3bdec47dfc3e0e8b7f8a628.webp";
+import img021 from "./5df5da27dcee43241fc35f4a3e842b4708328f40.webp";
+import imgImage2 from "./6f13b43bff73692f3535ad9ee71e65d34379edcf.webp";
+import img161 from "./146d43f51e15479edc5b6567ca17c752c93c098a.webp";
+import imgImage3 from "./851cd36c23ad4da155b6cf0f50ec6693c5ab0088.webp";
+import img171 from "./1a3d1e56d1305cc21af19544fb8fab9094a03110.webp";
+import imgChatGptImage21Juil20262252031 from "./d7d4cad0cd5f5cedffbd238fd28f3912e01c96e8.webp";
+
+const t = i18n.t.bind(i18n);
+
 function Text() {
   return <div className="relative shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">

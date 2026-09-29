@@ -1,9 +1,11 @@
 import i18n from "../../locales/i18n";
-const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-5vwvmv1zi0";
-import imgImage from "./1a87c5d486772503401990064608c4940c7da7fc.png";
-import imgImage1 from "./6c88d1ade3e7b7f98af20a56562688e565b1e477.png";
-import img011 from "./c06fcb3e51191a325985054ce1370bf867d176ef.png";
+import imgImage from "./1a87c5d486772503401990064608c4940c7da7fc.webp";
+import imgImage1 from "./6c88d1ade3e7b7f98af20a56562688e565b1e477.webp";
+import img011 from "./c06fcb3e51191a325985054ce1370bf867d176ef.webp";
+
+const t = i18n.t.bind(i18n);
+
 function Container() {
   return <div className="absolute bg-[#f2f2f2] border-[#d9d9d9] border-[0.716px] border-solid h-[21.479px] left-0 rounded-[2px] top-0 w-[71.597px]" data-name="Container">
       <p className="[word-break:break-word] absolute font-['DM_Sans:9pt_Regular',sans-serif] font-normal leading-[9.966px] left-[7.16px] text-[#595961] text-[6.64px] top-[5.01px] tracking-[0.928px] uppercase whitespace-nowrap" style={{

@@ -17,9 +17,29 @@ function figmaAssetResolver() {
   }
 }
 
+const inlineCss = () => ({
+    name: 'inline-css',
+    enforce: 'post' as const,
+    transformIndexHtml(html, ctx) {
+        let cssCode = '';
+        for (const key in ctx.bundle) {
+            if (key.endsWith('.css') && ctx.bundle[key].type === 'asset') {
+                cssCode += ctx.bundle[key].source;
+                delete ctx.bundle[key];
+            }
+        }
+        html = html.replace(/<link[^>]*?rel="stylesheet"[^>]*?href="[^"]*?\.css"[^>]*?>/g, '');
+        if (cssCode) {
+            html = html.replace('</head>', `<style>${cssCode}</style>\n</head>`);
+        }
+        return html;
+    }
+});
+
 export default defineConfig({
   plugins: [
     figmaAssetResolver(),
+      inlineCss(),
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
     react(),
@@ -47,6 +67,37 @@ export default defineConfig({
     },
   },
 
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+              if (id.includes('/node_modules/react/') || id.includes('/node_modules/react-dom/') || id.includes('/node_modules/react-router/') || id.includes('/node_modules/react-router-dom/')) {
+              return 'vendor-react';
+            }
+              if (id.includes('/node_modules/framer-motion/') || id.includes('/node_modules/motion/')) {
+                  return 'vendor-motion';
+              }
+              if (id.includes('/node_modules/@radix-ui/')) {
+                  return 'vendor-radix';
+              }
+              if (id.includes('/node_modules/lucide-react/')) {
+                  return 'vendor-lucide';
+              }
+              if (id.includes('/node_modules/recharts/')) {
+                  return 'vendor-recharts';
+              }
+              if (id.includes('/node_modules/i18next/') || id.includes('/node_modules/react-i18next/')) {
+                  return 'vendor-i18n';
+              }
+              if (id.includes('/node_modules/@mui/')) {
+                  return 'vendor-mui';
+              }
+          }
+        }
+      }
+    }
+  },
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })

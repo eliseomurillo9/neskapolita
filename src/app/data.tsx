@@ -1,14 +1,14 @@
 import i18n from "../locales/i18n";
-import room1Img from "@/imports/Document/6c88d1ade3e7b7f98af20a56562688e565b1e477.png";
-import room2Img from "@/imports/Document/2cbaef43d2ebac70a3bdec47dfc3e0e8b7f8a628.png";
-import room3Img from "@/imports/Document/6f13b43bff73692f3535ad9ee71e65d34379edcf.png";
-import room4Img from "@/imports/Document/851cd36c23ad4da155b6cf0f50ec6693c5ab0088.png";
+import room1Img from "@/imports/Document/6c88d1ade3e7b7f98af20a56562688e565b1e477.webp";
+import room2Img from "@/imports/Document/2cbaef43d2ebac70a3bdec47dfc3e0e8b7f8a628.webp";
+import room3Img from "@/imports/Document/6f13b43bff73692f3535ad9ee71e65d34379edcf.webp";
+import room4Img from "@/imports/Document/851cd36c23ad4da155b6cf0f50ec6693c5ab0088.webp";
 import svgPaths from "@/imports/DesktopV1/svg-a56cgiz6y";
 // Room number badge images (from Figma DesktopV1)
-import badge01 from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.png";
-import badge02 from "@/imports/DesktopV1/5df5da27dcee43241fc35f4a3e842b4708328f40.png";
-import badge16 from "@/imports/DesktopV1/146d43f51e15479edc5b6567ca17c752c93c098a.png";
-import badge17 from "@/imports/DesktopV1/1a3d1e56d1305cc21af19544fb8fab9094a03110.png";
+import badge01 from "@/imports/DesktopV1/c06fcb3e51191a325985054ce1370bf867d176ef.webp";
+import badge02 from "@/imports/DesktopV1/5df5da27dcee43241fc35f4a3e842b4708328f40.webp";
+import badge16 from "@/imports/DesktopV1/146d43f51e15479edc5b6567ca17c752c93c098a.webp";
+import badge17 from "@/imports/DesktopV1/1a3d1e56d1305cc21af19544fb8fab9094a03110.webp";
 import {DARK} from './theme';
 
 const t = i18n.t.bind(i18n);

@@ -5,16 +5,16 @@ import SavingsBannerSection from "@/imports/SavingsBannerSection";
 import BookingPayments from "@/imports/BookingPayments";
 import ButtonPrimary from "@/imports/ButtonPrimary";
 // Ruta de las Flores — 4 variants (desktop/mobile × light/dark)
-import rutaDesktopLight from "@/imports/ruta-de-las-flores-light-desktop-image-light.jpg";
-import rutaDesktopDark from "@/imports/ruta-de-las-flores-light-desktop-image-dark.jpg";
-import rutaMobileLight from "@/imports/ruta-de-las-flores-mobile-image-light.jpg";
-import rutaMobileDark from "@/imports/ruta-de-las-flores-mobile-image-dark.jpg";
+import rutaDesktopLight from "@/imports/ruta-de-las-flores-light-desktop-image-light.webp";
+import rutaDesktopDark from "@/imports/ruta-de-las-flores-light-desktop-image-dark.webp";
+import rutaMobileLight from "@/imports/ruta-de-las-flores-mobile-image-light.webp";
+import rutaMobileDark from "@/imports/ruta-de-las-flores-mobile-image-dark.webp";
 // Ruta de las Flores page assets
-import logoImg from "@/imports/DesktopV1/7a4368b70120d47e02aec91da9b968e1f2acd65c.png";
-import heroForest from "@/imports/DesktopV1/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
-import heroMobile from "@/imports/Variation3FullBleedOverlay/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.png";
-import bgLight from "@/imports/DesktopV1/302c2113c9e9de6558ff52e0df271ec24307bdf2.png";
-import bgFlowers from "@/imports/DesktopV1/0b3cdd2aed1034c1d0964bb9eb901d692e980bec.png";
+import logoImg from "@/imports/DesktopV1/7a4368b70120d47e02aec91da9b968e1f2acd65c.webp";
+import heroForest from "@/imports/DesktopV1/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.webp";
+import heroMobile from "@/imports/Variation3FullBleedOverlay/4ee5ecf8eb8baa6d95d45aecc608f95006973ad4.webp";
+import bgLight from "@/imports/DesktopV1/302c2113c9e9de6558ff52e0df271ec24307bdf2.webp";
+import bgFlowers from "@/imports/DesktopV1/0b3cdd2aed1034c1d0964bb9eb901d692e980bec.webp";
 import svgPaths from "@/imports/DesktopV1/svg-a56cgiz6y";
 import {Theme} from '../theme';
 import {Room} from '../data';
