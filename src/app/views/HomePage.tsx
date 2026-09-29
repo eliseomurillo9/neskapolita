@@ -76,16 +76,16 @@ export default function HomePage({
       background: "#0c1a10",
       minHeight: 600
     }}>
-          <img src={heroForest} alt=""
-               className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
-               fetchPriority="high" style={{
-        opacity: 0.8
-      }} />
-          <img src={heroForest} alt=""
-               className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
-               fetchPriority="high" style={{
-        opacity: 0.8
-      }} />
+          <picture className="absolute inset-0 w-full h-full pointer-events-none select-none" style={{opacity: 0.8}}>
+              <source media="(min-width: 768px)" srcSet={heroForest}/>
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt=""
+                   className="w-full h-full object-cover" fetchPriority="high"/>
+          </picture>
+          <picture className="absolute inset-0 w-full h-full pointer-events-none select-none" style={{opacity: 0.8}}>
+              <source media="(min-width: 768px)" srcSet={heroForest}/>
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt=""
+                   className="w-full h-full object-cover" fetchPriority="high"/>
+          </picture>
         <div className="absolute inset-0" style={{
         background: "linear-gradient(181.76deg, rgba(12,26,16,0.21) 18.55%, rgba(12,26,16,0.49) 71.94%, rgba(12,26,16,0.665) 102.8%)"
       }} />
@@ -189,9 +189,11 @@ export default function HomePage({
       minHeight: 560
     }}>
         {/* Full-bleed photo */}
-          <img src={heroMobile} alt="Neskapolita hostel entrance"
-               className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
-               fetchPriority="high"/>
+          <picture className="absolute inset-0 w-full h-full pointer-events-none select-none">
+              <source media="(max-width: 767px)" srcSet={heroMobile}/>
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Neskapolita hostel entrance"
+                   className="w-full h-full object-cover" fetchPriority="high"/>
+          </picture>
         {/* Top spacer */}
         <div className="h-[40px] sm:h-[80px] relative shrink-0 w-full" />
         {/* Bottom scrim panel — gradient matches Figma exactly */}
@@ -463,13 +465,15 @@ export default function HomePage({
       background: isDark ? "#0c1a10" : "#f2f4f3"
     }}>
         <div className="max-w-[1920px] mx-auto w-full relative">
-          {/* Desktop image */}
-            <img src={isDark ? rutaDesktopDark : rutaDesktopLight} alt="Ruta de las Flores map"
-                 className="hidden md:block w-full object-cover max-h-[850px]" width={1920} height={1080}
-                 loading="lazy"/>
-          {/* Mobile image */}
-            <img src={isDark ? rutaMobileDark : rutaMobileLight} alt="Ruta de las Flores map"
-                 className="block md:hidden w-full object-cover" width={1407} height={1120} loading="lazy"/>
+            {/* Responsive Map Image */}
+            <picture>
+                <source media="(min-width: 768px)" srcSet={isDark ? rutaDesktopDark : rutaDesktopLight} width={1920}
+                        height={1080}/>
+                <source media="(max-width: 767px)" srcSet={isDark ? rutaMobileDark : rutaMobileLight} width={1407}
+                        height={1120}/>
+                <img src={isDark ? rutaMobileDark : rutaMobileLight} alt="Ruta de las Flores map"
+                     className="w-full object-cover md:max-h-[850px]" loading="lazy"/>
+            </picture>
 
           {/* Desktop CTA — bottom-right, relative to the centered 1920 container */}
           <div className="hidden md:block absolute bottom-8 md:bottom-[80px] right-8 md:right-[80px]">
