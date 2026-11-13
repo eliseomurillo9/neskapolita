@@ -1,10 +1,9 @@
-import i18n from "../../locales/i18n";
+import { useTranslation } from "react-i18next";
 import {useState} from "react";
 import svgPaths from "./svg-9yr61w7rzh";
 import menuSvgPaths from "@/imports/NeskapolitaMenuV2Bright-1/svg-d640mmtgs0";
 import {GOOGLE_MAPS_URL} from "@/app/hooks/useAppNavigation";
 
-const t = i18n.t.bind(i18n);
 type NavBarProps = {
   className?: string;
   style?: "dark" | "light";
@@ -17,17 +16,6 @@ type NavBarProps = {
   onLogoClick?: () => void;
   onNavLink?: (link: string) => void;
 };
-const desktopLinks = ["Rooms", "Story", "Find Us"];
-const NAV_LINKS = [{
-  label: t("index.rooms"),
-  page: "rooms"
-}, {
-  label: t("nav.our_story"),
-  page: "home"
-}, {
-  label: t("index.find_us"),
-  page: "home"
-}];
 export default function NavBar({
   className,
   style = "light",
@@ -40,6 +28,19 @@ export default function NavBar({
   onLogoClick,
   onNavLink
 }: NavBarProps) {
+  const { t } = useTranslation();
+  const navLinks = [
+    { label: t("index.rooms"), page: "rooms", action: "Rooms" },
+    { label: t("nav.our_story"), page: "story", action: "Story" },
+    { label: t("index.find_us"), page: null, action: "Find Us" }
+  ];
+  const activateLink = (action: string) => {
+    if (onNavLink) {
+      onNavLink(action);
+    } else if (action === "Find Us") {
+      window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
+    }
+  };
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = (open: boolean) => {
     setMenuOpen(open);
@@ -50,7 +51,6 @@ export default function NavBar({
   const mutedColor = isDark ? "rgba(237,232,216,0.5)" : "rgba(28,36,32,0.5)";
   const toggleBorder = isDark ? "#d5dad7" : "#3d9e72";
   const menuBg = isDark ? "#0d1f13" : "#f2f4f3";
-  const activeLabel = currentPage === "rooms" ? "Rooms" : "Our Story";
   return <>
       {/* ── Nav bar strip ── */}
       <div className={className || "w-full relative"}>
@@ -58,21 +58,25 @@ export default function NavBar({
 
           {/* Desktop left: nav links */}
           <div className="hidden md:flex gap-10 flex-1 items-center">
-            {desktopLinks.map(l => <button key={l} className="font-bold uppercase whitespace-nowrap cursor-pointer bg-transparent border-0 p-0" style={{
-            fontFamily: "'DM Sans',sans-serif",
-            fontSize: 11.52,
-            letterSpacing: "1.38px",
-            color: textColor,
-            fontVariationSettings: '"opsz" 14'
-          }} onClick={() => {
-            if (onNavLink) {
-              onNavLink(l);
-            } else if (l === "Find Us") {
-              window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
-            }
-          }}>
-                {l}
-              </button>)}
+            {navLinks.map(({ label, page, action }) => {
+              const isActive = page === currentPage;
+              return <button
+                key={action}
+                aria-current={isActive ? "page" : undefined}
+                className="relative font-bold uppercase whitespace-nowrap cursor-pointer bg-transparent border-0 p-0"
+                style={{
+                  fontFamily: "'DM Sans',sans-serif",
+                  fontSize: 11.52,
+                  letterSpacing: "1.38px",
+                  color: isActive ? "#3d9e72" : textColor,
+                  fontVariationSettings: '"opsz" 14'
+                }}
+                onClick={() => activateLink(action)}
+              >
+                {label}
+                {isActive && <span aria-hidden="true" className="absolute -bottom-2 left-0 h-0.5 w-full rounded-full" style={{ background: "#3d9e72" }} />}
+              </button>;
+            })}
           </div>
 
           {/* Mobile left: hamburger */}
@@ -236,48 +240,28 @@ export default function NavBar({
 
         {/* Navigation links */}
           <div className="flex flex-col items-center flex-1 gap-4 pt-6 pb-6 px-6 overflow-y-auto">
-          {NAV_LINKS.map(({
-          label,
-          page
-        }) => {
-          const isActive = label === activeLabel;
-          if (isActive) {
-            return <div key={label} className="flex items-center justify-center px-7 py-2 rounded-full cursor-pointer" style={{
-              background: isDark ? "rgba(61,158,114,0.18)" : "rgba(61,158,114,0.14)"
-            }} onClick={() => {
-              if (page) {
-                onNavLink?.(label);
-                toggleMenu(false);
-              }
-            }}>
-                  <span className="font-bold text-center whitespace-nowrap" style={{
+          {navLinks.map(({ label, page, action }) => {
+            const isActive = page === currentPage;
+            return <button
+              key={action}
+              aria-current={isActive ? "page" : undefined}
+              className="flex items-center justify-center px-7 py-2 rounded-full border-0 text-center whitespace-nowrap cursor-pointer active:opacity-60"
+              style={{
+                background: isActive ? (isDark ? "rgba(61,158,114,0.18)" : "rgba(61,158,114,0.14)") : "transparent",
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 22,
-                color: "#3d9e72",
+                fontWeight: isActive ? 700 : 400,
+                color: isActive ? "#3d9e72" : textColor,
                 fontVariationSettings: '"opsz" 14'
-              }}>
-                    {label}
-                  </span>
-                </div>;
-          }
-          return <button key={label} className="bg-transparent border-0 text-center whitespace-nowrap cursor-pointer active:opacity-60" style={{
-            fontFamily: "'DM Sans',sans-serif",
-            fontSize: 22,
-            fontWeight: 400,
-            color: isDark ? "#ede8d8" : "#0c1a10",
-            fontVariationSettings: '"opsz" 14',
-            opacity: page ? 1 : 0.45
-          }} onClick={() => {
-            if (onNavLink) {
-              onNavLink(label);
-            } else if (label === t("index.find_us") || label === "Find Us") {
-              window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
-            }
-            toggleMenu(false);
-          }}>
-                {label}
-              </button>;
-        })}
+              }}
+              onClick={() => {
+                activateLink(action);
+                toggleMenu(false);
+              }}
+            >
+              {label}
+            </button>;
+          })}
         </div>
 
         {/* CTA section */}
