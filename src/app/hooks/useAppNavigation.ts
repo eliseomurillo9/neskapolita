@@ -6,9 +6,10 @@ export function useAppNavigation() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  let currentPage = "home";
+  let currentPage = location.pathname === "/" ? "home" : "unknown";
   if (location.pathname === "/rooms") currentPage = "rooms";
   if (location.pathname === "/ruta") currentPage = "ruta";
+  if (location.pathname === "/story") currentPage = "story";
 
   const goHome = () => {
     if (location.pathname === "/") {
