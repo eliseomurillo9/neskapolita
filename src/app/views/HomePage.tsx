@@ -328,7 +328,7 @@ export default function HomePage({
                 <br className="hidden md:block" />
                 <em style={{
                 color: "#3d9e72"
-              }}>{t("story.title_2")}</em>
+              }}>Neskapolita</em>
               </h2>
 
               {/* Subtext */}

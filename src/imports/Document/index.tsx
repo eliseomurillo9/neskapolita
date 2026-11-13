@@ -280,7 +280,7 @@ function Heading() {
         </span>
         <span className="font-['Fraunces:Black_Italic',sans-serif] italic leading-[36.291px] text-[#f2b138] text-[32.992px]" style={{
         fontVariationSettings: '"SOFT" 0, "WONK" 1'
-      }}>{`"Pretty Girl"`}</span>
+      }}>{`"Neskapolita"`}</span>
       </p>
     </div>;
 }

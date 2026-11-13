@@ -99,7 +99,6 @@ export default function AppRoutes({
             <RoomsPage
               theme={theme}
               rooms={getRooms()}
-              goHome={goHome}
               onOpenModal={setSelectedRoom}
             />
           </motion.div>
