@@ -112,10 +112,45 @@
     "our_story": "Nuestra Historia"
   },
   "story": {
+    "hero": {
+      "eyebrow": "Nuestras Raíces",
+      "title": "La Historia de",
+      "description": "Una casa familiar en Juayúa, transformada en un refugio para viajeros en la Ruta de las Flores de El Salvador.",
+      "image_alt": "El patio de Neskapolita rodeado de plantas, con sillas blancas de jardín y una sombrilla morada",
+      "name": "Neskapolita"
+    },
     "title_1": "Neskapolita: La Historia de la",
     "title_2": "\"Chica Bonita\"",
     "desc": "Adéntrate en la casa familiar que inspiró un legado de hospitalidad.",
-    "cta": "Leer la Historia Completa"
+    "cta": "Leer la Historia Completa",
+    "legacy": {
+      "eyebrow": "El Significado y el Legado",
+      "title": "De <em>Niña Bonita</em> a un Refugio en la Montaña",
+      "image_alt": "Ilustración de una mujer sonriente con un pañuelo estampado en la cabeza y frutas en la mano, rodeada de hojas",
+      "origin": "Inspirada en la expresión en euskera que significa “niña bonita”, Neskapolita nació del amor, las raíces familiares y la pasión por viajar. Lo que fue el hogar de María de las Nieves siempre ha sido un lugar de encuentro lleno de risas, comidas compartidas y puertas abiertas.",
+      "today": "Hoy mantenemos vivo su legado. Más que un hostal boutique en Juayúa, Neskapolita es un hogar construido sobre la calidez, la hospitalidad familiar y las amistades duraderas. Ya sea que llegues después de recorrer las cascadas o de pasear por los animados mercados del pueblo, aquí encontrarás una comunidad que te recibe como parte de la familia."
+    },
+    "values": {
+      "eyebrow": "Nuestros Valores",
+      "title": "Lo Que Nos Define",
+      "hospitality": {
+        "title": "Hospitalidad Cálida",
+        "description": "Un cuidado auténtico, de raíces familiares, que te hace sentir en casa desde el momento en que llegas."
+      },
+      "travel": {
+        "title": "Espíritu Viajero",
+        "description": "Creado por viajeros, para viajeros que buscan autenticidad en la Ruta de las Flores."
+      },
+      "community": {
+        "title": "Comunidad y Conexión",
+        "description": "Un refugio tranquilo donde otros huéspedes se convierten en amigos para toda la vida."
+      }
+    },
+    "booking": {
+      "title": "Ven a Quedarte Con Nosotros",
+      "description": "Solo cuatro habitaciones, aire fresco de montaña y una cálida bienvenida te esperan. Reserva tu habitación antes de que se llenen las fechas.",
+      "cta": "Reserva Tu Estadía"
+    }
   },
   "ruta": {
     "desc_1": "Famoso por su festival gastronómico de fin de semana, las cascadas de Los Chorros y la tierra volcánica activa perfecta para el café.",
@@ -242,11 +277,13 @@
     "a_hidden_multi_tiered": "Una cascada oculta de múltiples niveles en lo profundo de las montañas de Nahuaterique, a la que se accede por un sendero en la selva."
   },
   "page_titles": {
+    "story": "Nuestra Historia",
     "home": "Inicio",
     "ruta": "Ruta de las Flores",
     "rooms": "Habitaciones"
   },
   "page_descriptions": {
+    "story": "Una casa familiar en Juayúa, transformada en un refugio para viajeros en la Ruta de las Flores de El Salvador. Descubre la historia de Neskapolita.",
     "home": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores.",
     "ruta": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores.",
     "rooms": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores."
