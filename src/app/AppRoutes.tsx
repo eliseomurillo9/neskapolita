@@ -10,7 +10,7 @@ import {Helmet} from "react-helmet-async";
 const HomePage = lazy(() => import("./views/HomePage"));
 const RutaFloresPage = lazy(() => import("./views/RutaFloresPage"));
 const RoomsPage = lazy(() => import("./views/RoomsPage"));
-const UnderConstructionPage = lazy(() => import("./views/UnderConstructionPage"));
+const StoryPage = lazy(() => import("./views/StoryPage"));
 const NotFoundPage = lazy(() => import("./views/NotFoundPage"));
 
 const tStatic = i18n.t.bind(i18n);
@@ -52,6 +52,9 @@ export default function AppRoutes({
   } else if (location.pathname === "/rooms") {
     titleKey = "page_titles.rooms";
     descKey = "page_descriptions.rooms";
+  } else if (location.pathname === "/story") {
+    titleKey = "page_titles.story";
+    descKey = "page_descriptions.story";
   }
   const pageTitle = `Neskapolita | ${t(titleKey)}`;
   const pageDescription = t(descKey);
@@ -106,9 +109,9 @@ export default function AppRoutes({
 
         <Route path="/story" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-            <UnderConstructionPage
+            <StoryPage
               theme={theme}
-              goHome={goHome}
+              isDark={isDark}
             />
           </motion.div>
         } />

@@ -112,10 +112,45 @@
     "our_story": "Our Story"
   },
   "story": {
+    "hero": {
+      "eyebrow": "Our Roots",
+      "title": "The Story Behind",
+      "description": "A family home in Juayúa, transformed into a sanctuary for travelers along El Salvador’s Ruta de las Flores.",
+      "image_alt": "Neskapolita’s leafy courtyard with white garden chairs and a purple parasol",
+      "name": "Neskapolita"
+    },
     "title_1": "Neskapolita: The Story of the",
     "title_2": "\"Pretty Girl\"",
     "desc": "Step inside the family home that inspired a legacy of hospitality.",
-    "cta": "Read the Full Story"
+    "cta": "Read the Full Story",
+    "legacy": {
+      "eyebrow": "The Meaning & The Legacy",
+      "title": "From <em>Niña Bonita</em> to a Mountain Haven",
+      "image_alt": "Illustration of a smiling woman wearing a patterned headscarf and holding fruit, surrounded by leaves",
+      "origin": "Inspired by the Euskera phrase for “niña bonita” (pretty girl), Neskapolita was born from love, lineage, and a passion for travel. Originally the home of María de las Nieves, this space has long been a gathering place filled with laughter, shared meals, and open doors.",
+      "today": "Today, we carry her legacy forward. More than just a boutique hostel in Juayúa, Neskapolita is a home built on warmth, deep family hospitality, and lasting friendships. Whether you arrive after trekking the waterfalls or wandering the town’s vibrant markets, you step into a community that welcomes you like family."
+    },
+    "values": {
+      "eyebrow": "Our Values",
+      "title": "What We Stand For",
+      "hospitality": {
+        "title": "Warm Hospitality",
+        "description": "Genuine, family-rooted care that makes you feel at home the moment you arrive."
+      },
+      "travel": {
+        "title": "A Traveler’s Spirit",
+        "description": "Designed by travelers, for travelers seeking authenticity on the Ruta de las Flores."
+      },
+      "community": {
+        "title": "Community & Connection",
+        "description": "A quiet sanctuary where fellow guests become lifelong friends."
+      }
+    },
+    "booking": {
+      "title": "Come Stay With Us",
+      "description": "Just four rooms, quiet mountain air, and a warm welcome waiting for you. Grab your room before dates fill up.",
+      "cta": "Book Your Stay"
+    }
   },
   "ruta": {
     "desc_1": "Famous for its weekend food festival, cascading Los Chorros waterfalls, and active volcanic soil perfect for coffee.",
@@ -242,11 +277,13 @@
     "a_hidden_multi_tiered": "A hidden multi-tiered waterfall deep in the Nahuaterique mountains, reached via jungle trail."
   },
   "page_titles": {
+    "story": "Our Story",
     "home": "Home",
     "ruta": "Ruta de las Flores",
     "rooms": "Rooms"
   },
   "page_descriptions": {
+    "story": "A family home in Juayúa, transformed into a sanctuary for travelers along El Salvador’s Ruta de las Flores. Discover the story behind Neskapolita.",
     "home": "Discover Neskapolita Hostel in Juayua, El Salvador. An intimate 4-room getaway perfectly located on the beautiful Ruta de las Flores.",
     "ruta": "Discover Neskapolita Hostel in Juayua, El Salvador. An intimate 4-room getaway perfectly located on the beautiful Ruta de las Flores.",
     "rooms": "Discover Neskapolita Hostel in Juayua, El Salvador. An intimate 4-room getaway perfectly located on the beautiful Ruta de las Flores."
