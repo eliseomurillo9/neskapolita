@@ -1,5 +1,6 @@
 import i18n from "../../locales/i18n";
 import {useEffect} from "react";
+import { Link } from "react-router-dom";
 import {motion} from "motion/react";
 import SavingsBannerSection from "@/imports/SavingsBannerSection";
 import BookingPayments from "@/imports/BookingPayments";
@@ -52,15 +53,13 @@ export default function HomePage({
   theme,
   isDark,
   rooms,
-  onExploreRooms,
-  onExploreRuta
+  onExploreRooms
 }: {
   theme: Theme;
   isDark: boolean;
   rooms: Room[];
   onExploreRooms: () => void;
   onOpenModal: (r: Room) => void;
-  onExploreRuta: () => void;
 }) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -81,33 +80,25 @@ export default function HomePage({
               <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt=""
                    className="w-full h-full object-cover" fetchPriority="high"/>
           </picture>
-          <picture className="absolute inset-0 w-full h-full pointer-events-none select-none" style={{opacity: 0.8}}>
-              <source media="(min-width: 768px)" srcSet={heroForest}/>
-              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt=""
-                   className="w-full h-full object-cover" fetchPriority="high"/>
-          </picture>
         <div className="absolute inset-0" style={{
         background: "linear-gradient(181.76deg, rgba(12,26,16,0.21) 18.55%, rgba(12,26,16,0.49) 71.94%, rgba(12,26,16,0.665) 102.8%)"
       }} />
         <div className="relative z-10 flex flex-col justify-center gap-8 lg:gap-10 px-6 md:px-14 lg:px-[90px] pt-12 md:pt-16 pb-20 md:pb-[112px] max-w-[1920px] mx-auto w-full" style={{
         minHeight: 600
       }}>
-          <motion.div className="flex flex-col gap-5" initial={{
-          opacity: 0,
-          y: 28
-        }} animate={{
+          <motion.div className="flex flex-col gap-5" initial={false} animate={{
           opacity: 1,
           y: 0
         }} transition={{
           duration: 0.85,
           ease: [0.22, 1, 0.36, 1]
         }}>
-            <p className="font-black italic leading-none whitespace-nowrap" style={{
+            <h1 className="font-black italic leading-none whitespace-nowrap" style={{
             fontFamily: "'Fraunces',serif",
             fontSize: "clamp(42px,4.65vw,67px)",
             color: "#f2b138",
             fontVariationSettings: '"SOFT" 0,"WONK" 1'
-          }}>{t("hero.title")}</p>
+          }}>{t("hero.title")}</h1>
             <p className="font-black leading-tight" style={{
             fontFamily: "'Fraunces',serif",
             fontSize: "clamp(20px,2.08vw,30px)",
@@ -116,10 +107,7 @@ export default function HomePage({
             maxWidth: 520
           }}>{t("hero.subtitle")}</p>
           </motion.div>
-          <motion.div className="flex flex-col gap-8 md:gap-[60px]" initial={{
-          opacity: 0,
-          y: 16
-        }} animate={{
+          <motion.div className="flex flex-col gap-8 md:gap-[60px]" initial={false} animate={{
           opacity: 1,
           y: 0
         }} transition={{
@@ -128,7 +116,7 @@ export default function HomePage({
           ease: [0.22, 1, 0.36, 1]
         }}>
             <div className="flex flex-wrap gap-4 md:gap-5 items-center">
-              <button onClick={onExploreRooms} className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(242,177,56,0.2)] transition-colors" style={{
+              <Link to="/rooms" className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(242,177,56,0.2)] transition-colors" style={{
               background: "#f2b138"
             }} onMouseEnter={e => e.currentTarget.style.background = "#d49a1f"} onMouseLeave={e => e.currentTarget.style.background = "#f2b138"}>
                 <span style={{
@@ -144,11 +132,10 @@ export default function HomePage({
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                   <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="#0c1a10" strokeLinecap="round" strokeWidth="2" />
                 </svg>
-              </button>
-              <button className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
+              </Link>
+              <Link to="/story" className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
               background: "#3d9e72"
-            }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}
-            onClick={() => { window.location.href = '/story'; }}>
+            }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}>
                 <span style={{
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 11.2,
@@ -162,7 +149,7 @@ export default function HomePage({
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                   <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
                 </svg>
-              </button>
+              </Link>
             </div>
             <div className="flex flex-col gap-1">
               <p className="font-bold leading-none" style={{
@@ -203,10 +190,7 @@ export default function HomePage({
         paddingBottom: 36,
         paddingLeft: 20,
         paddingRight: 20
-      }} initial={{
-        opacity: 0,
-        y: 20
-      }} animate={{
+      }} initial={false} animate={{
         opacity: 1,
         y: 0
       }} transition={{
@@ -233,13 +217,13 @@ export default function HomePage({
               fontVariationSettings: '"opsz" 14'
             }}>{t("common.booking_rating_2")}</span>
             </div>
-            <p className="font-black italic text-center w-full" style={{
+            <h1 className="font-black italic text-center w-full" style={{
             fontFamily: "'Fraunces',serif",
             fontSize: "clamp(32px, 8.5vw, 38px)",
             color: "#f2b138",
             fontVariationSettings: '"SOFT" 0,"WONK" 1',
             lineHeight: 1.1
-          }}>{t("hero.title")}</p>
+          }}>{t("hero.title")}</h1>
             <p className="font-black text-center w-full" style={{
             fontFamily: "'Fraunces',serif",
             fontSize: "clamp(20px, 5.5vw, 24px)",
@@ -251,7 +235,7 @@ export default function HomePage({
 
           {/* Buttons */}
           <div className="flex flex-col gap-[10px] w-full max-w-[400px]">
-            <button onClick={onExploreRooms} className="w-full flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(242,177,56,0.2)]" style={{
+            <Link to="/rooms" className="w-full flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(242,177,56,0.2)]" style={{
             background: "#f2b138",
             padding: "14px 24px"
           }} onTouchStart={e => e.currentTarget.style.background = "#d49a1f"} onTouchEnd={e => e.currentTarget.style.background = "#f2b138"}>
@@ -268,12 +252,11 @@ export default function HomePage({
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="#0c1a10" strokeLinecap="round" strokeWidth="2" />
               </svg>
-            </button>
-            <button className="w-full flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)]" style={{
+            </Link>
+            <Link to="/story" className="w-full flex items-center justify-center gap-[8px] cursor-pointer border-0 rounded-[4px] drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)]" style={{
             background: "#3d9e72",
             padding: "14px 24px"
-          }} onTouchStart={e => e.currentTarget.style.background = "#2d8a60"} onTouchEnd={e => e.currentTarget.style.background = "#3d9e72"}
-          onClick={() => { window.location.href = '/story'; }}>
+          }} onTouchStart={e => e.currentTarget.style.background = "#2d8a60"} onTouchEnd={e => e.currentTarget.style.background = "#3d9e72"}>
               <span style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11.2,
@@ -287,7 +270,7 @@ export default function HomePage({
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
               </svg>
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>
@@ -343,10 +326,9 @@ export default function HomePage({
             </div>
 
             {/* Button */}
-            <button className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
+            <Link to="/story" className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
             background: "#3d9e72"
-          }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}
-          onClick={() => { window.location.href = '/story'; }}>
+          }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}>
               <span style={{
               fontFamily: "'DM Sans',sans-serif",
               fontSize: 11.2,
@@ -360,7 +342,7 @@ export default function HomePage({
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -477,12 +459,12 @@ export default function HomePage({
 
           {/* Desktop CTA — bottom-right, relative to the centered 1920 container */}
           <div className="hidden md:block absolute bottom-8 md:bottom-[80px] right-8 md:right-[80px]">
-            <ButtonPrimary onClick={onExploreRuta} />
+            <ButtonPrimary />
           </div>
 
           {/* Mobile CTA — centered at the bottom of the image */}
           <div className="md:hidden absolute bottom-5 left-1/2 -translate-x-1/2">
-            <ButtonPrimary onClick={onExploreRuta} />
+            <ButtonPrimary />
           </div>
         </div>
       </section>

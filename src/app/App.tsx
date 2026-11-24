@@ -1,5 +1,3 @@
-import i18n from "../locales/i18n";
-const t = i18n.t.bind(i18n);
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import NavBar from "@/imports/NavBar";
@@ -25,8 +23,6 @@ export default function App() {
     currentPage,
     goHome,
     goRooms,
-    goRuta,
-    handleNavLink,
     handleFooterLink
   } = useAppNavigation();
   const [selectedRoom, setSelectedRoom] = useState<Room | null>(null);
@@ -45,7 +41,7 @@ export default function App() {
       background: mobileMenuOpen ? isDark ? "#0c1a10" : "#f2f4f3" : isDark ? "rgba(12,26,16,0.82)" : "rgba(242,244,243,0.88)",
       borderBottom: isDark ? "1px solid rgba(237,232,216,0.07)" : "1px solid rgba(28,36,32,0.10)"
     }}>
-        <NavBar style={isDark ? "dark" : "light"} lang={lang} currentPage={currentPage} onToggleMode={toggleTheme} onToggleLang={toggleLang} onMenuChange={setMobileMenuOpen} onLogoClick={goHome} onNavLink={handleNavLink} onBookNow={() => window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank')} className="w-full relative" />
+        <NavBar style={isDark ? "dark" : "light"} lang={lang} currentPage={currentPage} onToggleMode={toggleTheme} onToggleLang={toggleLang} onMenuChange={setMobileMenuOpen} onLogoClick={goHome} onBookNow={() => window.open('https://api.whatsapp.com/send?phone=50370917674', '_blank')} className="w-full relative" />
       </div>
 
       <AppRoutes 
@@ -54,7 +50,6 @@ export default function App() {
         isDark={isDark}
         goHome={goHome}
         goRooms={goRooms}
-        goRuta={goRuta}
         setSelectedRoom={setSelectedRoom}
       />
 
