@@ -1,11 +1,10 @@
-import {lazy, Suspense} from "react";
+import { lazy, Suspense } from "react";
 import {useTranslation} from "react-i18next";
-import i18n from "../locales/i18n";
 import {Route, Routes} from "react-router-dom";
 import {AnimatePresence, motion} from "motion/react";
 import {getRooms, Room} from "./data";
 import {Theme} from "./theme";
-import {Helmet} from "react-helmet-async";
+import PageMetadata from "./PageMetadata";
 
 const HomePage = lazy(() => import("./views/HomePage"));
 const RutaFloresPage = lazy(() => import("./views/RutaFloresPage"));
@@ -13,15 +12,12 @@ const RoomsPage = lazy(() => import("./views/RoomsPage"));
 const StoryPage = lazy(() => import("./views/StoryPage"));
 const NotFoundPage = lazy(() => import("./views/NotFoundPage"));
 
-const tStatic = i18n.t.bind(i18n);
-
 interface AppRoutesProps {
   location: any;
   theme: Theme;
   isDark: boolean;
   goHome: () => void;
   goRooms: () => void;
-  goRuta: () => void;
   setSelectedRoom: (room: Room | null) => void;
 }
 
@@ -39,37 +35,15 @@ export default function AppRoutes({
   isDark,
   goHome,
   goRooms,
-  goRuta,
   setSelectedRoom,
 }: AppRoutesProps) {
   const {t} = useTranslation();
 
-  let titleKey = "page_titles.home";
-  let descKey = "page_descriptions.home";
-  if (location.pathname === "/ruta") {
-    titleKey = "page_titles.ruta";
-    descKey = "page_descriptions.ruta";
-  } else if (location.pathname === "/rooms") {
-    titleKey = "page_titles.rooms";
-    descKey = "page_descriptions.rooms";
-  } else if (location.pathname === "/story") {
-    titleKey = "page_titles.story";
-    descKey = "page_descriptions.story";
-  }
-  const pageTitle = `Neskapolita | ${t(titleKey)}`;
-  const pageDescription = t(descKey);
-
   return (
     <>
-      <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDescription} />
-        <meta property="twitter:title" content={pageTitle} />
-      </Helmet>
-      <AnimatePresence mode="wait" onExitComplete={resetWindowScroll}>
-          <Suspense fallback={<div style={{height: '100vh'}}/>}>
+      <PageMetadata pathname={location.pathname} />
+      <AnimatePresence initial={false} mode="wait" onExitComplete={resetWindowScroll}>
+        <Suspense fallback={<div style={{ height: "100vh" }} />}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
@@ -77,7 +51,6 @@ export default function AppRoutes({
                 theme={theme} isDark={isDark} rooms={getRooms()}
               onExploreRooms={goRooms}
               onOpenModal={setSelectedRoom}
-              onExploreRuta={goRuta}
             />
           </motion.div>
         } />
@@ -90,7 +63,7 @@ export default function AppRoutes({
                 className="flex items-center gap-1.5 uppercase tracking-widest"
                 style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 10, color: "#54625d", background: "none", border: "none", cursor: "pointer" }}
               >
-                {tStatic("common.back_to_home_1")}
+                {t("common.back_to_home_1")}
               </button>
             </div>
             <RutaFloresPage onExploreRooms={goRooms} />
@@ -125,7 +98,7 @@ export default function AppRoutes({
           </motion.div>
         } />
       </Routes>
-          </Suspense>
+        </Suspense>
     </AnimatePresence>
     </>
   );

@@ -1,14 +1,13 @@
+import { Link } from "react-router-dom";
 import i18n from "../../locales/i18n";
 const t = i18n.t.bind(i18n);
 import svgPaths from "./svg-864d05ehra";
 export default function ButtonPrimary({
-  className,
-  onClick
+  className
 }: {
   className?: string;
-  onClick?: () => void;
 }) {
-  return <div className={className || "bg-[#3d9e72] drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] relative rounded-[4px] cursor-pointer"} data-name="Button-primary" onClick={onClick}>
+  return <Link to="/ruta" className={className || "block bg-[#3d9e72] drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] relative rounded-[4px] cursor-pointer"} data-name="Button-primary">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[8px] items-center px-[30px] py-[14px] relative size-full">
           <p className="[word-break:break-word] font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[11.2px] text-white tracking-[1.34px] uppercase whitespace-nowrap" style={{
@@ -23,5 +22,5 @@ export default function ButtonPrimary({
           </div>
         </div>
       </div>
-    </div>;
+    </Link>;
 }

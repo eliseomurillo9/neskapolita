@@ -1,19 +1,25 @@
-import { createRoot } from "react-dom/client";
-  import { BrowserRouter } from "react-router-dom";
-  import App from "./app/App.tsx";
-  import "./styles/index.css";
-import "./locales/i18n";
-
+import { createRoot, hydrateRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import App from "./app/App";
+import i18n from "./locales/i18n";
+import "./styles/index.css";
 
-if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
+if ("scrollRestoration" in window.history) {
   window.history.scrollRestoration = "manual";
 }
 
-  createRoot(document.getElementById("root")!).render(
-    <HelmetProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </HelmetProvider>
-  );
+const root = document.getElementById("root")!;
+const app = (
+  <HelmetProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </HelmetProvider>
+);
+
+if (root.hasChildNodes() && i18n.resolvedLanguage === "en") {
+  hydrateRoot(root, app);
+} else {
+  createRoot(root).render(app);
+}

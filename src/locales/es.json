@@ -104,8 +104,9 @@
     "laundry": "Lavandería de Autoservicio"
   },
   "hero": {
-    "title": "Neskapolita",
-    "subtitle": "Tu refugio en la Ruta de las flores"
+    "title": "Neska Polita Hostel",
+    "wordmark": "Neskapolita",
+    "subtitle": "Tu refugio en Juayúa, en la Ruta de las Flores"
   },
   "nav": {
     "explore_rooms": "Explorar Habitaciones",
@@ -277,16 +278,16 @@
     "a_hidden_multi_tiered": "Una cascada oculta de múltiples niveles en lo profundo de las montañas de Nahuaterique, a la que se accede por un sendero en la selva."
   },
   "page_titles": {
-    "story": "Nuestra Historia",
-    "home": "Inicio",
-    "ruta": "Ruta de las Flores",
-    "rooms": "Habitaciones"
+    "story": "Nuestra historia en Juayúa",
+    "home": "Hostal en Juayúa, El Salvador",
+    "ruta": "Guía de la Ruta de las Flores",
+    "rooms": "Habitaciones en Juayúa"
   },
   "page_descriptions": {
     "story": "Una casa familiar en Juayúa, transformada en un refugio para viajeros en la Ruta de las Flores de El Salvador. Descubre la historia de Neskapolita.",
-    "home": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores.",
-    "ruta": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores.",
-    "rooms": "Descubre el Hostal Neskapolita en Juayúa, El Salvador. Una íntima escapada de 4 habitaciones perfectamente ubicada en la hermosa Ruta de las Flores."
+    "home": "Alójate en Neska Polita Hostel en Juayúa, El Salvador, en la Ruta de las Flores. Conoce nuestras cuatro habitaciones, cocina compartida y jardín.",
+    "ruta": "Planea tu viaje por la Ruta de las Flores desde Juayúa. Descubre pueblos, cascadas, café y consejos de viaje de Neska Polita Hostel.",
+    "rooms": "Conoce las cuatro habitaciones de Neska Polita Hostel en Juayúa. Compara las camas y servicios de cada habitación para tu estancia."
   },
   "page_messages": {
     "under_construction": "En",

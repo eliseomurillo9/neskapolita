@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import {useState} from "react";
+import { Link } from "react-router-dom";
 import svgPaths from "./svg-9yr61w7rzh";
 import menuSvgPaths from "@/imports/NeskapolitaMenuV2Bright-1/svg-d640mmtgs0";
 import {GOOGLE_MAPS_URL} from "@/app/hooks/useAppNavigation";
@@ -14,7 +15,6 @@ type NavBarProps = {
   onBookNow?: () => void;
   onMenuChange?: (open: boolean) => void;
   onLogoClick?: () => void;
-  onNavLink?: (link: string) => void;
 };
 export default function NavBar({
   className,
@@ -25,22 +25,14 @@ export default function NavBar({
   onToggleLang,
   onBookNow,
   onMenuChange,
-  onLogoClick,
-  onNavLink
+  onLogoClick
 }: NavBarProps) {
   const { t } = useTranslation();
   const navLinks = [
-    { label: t("index.rooms"), page: "rooms", action: "Rooms" },
-    { label: t("nav.our_story"), page: "story", action: "Story" },
-    { label: t("index.find_us"), page: null, action: "Find Us" }
+    { label: t("index.rooms"), page: "rooms", href: "/rooms" },
+    { label: t("nav.our_story"), page: "story", href: "/story" },
+    { label: t("index.find_us"), page: null, href: GOOGLE_MAPS_URL },
   ];
-  const activateLink = (action: string) => {
-    if (onNavLink) {
-      onNavLink(action);
-    } else if (action === "Find Us") {
-      window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
-    }
-  };
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = (open: boolean) => {
     setMenuOpen(open);
@@ -58,10 +50,13 @@ export default function NavBar({
 
           {/* Desktop left: nav links */}
           <div className="hidden md:flex gap-10 flex-1 items-center">
-            {navLinks.map(({ label, page, action }) => {
+            {navLinks.map(({ label, page, href }) => {
               const isActive = page === currentPage;
-              return <button
-                key={action}
+              return <Link
+                key={href}
+                to={href}
+                target={page ? undefined : "_blank"}
+                rel={page ? undefined : "noopener noreferrer"}
                 aria-current={isActive ? "page" : undefined}
                 className="relative font-bold uppercase whitespace-nowrap cursor-pointer bg-transparent border-0 p-0"
                 style={{
@@ -71,11 +66,10 @@ export default function NavBar({
                   color: isActive ? "#3d9e72" : textColor,
                   fontVariationSettings: '"opsz" 14'
                 }}
-                onClick={() => activateLink(action)}
               >
                 {label}
                 {isActive && <span aria-hidden="true" className="absolute -bottom-2 left-0 h-0.5 w-full rounded-full" style={{ background: "#3d9e72" }} />}
-              </button>;
+              </Link>;
             })}
           </div>
 
@@ -102,7 +96,7 @@ export default function NavBar({
             fontVariationSettings: '"SOFT" 0, "WONK" 1',
             lineHeight: "33.6px",
             cursor: onLogoClick ? "pointer" : "default"
-          }} onClick={onLogoClick}>{t("hero.title")}</p>
+          }} onClick={onLogoClick}>{t("hero.wordmark")}</p>
           </div>
 
           {/* Right: desktop toggles + Book Now */}
@@ -221,7 +215,7 @@ export default function NavBar({
         }} onClick={() => {
           onLogoClick?.();
           toggleMenu(false);
-        }}>{t("hero.title")}</p>
+        }}>{t("hero.wordmark")}</p>
 
             {/* Right: Close button */}
             <button onClick={() => toggleMenu(false)}
@@ -240,10 +234,13 @@ export default function NavBar({
 
         {/* Navigation links */}
           <div className="flex flex-col items-center flex-1 gap-4 pt-6 pb-6 px-6 overflow-y-auto">
-          {navLinks.map(({ label, page, action }) => {
+          {navLinks.map(({ label, page, href }) => {
             const isActive = page === currentPage;
-            return <button
-              key={action}
+            return <Link
+              key={href}
+                to={href}
+                target={page ? undefined : "_blank"}
+                rel={page ? undefined : "noopener noreferrer"}
               aria-current={isActive ? "page" : undefined}
               className="flex items-center justify-center px-7 py-2 rounded-full border-0 text-center whitespace-nowrap cursor-pointer active:opacity-60"
               style={{
@@ -254,13 +251,10 @@ export default function NavBar({
                 color: isActive ? "#3d9e72" : textColor,
                 fontVariationSettings: '"opsz" 14'
               }}
-              onClick={() => {
-                activateLink(action);
-                toggleMenu(false);
-              }}
+              onClick={() => toggleMenu(false)}
             >
               {label}
-            </button>;
+            </Link>;
           })}
         </div>
 

@@ -104,8 +104,9 @@
     "laundry": "Self-Service Laundry"
   },
   "hero": {
-    "title": "Neskapolita",
-    "subtitle": "Your refuge on the Ruta de las flores"
+    "title": "Neska Polita Hostel",
+    "wordmark": "Neskapolita",
+    "subtitle": "Your stay in Juayúa on the Ruta de las Flores"
   },
   "nav": {
     "explore_rooms": "Explore Rooms",
@@ -277,16 +278,16 @@
     "a_hidden_multi_tiered": "A hidden multi-tiered waterfall deep in the Nahuaterique mountains, reached via jungle trail."
   },
   "page_titles": {
-    "story": "Our Story",
-    "home": "Home",
-    "ruta": "Ruta de las Flores",
-    "rooms": "Rooms"
+    "story": "Our Story in Juayúa",
+    "home": "Juayúa, El Salvador",
+    "ruta": "Ruta de las Flores Travel Guide",
+    "rooms": "Hostel Rooms in Juayúa"
   },
   "page_descriptions": {
     "story": "A family home in Juayúa, transformed into a sanctuary for travelers along El Salvador’s Ruta de las Flores. Discover the story behind Neskapolita.",
-    "home": "Discover Neskapolita Hostel in Juayua, El Salvador. An intimate 4-room getaway perfectly located on the beautiful Ruta de las Flores.",
-    "ruta": "Discover Neskapolita Hostel in Juayua, El Salvador. An intimate 4-room getaway perfectly located on the beautiful Ruta de las Flores.",
-    "rooms": "Discover Neskapolita Hostel in Juayua, El Salvador. An intimate 4-room getaway perfectly located on the beautiful Ruta de las Flores."
+    "home": "Stay at Neska Polita Hostel in Juayúa, El Salvador, on the Ruta de las Flores. Explore our four rooms, shared kitchen and garden, and book directly.",
+    "ruta": "Plan your Ruta de las Flores trip from Juayúa. Explore nearby towns, waterfalls, coffee country and travel tips from Neska Polita Hostel.",
+    "rooms": "Explore the four rooms at Neska Polita Hostel in Juayúa. Compare bed layouts and room amenities for your stay on the Ruta de las Flores."
   },
   "page_messages": {
     "under_construction": "Under",

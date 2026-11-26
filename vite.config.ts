@@ -2,7 +2,6 @@ import {defineConfig} from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
-import Sitemap from 'vite-plugin-sitemap'
 import {ViteImageOptimizer} from 'vite-plugin-image-optimizer';
 
 function figmaAssetResolver() {
@@ -36,16 +35,15 @@ const inlineCss = () => ({
     }
 });
 
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [
     figmaAssetResolver(),
-      inlineCss(),
+    !isSsrBuild && inlineCss(),
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
-    Sitemap({ hostname: 'https://neskapolita.com', dynamicRoutes: ['/', '/ruta', '/rooms'] }),
-      ViteImageOptimizer({
+    !isSsrBuild && ViteImageOptimizer({
           png: {
               quality: 80,
           },
@@ -100,4 +98,4 @@ export default defineConfig({
   },
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
-})
+}))

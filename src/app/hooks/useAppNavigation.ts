@@ -6,13 +6,14 @@ export function useAppNavigation() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  let currentPage = location.pathname === "/" ? "home" : "unknown";
-  if (location.pathname === "/rooms") currentPage = "rooms";
-  if (location.pathname === "/ruta") currentPage = "ruta";
-  if (location.pathname === "/story") currentPage = "story";
+  const pathname = location.pathname.replace(/\/+$/, "") || "/";
+  let currentPage = pathname === "/" ? "home" : "unknown";
+  if (pathname === "/rooms") currentPage = "rooms";
+  if (pathname === "/ruta") currentPage = "ruta";
+  if (pathname === "/story") currentPage = "story";
 
   const goHome = () => {
-    if (location.pathname === "/") {
+    if (pathname === "/") {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     } else {
       navigate("/");
@@ -20,34 +21,13 @@ export function useAppNavigation() {
   };
 
   const goRooms = () => {
-    if (location.pathname === "/rooms") {
+    if (pathname === "/rooms") {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     } else {
       navigate("/rooms");
     }
   };
 
-  const goRuta = () => {
-    if (location.pathname === "/ruta") {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    } else {
-      navigate("/ruta");
-    }
-  };
-
-  const handleNavLink = (link: string) => {
-    const l = link.toLowerCase().trim();
-    if (l === "rooms" || l.includes("habita")) {
-      goRooms();
-    } else if (l === "find us" || l.includes("find") || l.includes("encuentra") || l.includes("ubica")) {
-      window.open(GOOGLE_MAPS_URL, '_blank', 'noopener,noreferrer');
-    } else if (l === "our story" || l === "story" || l.includes("historia")) {
-      navigate("/story");
-    } else {
-      goHome();
-    }
-  };
-  
   const scrollToFaq = () => {
     navigate("/ruta");
     setTimeout(() => {
@@ -77,8 +57,6 @@ export function useAppNavigation() {
     currentPage,
     goHome,
     goRooms,
-    goRuta,
-    handleNavLink,
     handleFooterLink
   };
 }
