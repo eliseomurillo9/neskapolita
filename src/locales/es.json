@@ -76,15 +76,16 @@
     "traveler_desc": "Eventos semanales, cenas y encuentros para nómadas globales modernos.",
     "top_places": "Mejores Lugares",
     "tap_place": "Toca un lugar para abrir en Google Maps",
-    "cozy_refuge": "Un Refugio Acogedor en la",
+    "cozy_refuge": "Guía local de la",
     "ruta_de_las_flores": "Ruta de las Flores",
-    "set_in_heart": "Ubicado en el corazón de Juayúa, Neskapolita hace que explorar la región sea fácil.",
-    "see_all_rooms_1": "Ver Todas las Habitaciones",
+    "set_in_heart": "La Ruta de las Flores conecta pueblos de montaña en el occidente de El Salvador. Empieza en Juayúa por su festival gastronómico de fin de semana y las cascadas de Los Chorros. Sigue hacia Apaneca para visitar fincas de café o hacia Ataco para ver murales y artesanías.",
+    "see_all_rooms_1": "Ver habitaciones en Juayúa",
     "explore_ruta": "Explora la Ruta de las Flores",
     "discover_best": "Descubre lo mejor de Juayúa y los pueblos de montaña vecinos — desde el famoso festival de comida y fincas de café hasta cascadas ocultas y mercados coloniales.",
-    "ready_to_explore": "¿Listo para explorar la Ruta de las Flores?",
-    "book_your_stay": "Reserva tu estadía en Neskapolita en Juayúa — la base perfecta y céntrica para todas tus aventuras en las montañas occidentales.",
+    "ready_to_explore": "Dónde alojarse en la Ruta de las Flores",
+    "book_your_stay": "Neska Polita Hostel está en el centro de Juayúa. Puedes alojarte en una habitación privada o en un dormitorio compartido y salir de excursión a los pueblos de la ruta.",
     "ruta_quick_tips": "Consejos Rápidos de la Ruta",
+    "read_ruta_guide": "Lee nuestra guía de la Ruta de las Flores",
     "back_to_home_1": "← Volver al Inicio",
     "find_your_casa": "Encuentra tu Casa",
     "apaneca": "Apaneca",
@@ -106,7 +107,7 @@
   "hero": {
     "title": "Neska Polita Hostel",
     "wordmark": "Neskapolita",
-    "subtitle": "Tu refugio en Juayúa, en la Ruta de las Flores"
+    "subtitle": "Un pequeño hostal en Juayúa, en la Ruta de las Flores de El Salvador"
   },
   "nav": {
     "explore_rooms": "Explorar Habitaciones",
@@ -154,7 +155,7 @@
     }
   },
   "ruta": {
-    "desc_1": "Famoso por su festival gastronómico de fin de semana, las cascadas de Los Chorros y la tierra volcánica activa perfecta para el café.",
+    "desc_1": "Si vienes el fin de semana, empieza por el festival gastronómico en el pueblo. Para otra excursión, visita las cascadas de Los Chorros, a las afueras de Juayúa.",
     "desc_2": "El pueblo más alto de la ruta, con fincas de café veladas por la niebla, tirolesa extrema y la hermosa Laguna Verde.",
     "desc_3": "Un pueblo vibrante lleno de murales callejeros en tonos pastel, tiendas boutique de artesanía y microcervecerías de gran altura.",
     "desc_4": "Famoso por la yuca al vapor tradicional servida en hojas de plátano, altas vistas a la montaña y galerías de madera locales.",
@@ -187,7 +188,7 @@
     "cards_accepted": "Se Aceptan Tarjetas",
     "free_cancellation_within_48h": "Cancelación gratuita en 48h",
     "we_accept_various_ways": "Aceptamos varias formas de pago para que puedas concentrarte en la aventura",
-    "explore_the_must_visit": "Explora los lugares de visita obligada",
+    "explore_the_must_visit": "Guía de la Ruta de las Flores",
     "24_7_washers_and": "Lavadoras y secadoras 24/7 para que viajes ligero y te mantengas fresco.",
     "cozy_community_space_with": "Acogedor espacio comunitario con cómodos sofás, libros y discos de vinilo.",
     "fully_equipped_space_to": "Espacio totalmente equipado para cocinar, compartir recetas y conectar en torno a la comida.",
@@ -279,15 +280,15 @@
   },
   "page_titles": {
     "story": "Nuestra historia en Juayúa",
-    "home": "Hostal en Juayúa, El Salvador",
-    "ruta": "Guía de la Ruta de las Flores",
-    "rooms": "Habitaciones en Juayúa"
+    "home": "{{brand}} en Juayúa, El Salvador",
+    "ruta": "Guía de la Ruta de las Flores, El Salvador",
+    "rooms": "Habitaciones privadas y camas compartidas en Juayúa"
   },
   "page_descriptions": {
     "story": "Una casa familiar en Juayúa, transformada en un refugio para viajeros en la Ruta de las Flores de El Salvador. Descubre la historia de Neskapolita.",
-    "home": "Alójate en Neska Polita Hostel en Juayúa, El Salvador, en la Ruta de las Flores. Conoce nuestras cuatro habitaciones, cocina compartida y jardín.",
-    "ruta": "Planea tu viaje por la Ruta de las Flores desde Juayúa. Descubre pueblos, cascadas, café y consejos de viaje de Neska Polita Hostel.",
-    "rooms": "Conoce las cuatro habitaciones de Neska Polita Hostel en Juayúa. Compara las camas y servicios de cada habitación para tu estancia."
+    "home": "Alójate en Neska Polita Hostel, en el centro de Juayúa, en la Ruta de las Flores. Elige una habitación privada o una cama compartida y reserva directamente.",
+    "ruta": "Planea tu viaje por la Ruta de las Flores desde Juayúa. Descubre pueblos, cascadas, gastronomía de fin de semana, fincas de café y murales.",
+    "rooms": "Compara habitaciones privadas y un dormitorio mixto en Neska Polita Hostel, en Juayúa. Consulta las camas, baños y servicios antes de reservar."
   },
   "page_messages": {
     "under_construction": "En",

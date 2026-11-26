@@ -56,7 +56,7 @@ export default function PageMetadata({ pathname }: { pathname: string }) {
     );
   }
 
-  const title = page === "home" ? `${brand} | ${t("page_titles.home")}` : `${t(`page_titles.${page}`)} | ${brand}`;
+  const title = page === "home" ? t("page_titles.home", { brand }) : `${t(`page_titles.${page}`)} | ${brand}`;
   const description = t(`page_descriptions.${page}`);
   const canonical = SITE_ORIGIN + path;
 
