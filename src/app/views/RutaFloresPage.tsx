@@ -2,6 +2,7 @@ import i18n from "../../locales/i18n";
 import {useEffect, useState} from "react";
 import {AnimatePresence, motion} from "motion/react";
 import {X} from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Ruta de las Flores page assets
 import rutaHeroPhoto from "@/imports/RutaFloresMapPageDesktop/850dde4affad5f2560eb4e5d70ef9add7b7d9ff3.webp";
@@ -14,11 +15,7 @@ import rutaSonsonate from "@/imports/RutaFloresMapPageDesktop/a846ec44cc9d1a94bd
 
 const t = i18n.t.bind(i18n);
 
-export default function RutaFloresPage({
-  onExploreRooms
-}: {
-  onExploreRooms: () => void;
-}) {
+export default function RutaFloresPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.documentElement.scrollTop = 0;
@@ -147,7 +144,7 @@ export default function RutaFloresPage({
             color: "#54625d",
             fontVariationSettings: '"opsz" 14'
           }}>{t("common.set_in_heart")}</p>
-            <button onClick={onExploreRooms} className="self-start flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
+            <Link to="/rooms" className="self-start flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors" style={{
             background: "#3d9e72"
           }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}>
               <span style={{
@@ -163,7 +160,7 @@ export default function RutaFloresPage({
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
               </svg>
-            </button>
+            </Link>
           </div>
 
           {/* Right: Juayúa photo */}
@@ -291,7 +288,7 @@ export default function RutaFloresPage({
             fontVariationSettings: '"opsz" 14'
           }}>{t("common.book_your_stay")}</p>
           </div>
-          <button onClick={onExploreRooms} className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors shrink-0" style={{
+          <Link to="/rooms" className="flex items-center gap-[8px] px-[30px] py-[14px] rounded-[4px] cursor-pointer border-0 drop-shadow-[0px_4px_6px_rgba(76,110,88,0.05)] transition-colors shrink-0" style={{
           background: "#3d9e72"
         }} onMouseEnter={e => e.currentTarget.style.background = "#2d8a60"} onMouseLeave={e => e.currentTarget.style.background = "#3d9e72"}>
             <span style={{
@@ -307,7 +304,7 @@ export default function RutaFloresPage({
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M2.4996 6H9.5004M6 9.5004L9.5004 6L6 2.4996" stroke="white" strokeLinecap="round" strokeWidth="2" />
             </svg>
-          </button>
+          </Link>
         </div>
       </section>
 

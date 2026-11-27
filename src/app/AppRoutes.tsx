@@ -66,7 +66,7 @@ export default function AppRoutes({
                 {t("common.back_to_home_1")}
               </button>
             </div>
-            <RutaFloresPage onExploreRooms={goRooms} />
+            <RutaFloresPage />
           </motion.div>
         } />
 
